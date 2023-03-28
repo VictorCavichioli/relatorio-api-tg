@@ -83,7 +83,7 @@ Para relização da API utilizamos a linguagem Python, com algumas bibliotecas, 
     Essa função basicamente recebe uma mensagem e reproduz ela usando a voz do google, se imprimir receber True,
     a mensagem é escrita no chat. Como ela é genérica, foi usada em basicamente todos os arquivos do projeto.
 
-    <details>
+    <details><summary>Função assistente</summary>
 
     ```python
     def assistente():
@@ -107,10 +107,11 @@ Para relização da API utilizamos a linguagem Python, com algumas bibliotecas, 
                 break
     ```
     </details>
+
     Aqui temos a primeira parte da matriz do assistente, o que estou dizendo aqui primeiramente é que vamos armazenar
     a informação dita pelo microfone na variável 'user_name', que utilizaremos em toda a execução.
 
-    <details>
+    <details><summary>Recognizer</summary>
 
     ```python
     rec = sr.Recognizer()
@@ -139,6 +140,7 @@ Para relização da API utilizamos a linguagem Python, com algumas bibliotecas, 
             except sr.UnknownValueError:
                 sai_som(resposta_erro_aleatoria)
     ```
+
     Aqui temos o coração da operação, o usuário é levado a um menu que mostra as funcionalidades implementadas
     e ele terá de escolher uma, para cada função executamos basicamente o mesmo bloco if abaixo:
 
@@ -156,7 +158,7 @@ Para relização da API utilizamos a linguagem Python, com algumas bibliotecas, 
 
 - Requisição e interpretação de dados vindos da web;
 
-    <details>
+    <details><summary>Função cotação</summary>
 
     ```python
     requisição = requests.get('https://economia.awesomeapi.com.br/all')
@@ -184,7 +186,7 @@ Para relização da API utilizamos a linguagem Python, com algumas bibliotecas, 
 
 - Tratamento de erro.
 
-    <details>
+    <details><summary>Padrões de retorno</summary>
 
     ```python
     lista_erros = [
@@ -209,6 +211,7 @@ Para relização da API utilizamos a linguagem Python, com algumas bibliotecas, 
     </details>
     Primeiramente para tratar os erros eu defini algumas configurações no arquivo config.py, para padronizar
     retorno de erros, fazendo com que retornasse o valor de erro e o assistente falar uma frase típica.
+
     ```python
     except sr.UnknownValueError:
         sai_som(resposta_erro_aleatoria)
