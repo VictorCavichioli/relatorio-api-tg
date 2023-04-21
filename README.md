@@ -11,6 +11,15 @@ Tenho 19 anos e trabalho com DevOps. <br/>
 <h4><details>
 <summary>Meus principais conhecimentos</summary>
 
+<div style="display: inline_block"><br>
+  <img align="center" alt="THL-Js" height="30" width="40" src="https://raw.githubusercontent.com/devicons/devicon/master/icons/javascript/javascript-plain.svg">
+  <img align="center" alt="THL-J" height="30" width="40" src="https://raw.githubusercontent.com/devicons/devicon/00f02ef57fb7601fd1ddcc2fe6fe670fef3ae3e4/icons/java/java-original.svg">
+  <img align="center" alt="THL-Python" height="30" width="40" src="https://raw.githubusercontent.com/devicons/devicon/master/icons/python/python-original.svg">
+  <img align="center" alt="THL-Node" height="30" width="40" src="https://raw.githubusercontent.com/devicons/devicon/00f02ef57fb7601fd1ddcc2fe6fe670fef3ae3e4/icons/nodejs/nodejs-plain.svg">
+  <img align="center" alt="THL-Docker" height="30" width="40" src="https://raw.githubusercontent.com/devicons/devicon/master/icons/docker/docker-plain.svg">
+  <img align="center" alt="THL-Kubernetes" height="30" width="40" src="https://raw.githubusercontent.com/devicons/devicon/master/icons/kubernetes/kubernetes-plain.svg">
+</div>
+
 #### **Python**
 
 Python foi a primeiras linguagem que estudei, no primeiro semestre da graduação. Hoje como DevOps minhas principais atribuições são utilizando python, pela Fatec também
@@ -21,14 +30,22 @@ no **Banco de Dados**.
 Java foi a terceira linguagem de programação que aprendi, antes de trabalhar com Python eu trabalhei uma pouco na parte de Billing, e muitos dos serviços são feitos em Java utilizando Spring Boot, juntando isso com os APIs na Fatec que foram em Java, agrego muito valor quando estamos falando em Java e principalmente REST APIs.
 
 #### **Docker**
+Docker é uma plataforma de virtualização de aplicativos que permite criar, empacotar e executar aplicativos em um ambiente isolado, conhecido como contêiner. Isso ajuda a garantir que os aplicativos sejam executados da mesma maneira em diferentes sistemas operacionais e ambientes, o que simplifica o processo de implantação e reduz os problemas de compatibilidade. Além disso, o Docker permite que vários contêineres compartilhem recursos de hardware, como CPU e memória, sem interferir uns nos outros. Essa capacidade de isolamento e compartilhamento de recursos é crucial para a construção de aplicativos escaláveis, confiáveis e eficientes. 
 
 #### **Kubernetes**
+Kubernetes é uma plataforma de orquestração de contêineres que automatiza a implantação, a escala e a gestão de aplicativos em contêineres. Ele permite que os usuários gerenciem e orquestrem contêineres em grande escala, em diferentes ambientes de infraestrutura, como data centers, nuvens públicas e privadas. Com o Kubernetes, os usuários podem implantar aplicativos rapidamente, com alta disponibilidade e resiliência, além de gerenciar o tráfego de rede e balanceamento de carga entre os contêineres. O Kubernetes também oferece recursos avançados, como implantações canário, atualizações automáticas e rollbacks de aplicativos, o que permite uma gestão mais eficiente e segura de aplicativos críticos de negócios. Em resumo, o Kubernetes é uma ferramenta essencial para construir e gerenciar aplicativos escaláveis e altamente disponíveis na era da nuvem.
 
 #### **Helm**
+Helm é uma ferramenta de gerenciamento de pacotes para Kubernetes que ajuda a simplificar e automatizar a implantação de aplicativos em contêineres. Ele permite que os usuários definam e instalem pacotes de aplicativos, conhecidos como charts, em um cluster Kubernetes de maneira fácil e repetitiva. Helm também oferece recursos avançados, como a capacidade de atualizar, listar e remover charts, além de integrar-se com outras ferramentas de orquestração, como o Kubernetes Dashboard e o Terraform. Com Helm, os usuários podem padronizar e automatizar a implantação de aplicativos em diferentes ambientes, o que reduz o tempo e o esforço necessários para configurar e gerenciar um cluster Kubernetes. Em resumo, Helm é uma ferramenta importante para gerenciar a complexidade da implantação de aplicativos em Kubernetes, permitindo que os usuários se concentrem no desenvolvimento e na inovação de seus aplicativos.
 
 #### **Cassandra**
+Cassandra é um banco de dados NoSQL distribuído, altamente escalável e tolerante a falhas. Ele foi projetado para gerenciar grandes volumes de dados estruturados em vários data centers e na nuvem, oferecendo alta disponibilidade e desempenho constante, mesmo em escala global. Cassandra usa uma arquitetura descentralizada e distribuída, com replicação de dados automática e consistência eventual, o que significa que os dados podem ser gravados e lidos em vários nós simultaneamente. Além disso, Cassandra oferece recursos avançados, como compressão de dados, suporte a transações ACID, e uma linguagem de consulta baseada em SQL, o CQL. Esses recursos tornam o Cassandra uma ferramenta importante para aplicativos que exigem escalabilidade e disponibilidade, como serviços de mensagens, mídias sociais, jogos online e IoT.
 
 #### **Testes**
+Testes de software são uma prática essencial no desenvolvimento de aplicativos que ajudam a garantir que os aplicativos atendam aos requisitos de qualidade, segurança e desempenho. Eles incluem uma série de atividades que vão desde a identificação de requisitos de teste, planejamento de testes, design de casos de teste, execução de testes, avaliação de resultados e relatórios de bugs. Existem vários tipos de testes de software, incluindo testes funcionais, testes de integração, testes de desempenho, testes de segurança e testes de aceitação do usuário, entre outros. A adoção de uma estratégia de teste sólida pode ajudar a reduzir o risco de bugs e falhas no aplicativo, melhorar a eficiência do desenvolvimento e aumentar a satisfação do usuário final.
+
+#### **Sistemas Distribuídos**
+Sistemas distribuídos são sistemas de software que consistem em múltiplos componentes independentes, que podem ser executados em diferentes computadores e se comunicam entre si para realizar uma tarefa específica. Eles são projetados para lidar com grandes volumes de dados, lidar com falhas e serem escaláveis, permitindo que os aplicativos sejam distribuídos em várias máquinas para aumentar a capacidade de processamento. Alguns exemplos de sistemas distribuídos incluem aplicativos de comércio eletrônico, redes sociais, sistemas bancários e de gerenciamento de estoque. A construção de sistemas distribuídos requer uma compreensão profunda de arquiteturas de software, protocolos de rede, segurança, gerenciamento de recursos e balanceamento de carga, entre outros conceitos. Além disso, os sistemas distribuídos podem ser difíceis de depurar e testar, tornando a construção de aplicativos escaláveis e tolerantes a falhas um desafio para os desenvolvedores.
 
 </details></h4>
 
@@ -267,7 +284,7 @@ Para relização da API utilizamos a linguagem Java, com algumas bibliotecas, s�
 
 - Tratamento de erros:
 
-    <details>
+    <details><summary>SQLRunTimeException</summary>
 
     ```java
     public class SQLRunTimeException extends RuntimeException {
@@ -303,7 +320,7 @@ Para relização da API utilizamos a linguagem Java, com algumas bibliotecas, s�
     Em algumas operações que faziamos, era comum os erros voltarem de maneira não estruturada, para facilitar a leitura foi criado então essa forma de tratamento de exeception para que o erro fosse mais fácil de se ler.
 - Leitura de dados passados pelo usuário:
 
-    <details>
+    <details><summary>Leitor</summary>
 
     ```java
     public class Leitor implements AutoCloseable {
@@ -342,7 +359,7 @@ Para relização da API utilizamos a linguagem Java, com algumas bibliotecas, s�
 
 - Métrica de tamanho de **Banco de Dados**:
 
-    <details>
+    <details><summary>Obter tamanho do banco</summary>
 
     ```java
     @SuppressWarnings("unused")
@@ -361,7 +378,7 @@ Para relização da API utilizamos a linguagem Java, com algumas bibliotecas, s�
 
     Por fim, também foi feito a implementação de alguns métodos responsáveis por coletar métricas, nesse caso, de como obter o tamanho de **Banco de Dados**.
 
-    <details>
+    <details><summary>Coleta de métricas</summary>
 
     ```java
     public ArrayList<TamanhoBancos> TamanhoBanco() {
@@ -437,7 +454,7 @@ Para construção da nos interface utilizamos o Angular, por alguns motivos, ele
 
 - Exposição do endpoints das tabelas e camada de serviço;
 
-    <details>
+    <details><summary>CategoryResource</summary>
 
     ```java
     @RestController
@@ -496,7 +513,7 @@ Para construção da nos interface utilizamos o Angular, por alguns motivos, ele
 
     Fui responsável por realizar a exposição de alguns endpoins baseado no modelo básico de dados. Como podemos ver, definindo a classe como um RestController e mapeando ela para uma URL desejada estaremos expondo aquele ponto de acesso quando iniciamos o TomCat, realizamos a exposição da entidade para que seja acessada via a uma URL na web, com o domínio que quisermos. Nesse caso, tudo que é relacionado a entidade Category terá seu ponto de acesso nesse endpoint que definimos, por ele realizamos as operações que desejamos e as devidas manipulações utilizando os métodos HTTPs para que sejam feitas operações no BD, na tabela Category.
 
-    <details>
+    <details><summary>CategoryService</summary>
 
     ```java
     @Service
@@ -561,7 +578,7 @@ Para construção da nos interface utilizamos o Angular, por alguns motivos, ele
 
     Como fui responsável pelo template inicial do projeto, produzi o modelo básico de dados, que seria as classes que representam entidades:
 
-    <details>
+    <details><summary>Product Entity</summary>
 
     ```java
     @Entity
@@ -613,7 +630,7 @@ Para construção da nos interface utilizamos o Angular, por alguns motivos, ele
 - Módulo de configurações da aplicação;
     Também foi necessário que tivessemos um módulo responsável por realizar configurações antes da inicialização do TomCat, fiquei responsável por isso e desenvolvi algumas funções que tinham características específicas, como pro exemplo um configuration que definisse a nossa WebConfig, quais URLs poderiam estar acessando nosso Back-end, quais métodos seriam permitidos e assim por diante, com o intuito de não ter que repetir código em todos os endpoints que fossem implementados.
 
-    <details>
+    <details><summary>Configurações de CORS</summary>
 
     ```java
     @Configuration
@@ -653,7 +670,7 @@ Para construção da nos interface utilizamos o Angular, por alguns motivos, ele
 
 - Integração do **Front-end** e **Back-end** utilizando Typescript;
 
-    <details>
+    <details><summary>ProductService</summary>
 
     ```typescript
     @Injectable({
@@ -716,7 +733,7 @@ Para construção da nos interface utilizamos o Angular, por alguns motivos, ele
 
 - Desenvolvimento de algumas telas responsivas.
 
-    <details>
+    <details><summary>ProductForm</summary>
 
     ```html
     <div class="container">
@@ -853,7 +870,7 @@ Para construção da nos interface utilizamos o VueJs, como requisitado pela fat
 ### **Contribuições pessoais**
 - Exposição do endpoints das tabelas e camada de serviço:
 
-    <details>
+    <details><summary>ChamadoController</summary>
 
     ```java
     @RestController
@@ -915,7 +932,7 @@ Para construção da nos interface utilizamos o VueJs, como requisitado pela fat
 
     Como fui responsável pelo template inicial do projeto, produzi o modelo básico de dados, que seria as classes que representam entidades, utilizando como guia a modelagem feita por outro membro do time.
 
-    <details>
+    <details><summary>Chamado Entity</summary>
 
     ```java
     @Entity(name = "CHAMADO")
@@ -999,7 +1016,7 @@ Para construção da nos interface utilizamos o VueJs, como requisitado pela fat
 
     Também foi necessário que tivessemos um módulo responsável por realizar configurações antes da inicialização do TomCat, fiquei responsável por isso e desenvolvi algumas funções que tinham características específicas, como pro exemplo um configuration que definisse a nossa WebConfig, quais URLs poderiam estar acessando nosso Back-end, quais métodos seriam permitidos e assim por diante, com o intuito de não ter que repetir código em todos os endpoints que fossem implementados.
 
-    <details>
+    <details><summary>Configurações de CORS</summary>
 
     ```java
     @Configuration
@@ -1039,7 +1056,7 @@ Para construção da nos interface utilizamos o VueJs, como requisitado pela fat
 
 - Security:
 
-    <details>
+    <details><summary>JWTAuthenticationFilter</summary>
 
     ```java
     @Slf4j
@@ -1095,7 +1112,7 @@ Para construção da nos interface utilizamos o VueJs, como requisitado pela fat
 
     Se as credenciais do usuário forem validadas com sucesso, o método **successfulAuthentication()** é chamado. Nesse método, um token JWT é criado usando a biblioteca java-jwt. O token contém o nome de usuário, uma data de expiração, um emissor e as permissões do usuário (também chamadas de funções). O token é então adicionado ao objeto Map e enviado como uma resposta HTTP com um status de 200.
 
-    <details>
+    <details><summary>JWTAuthorizationFilter</summary>
 
     ```java
     public class JWTAuthorizationFilter extends OncePerRequestFilter {
@@ -1147,7 +1164,7 @@ Para construção da nos interface utilizamos o VueJs, como requisitado pela fat
 
     Se o token JWT for inválido, o filtro retorna um erro 403 Forbidden com uma mensagem de erro JSON no corpo da resposta.
 
-    <details>
+    <details><summary>SecurityConfig</summary>
 
     ```java
     @Configuration
@@ -1233,7 +1250,7 @@ Para construção da nos interface utilizamos o VueJs, como requisitado pela fat
 
     Os beans de **BCryptPasswordEncoder** e **AuthenticationManager** são configurados e disponíveis para uso no contexto da aplicação.
 
-    <details>
+    <details><summary>ApplicationUserDetails</summary>
 
     ```java
     @Service @RequiredArgsConstructor @Transactional @Slf4j
@@ -1285,7 +1302,7 @@ Para construção da nos interface utilizamos o VueJs, como requisitado pela fat
     relacionamentos dessa classe para que não quebre, mas continuamos com o problema de não conseguir visualizar esses dados, e 
     para isso que utilizamos o JsonView.
 
-    <details>
+    <details><summary>JsonView</summary>
 
     ```java
     public class View {
@@ -1315,7 +1332,7 @@ Para construção da nos interface utilizamos o VueJs, como requisitado pela fat
     Essa classe é a referência pro JsonView, cada método representa a abstração que será usada como View para cada tabela que temos,
     e cada atributo da entidade, recebera uma anotação para o seu JsonView respectivo.
 
-    <details>
+    <details><summary>Usuario Entity</summary>
 
     ```java
     @Entity(name = "USUARIO")
@@ -1432,8 +1449,367 @@ Para relização da API utilizamos a linguagem Python, e para expor a aplicaçã
 ### **Front-end**: VueJS, CSS, Bootstrap
 Para construção da nos interface utilizamos o VueJS.
 
-### **Ferramentas**: Visual Studio Code, GitHub e Figma
+### **Ferramentas**: Visual Studio Code, GitHub, Jira e Figma
 
 ### **Contribuições pessoais**
+
+- Google Drive API:
+    - Download
+
+        <details><summary>Fazer Download de Arquivo</summary>
+
+        ```python
+        def download_file(file_id, file_name, token):
+            try:
+                file_url = f"https://www.googleapis.com/drive/v3/files/{file_id}?alt=media"
+                start_time = time.time()
+                response = requests.get(
+                    file_url, headers={"Authorization": f"Bearer {token}"}, stream=True
+                )
+                if not os.path.exists("./downloads/google"):
+                    os.makedirs("./downloads/google")
+
+                output_file = os.path.join("./downloads/google", file_name)
+                total_time = None
+                with open(output_file, "wb") as output:
+                    for chunk in response.iter_content(chunk_size=1024):
+                        if chunk:
+                            output.write(chunk)
+                            total_time = time.time() - start_time
+                file_size = os.path.getsize(output_file)
+                return make_response(
+                    jsonify({"title": file_name, "time": total_time, "size": file_size}), 200
+                )
+            except Exception as e:
+                return make_response(jsonify({"error": f"download error: {e}"}), 500)
+        ```
+
+        Essa é uma função Python que realiza o download de um arquivo específico do Google Drive. Ela usa a biblioteca requests para fazer uma chamada de API, definindo o ID do arquivo, o nome do arquivo e o token de autorização. A função cria um diretório de download caso não exista e define o caminho de saída para o arquivo baixado. Em seguida, ela baixa os dados do arquivo em chunks, escrevendo-os em um arquivo de saída. Se o download for bem-sucedido, a função retorna informações sobre o arquivo baixado, incluindo o nome, o tempo total de download e o tamanho em bytes. Se ocorrer um erro, a função retorna uma mensagem de erro JSON com um código de status 500.
+
+        </details>
+
+    - Upload
+
+        <details><summary>Fazer Upload de Arquivo</summary>
+
+        ```python
+        def upload_file(file_name, token, origin):
+            try:
+                url = "https://www.googleapis.com/drive/v2/files"
+                data = {
+                    "title": file_name,
+                    "mimeType": getMymetype("./downloads/google/" + file_name)[0],
+                    "description": "Powered by Cloud-in",
+                }
+                output_file = os.path.join("./downloads/google", file_name)
+                start_time = time.time()
+                req = requests.post(
+                    url, headers={"Authorization": f"Bearer {token}"}, data=json.dumps(data)
+                )
+                file_id = req.json()["selfLink"].split("/")[-1]
+                req_content = (
+                    "https://www.googleapis.com/upload/drive/v2/files/"
+                    + file_id
+                    + "?uploadType=media"
+                )
+                with open("./downloads/" + origin + "/" + file_name, "rb") as file:
+                    content = BytesIO(file.read())
+                req = requests.put(
+                    req_content, headers={"Authorization": f"Bearer {token}"}, data=content
+                )
+                total_time = time.time() - start_time
+                file_size = os.path.getsize(output_file)
+                os.remove("./downloads/" + origin + "/" + file_name)
+                return make_response(
+                    jsonify({"title": file_name, "time": total_time, "size": file_size}), 200
+                )
+            except Exception as e:
+                return make_response(jsonify({"error": f"upload error: {e}"}), 500)
+        ```
+
+        Essa função Python é responsável pelo upload de um arquivo para o Google Drive. Ela recebe como entrada o nome do arquivo, o token de autorização e o diretório de origem do arquivo. A função define o título, o tipo MIME e a descrição do arquivo e envia uma solicitação POST para criar um novo arquivo no Google Drive. Em seguida, ela extrai o ID do arquivo recém-criado e constrói uma URL de upload para enviar os dados do arquivo. A função abre o arquivo de origem e lê seu conteúdo em um objeto BytesIO. Em seguida, ela envia uma solicitação PUT com o objeto BytesIO como carga útil e o token de autorização no cabeçalho. Se o upload for bem-sucedido, a função retorna informações sobre o arquivo carregado, incluindo o nome, o tempo total de upload e o tamanho em bytes. A função também exclui o arquivo de origem após o upload. Se ocorrer um erro, a função retorna uma mensagem de erro JSON com um código de status 500.
+
+        </details>
+    
+    - List
+
+        <details><summary>Listar todos os arquivos</summary>
+
+        ```python
+        def list_files():
+            try:
+                token = request.headers.get("token")
+                url = "https://www.googleapis.com/drive/v3/files"
+                headers = {"Authorization": f"Bearer {token}"}
+                params = {"pageSize": 1000, "fields": "nextPageToken, files(id, name, size)"}
+                files = []
+                next_page_token = True
+                while next_page_token:
+                    response = requests.get(url, headers=headers, params=params)
+                    json_response = response.json()
+                    files.extend(json_response["files"])
+                    next_page_token = json_response.get("nextPageToken", None)
+                    params["pageToken"] = next_page_token
+                return make_response(jsonify({"result": files}), 200)
+            except Exception as e:
+                return make_response(jsonify({"error": f"list files error: {e}"}), 500)
+        ```
+
+        Essa função Python faz uma chamada de API para o Google Drive e lista todos os arquivos do usuário autenticado. Ele usa a biblioteca requests para fazer a chamada de API e define parâmetros de consulta para especificar o tamanho máximo de página dos resultados e os campos a serem incluídos na resposta da API. A função percorre todas as páginas de resultados da API e armazena os arquivos em uma lista. Se a chamada da API for bem-sucedida, a função retorna uma lista de arquivos em formato JSON com um código de status 200. Se ocorrer um erro, a função retorna uma mensagem de erro JSON com um código de status 500.
+
+        </details>
+
+        <details><summary>Listar todas as pastas ativas no root</summary>
+
+        ```python
+        def list_folders():
+            try:
+                token = request.headers.get("token")
+                url = "https://www.googleapis.com/drive/v3/files"
+                headers = {"Authorization": f"Bearer {token}"}
+                params = {
+                    "q": "mimeType='application/vnd.google.apps.folder' and trashed=false and 'root' in parent",
+                    "fields": "nextPageToken,files(id,name)",
+                    "pageSize": 1000,
+                }
+                folders = []
+                next_page_token = True
+                while next_page_token:
+                    response = requests.get(url, hearders=headers, params=params)
+                    json_response = response.json()
+                    folders.extend(json_response["files"])
+                    next_pag_token = json_response.get("nextPageToken", None)
+                    params["page Token"] = next_pag_token
+                    return make_response(jsonify({"result": folders}), 200)
+            except Exception as e:
+                return make_response(jsonify({"error": f"list folder error:{e}"}, 500))
+        ```
+
+        Esta é uma função que lista as pastas no Google Drive do usuário autenticado pelo token fornecido no cabeçalho da solicitação. A função envia uma solicitação GET para a API do Google Drive com os parâmetros apropriados para recuperar uma lista de pastas que atendam aos critérios especificados na cláusula "q" dos parâmetros. O resultado é uma lista de dicionários, onde cada dicionário representa uma pasta e contém seu ID e nome. A lista completa é retornada como uma resposta JSON com status HTTP 200, a menos que ocorra uma exceção, caso em que a resposta JSON com um erro e status HTTP 500 são retornados.
+
+        </details>
+
+    - Métricas(Quantidade de bytes transferidos, tempo de requisição)
+
+    - Padronização de retornos
+
+    ```python
+        return make_response(jsonify({"result": folders}), 200)
+    except Exception as e:
+        return make_response(jsonify({"error": f"list folder error:{e}"}, 500))
+    ```
+
+    Durante o desenvolvimento foi identificado a necessidade de padronizar respostas para o Front-end, portanto fique responsável por esse tratamento
+
+    - Config errors
+
+    ```python
+    def config_error(app):
+        @app.errorhandler(Exception)
+        def handle_exception(e):
+            """Return JSON instead of HTML for HTTP errors."""
+            # start with the correct headers and status code from the error
+            response = e.get_response()
+            # replace the body with JSON
+            response.data = json.dumps(
+                {
+                    "code": e.code,
+                    "name": e.name,
+                    "description": e.description,
+                }
+            )
+            response.content_type = "application/json"
+            return response
+    ```
+
+    Além de retornar respostas padrões para o Front-end, também foi necessário realizar um ErrorHandler para mapear todo tipo de erro e padronizar a resposta de maneira que o Front-end possa lidar com mais facilidade.
+
+    - 
+- CI
+    - Setup Jenkins/Github Actions
+    - Testes de unidade
+
+    <details><summary>test_list_files_valid_token</summary>
+
+    ```python
+    @mock.patch("requests.get")
+    def test_list_files_valid_token(mock_get):
+        mock_get.return_value.json.return_value = {
+            "files": [
+                {"id": "123", "name": "file1", "size": 100},
+                {"id": "456", "name": "file2", "size": 200},
+            ]
+        }
+        client = app.test_client()
+        response = client.get("/google/list", headers={"token": "valid_token"})
+        assert response.status_code == 200
+        assert response.json == {
+            "result": [
+                {"id": "123", "name": "file1", "size": 100},
+                {"id": "456", "name": "file2", "size": 200},
+            ]
+        }
+    ```
+
+    Este é um teste unitário para a função list_files() que verifica se a função retorna os arquivos corretamente quando é passado um token válido. O teste utiliza a biblioteca unittest.mock para criar um objeto "mock" para a função requests.get(). O objeto mock é usado para simular o comportamento da função requests.get() sem realmente fazer uma requisição HTTP real. Em seguida, o teste configura o objeto mock para retornar uma resposta simulada contendo uma lista de dois arquivos. O teste então usa um cliente Flask para enviar uma solicitação HTTP GET para a rota "/google/list" com um token de autorização válido. Finalmente, o teste verifica se a resposta HTTP retorna um código de status 200 e se o conteúdo JSON retornado é igual à lista de arquivos simulados. Se ambas as verificações passarem, o teste é considerado bem-sucedido.
+
+    </details><summary>test_list_files_invalid_token</summary>
+
+    ```python
+    def test_list_files_invalid_token():
+        client = app.test_client()
+        response = client.get("/google/list", headers={"token": "invalid_token"})
+        assert response.status_code == 500
+    ```
+
+    Este é um teste da função list_files() quando é fornecido um token inválido. O teste é executado usando o cliente de teste do Flask para enviar uma solicitação GET para a rota '/google/list', com o cabeçalho 'token' definido como 'invalid_token'. Em seguida, é feita uma afirmação para verificar se o código de status da resposta é 500 (erro interno do servidor), o que significa que o token fornecido não é válido e não é possível listar os arquivos.
+
+    </details>
+
+    </details><summary>test_download_file</summary>
+
+    ```python
+    @mock.patch("requests.get")
+    def test_download_file(mock_get):
+        # Define o retorno simulado da requisição feita pelo requests.get()
+        mock_get.return_value.iter_content.return_value = [b"test content"]
+        mock_get.return_value.status_code = 200
+        # Define as variáveis necessárias para a rota
+        file_id = "123"
+        file_name = "test_file"
+        token = "valid_token"
+
+        # Faz a requisição para a rota
+        with app.app_context():
+            response = download_file(file_id, file_name, token)
+            # Verifica se a resposta é bem-sucedida e possui o conteúdo esperado
+            assert response.status_code == 200
+            assert response.json == {
+                "title": file_name,
+                "time": pytest.approx(0, abs=0.1),  # Verifica que o tempo é próximo de zero
+                "size": len(b"test content"),
+            }
+            # Verifica se o arquivo foi criado corretamente
+            assert os.path.exists(f"./downloads/google/{file_name}")
+            with open(f"./downloads/google/{file_name}", "rb") as f:
+                assert f.read() == b"test content"
+            os.remove(f"./downloads/google/{file_name}")
+            assert not os.path.exists(f"./downloads/google/{file_name}")
+    ```
+
+    Esse é um teste da função download_file() que verifica se o download de um arquivo do Google Drive é feito corretamente. Para isso, ele utiliza a biblioteca pytest e a biblioteca unittest.mock para criar um objeto mock que simula a resposta da requisição feita pelo requests.get(). Em seguida, a função download_file() é chamada com um file_id, um file_name e um token válidos. O teste verifica se a resposta da função é bem-sucedida (código de status 200), se o tempo retornado é próximo de zero, se o tamanho do arquivo baixado corresponde ao tamanho esperado e se o arquivo foi criado e removido corretamente na pasta de downloads. Esse teste ajuda a garantir que a função download_file() está funcionando corretamente e é uma boa prática de desenvolvimento de software para evitar erros no código em produção.
+
+    </details>
+
+    </details><summary>test_download_file</summary>
+
+    ```python
+    @mock.patch("requests.post")
+    @mock.patch("requests.put")
+    def test_upload_file(mock_put, mock_post):
+        # Define o retorno simulado da requisição feita pelo requests.post()
+        mock_post.return_value.status_code = 200
+        mock_post.return_value.json.return_value = {
+            "selfLink": "https://www.googleapis.com/drive/v2/files/123"
+        }
+
+        # Define o retorno simulado da requisição feita pelo requests.put()
+        mock_put.return_value.status_code = 200
+
+        # Define as variáveis necessárias para a rota
+        file_name = "test_file"
+        token = "valid_token"
+        origin = "google"
+
+        # Cria um arquivo de teste
+        if not os.path.exists(f"./downloads/{origin}"):
+            os.makedirs(f"./downloads/{origin}")
+        with open(f"./downloads/{origin}/{file_name}", "wb") as f:
+            f.write(b"test content")
+
+        # Faz a requisição para a rota
+        with app.app_context():
+            response = upload_file(file_name, token, origin)
+
+            # Verifica se a resposta é bem-sucedida e possui o conteúdo esperado
+            assert response.status_code == 200
+            assert response.json == {
+                "title": file_name,
+                "time": pytest.approx(0, abs=0.1),  # Verifica que o tempo é próximo de zero
+                "size": len(b"test content"),
+            }
+            # Verifica se o arquivo foi removido corretamente
+            assert not os.path.exists(f"./downloads/{origin}/{file_name}")
+    ```
+
+    Esse é um teste de unidade para uma função upload_file() que simula a requisição para upload de um arquivo em um serviço de armazenamento em nuvem. A função utiliza os módulos requests.post e requests.put para simular a criação do arquivo na nuvem e o upload do conteúdo. O teste cria um arquivo de teste na pasta de downloads da aplicação e chama a função com os parâmetros necessários para fazer o upload desse arquivo para o serviço de armazenamento. O teste usa mock.patch para substituir as funções requests.post e requests.put por versões simuladas, que retornam um código de status HTTP 200 para simular uma requisição bem-sucedida. O teste então verifica se a resposta da função está correta, ou seja, se o código de status é 200 e se o JSON retornado possui as informações esperadas do arquivo, como nome, tamanho e tempo de upload. Por fim, o teste verifica se o arquivo de teste foi removido corretamente após a conclusão do upload.
+
+    </details>
+
+    - Deploy usando Dockerfile
+
+    ```Dockerfile
+    FROM python:3.11-bullseye
+    COPY ./requirements.txt /app/requirements.txt
+    WORKDIR /app
+    RUN pip install -r requirements.txt
+    COPY . /app
+    ENTRYPOINT [ "flask" ]
+    CMD [ "run","--host=0.0.0.0","--port=5000"]
+    ```
+
+    - Deploy usando docker-compose
+
+    ```yaml
+    version: "3.3"
+
+    services:
+
+    prometheus:
+        image: prom/prometheus
+        ports:
+        - "9090:9090"
+        volumes:
+        - ${PWD}/prometheus.yml:/etc/prometheus/prometheus.yml
+
+    grafana:
+        hostname: grafana
+        image: grafana/grafana
+        ports:
+        - 3000:3000
+
+    mysql:
+        image: mysql:latest
+        restart: always
+        environment:
+        MYSQL_ROOT_PASSWORD: example
+        MYSQL_DATABASE: cloudin
+        MYSQL_USER: dbuser
+        MYSQL_PASSWORD: dbuser
+        volumes:
+        - ./mysql-data:/var/lib/mysql
+        ports:
+        - "3307:3306"
+
+    app:
+        build:
+        context: .
+        dockerfile: Dockerfile
+        restart: always
+        depends_on:
+        - mysql
+        - prometheus
+        ports:
+        - "5000:5000"
+        environment:
+        - SQLALCHEMY_DATABASE_URI=mysql://dbuser:dbuser@mysql:3306/cloudin
+    ```
+
+- CD
+    - K3D Cluster
+    - K8s Deployment
+- Monitoramento
+    - Prometheus
+    - Grafana
 
 </details></h4>
