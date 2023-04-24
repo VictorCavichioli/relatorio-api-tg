@@ -1589,227 +1589,225 @@ Para construção da nos interface utilizamos o VueJS.
 
         </details>
 
-    - Métricas(Quantidade de bytes transferidos, tempo de requisição)
-
     - Padronização de retornos
 
-    ```python
-        return make_response(jsonify({"result": folders}), 200)
-    except Exception as e:
-        return make_response(jsonify({"error": f"list folder error:{e}"}, 500))
-    ```
+        ```python
+            return make_response(jsonify({"result": folders}), 200)
+        except Exception as e:
+            return make_response(jsonify({"error": f"list folder error:{e}"}, 500))
+        ```
 
-    Durante o desenvolvimento foi identificado a necessidade de padronizar respostas para o Front-end, portanto fique responsável por esse tratamento
+        Durante o desenvolvimento foi identificado a necessidade de padronizar respostas para o Front-end, portanto fique responsável por esse tratamento
 
     - Config errors
 
-    ```python
-    def config_error(app):
-        @app.errorhandler(Exception)
-        def handle_exception(e):
-            """Return JSON instead of HTML for HTTP errors."""
-            # start with the correct headers and status code from the error
-            response = e.get_response()
-            # replace the body with JSON
-            response.data = json.dumps(
-                {
-                    "code": e.code,
-                    "name": e.name,
-                    "description": e.description,
-                }
-            )
-            response.content_type = "application/json"
-            return response
-    ```
+        ```python
+        def config_error(app):
+            @app.errorhandler(Exception)
+            def handle_exception(e):
+                """Return JSON instead of HTML for HTTP errors."""
+                # start with the correct headers and status code from the error
+                response = e.get_response()
+                # replace the body with JSON
+                response.data = json.dumps(
+                    {
+                        "code": e.code,
+                        "name": e.name,
+                        "description": e.description,
+                    }
+                )
+                response.content_type = "application/json"
+                return response
+        ```
 
-    Além de retornar respostas padrões para o Front-end, também foi necessário realizar um ErrorHandler para mapear todo tipo de erro e padronizar a resposta de maneira que o Front-end possa lidar com mais facilidade.
+        Além de retornar respostas padrões para o Front-end, também foi necessário realizar um ErrorHandler para mapear todo tipo de erro e padronizar a resposta de maneira que o Front-end possa lidar com mais facilidade.
 
-    - 
 - CI
-    - Setup Jenkins/Github Actions
     - Testes de unidade
 
-    <details><summary>test_list_files_valid_token</summary>
+        <details><summary>test_list_files_valid_token</summary>
 
-    ```python
-    @mock.patch("requests.get")
-    def test_list_files_valid_token(mock_get):
-        mock_get.return_value.json.return_value = {
-            "files": [
-                {"id": "123", "name": "file1", "size": 100},
-                {"id": "456", "name": "file2", "size": 200},
-            ]
-        }
-        client = app.test_client()
-        response = client.get("/google/list", headers={"token": "valid_token"})
-        assert response.status_code == 200
-        assert response.json == {
-            "result": [
-                {"id": "123", "name": "file1", "size": 100},
-                {"id": "456", "name": "file2", "size": 200},
-            ]
-        }
-    ```
-
-    Este é um teste unitário para a função list_files() que verifica se a função retorna os arquivos corretamente quando é passado um token válido. O teste utiliza a biblioteca unittest.mock para criar um objeto "mock" para a função requests.get(). O objeto mock é usado para simular o comportamento da função requests.get() sem realmente fazer uma requisição HTTP real. Em seguida, o teste configura o objeto mock para retornar uma resposta simulada contendo uma lista de dois arquivos. O teste então usa um cliente Flask para enviar uma solicitação HTTP GET para a rota "/google/list" com um token de autorização válido. Finalmente, o teste verifica se a resposta HTTP retorna um código de status 200 e se o conteúdo JSON retornado é igual à lista de arquivos simulados. Se ambas as verificações passarem, o teste é considerado bem-sucedido.
-
-    </details><summary>test_list_files_invalid_token</summary>
-
-    ```python
-    def test_list_files_invalid_token():
-        client = app.test_client()
-        response = client.get("/google/list", headers={"token": "invalid_token"})
-        assert response.status_code == 500
-    ```
-
-    Este é um teste da função list_files() quando é fornecido um token inválido. O teste é executado usando o cliente de teste do Flask para enviar uma solicitação GET para a rota '/google/list', com o cabeçalho 'token' definido como 'invalid_token'. Em seguida, é feita uma afirmação para verificar se o código de status da resposta é 500 (erro interno do servidor), o que significa que o token fornecido não é válido e não é possível listar os arquivos.
-
-    </details>
-
-    </details><summary>test_download_file</summary>
-
-    ```python
-    @mock.patch("requests.get")
-    def test_download_file(mock_get):
-        # Define o retorno simulado da requisição feita pelo requests.get()
-        mock_get.return_value.iter_content.return_value = [b"test content"]
-        mock_get.return_value.status_code = 200
-        # Define as variáveis necessárias para a rota
-        file_id = "123"
-        file_name = "test_file"
-        token = "valid_token"
-
-        # Faz a requisição para a rota
-        with app.app_context():
-            response = download_file(file_id, file_name, token)
-            # Verifica se a resposta é bem-sucedida e possui o conteúdo esperado
+        ```python
+        @mock.patch("requests.get")
+        def test_list_files_valid_token(mock_get):
+            mock_get.return_value.json.return_value = {
+                "files": [
+                    {"id": "123", "name": "file1", "size": 100},
+                    {"id": "456", "name": "file2", "size": 200},
+                ]
+            }
+            client = app.test_client()
+            response = client.get("/google/list", headers={"token": "valid_token"})
             assert response.status_code == 200
             assert response.json == {
-                "title": file_name,
-                "time": pytest.approx(0, abs=0.1),  # Verifica que o tempo é próximo de zero
-                "size": len(b"test content"),
+                "result": [
+                    {"id": "123", "name": "file1", "size": 100},
+                    {"id": "456", "name": "file2", "size": 200},
+                ]
             }
-            # Verifica se o arquivo foi criado corretamente
-            assert os.path.exists(f"./downloads/google/{file_name}")
-            with open(f"./downloads/google/{file_name}", "rb") as f:
-                assert f.read() == b"test content"
-            os.remove(f"./downloads/google/{file_name}")
-            assert not os.path.exists(f"./downloads/google/{file_name}")
-    ```
+        ```
 
-    Esse é um teste da função download_file() que verifica se o download de um arquivo do Google Drive é feito corretamente. Para isso, ele utiliza a biblioteca pytest e a biblioteca unittest.mock para criar um objeto mock que simula a resposta da requisição feita pelo requests.get(). Em seguida, a função download_file() é chamada com um file_id, um file_name e um token válidos. O teste verifica se a resposta da função é bem-sucedida (código de status 200), se o tempo retornado é próximo de zero, se o tamanho do arquivo baixado corresponde ao tamanho esperado e se o arquivo foi criado e removido corretamente na pasta de downloads. Esse teste ajuda a garantir que a função download_file() está funcionando corretamente e é uma boa prática de desenvolvimento de software para evitar erros no código em produção.
+        Este é um teste unitário para a função list_files() que verifica se a função retorna os arquivos corretamente quando é passado um token válido. O teste utiliza a biblioteca unittest.mock para criar um objeto "mock" para a função requests.get(). O objeto mock é usado para simular o comportamento da função requests.get() sem realmente fazer uma requisição HTTP real. Em seguida, o teste configura o objeto mock para retornar uma resposta simulada contendo uma lista de dois arquivos. O teste então usa um cliente Flask para enviar uma solicitação HTTP GET para a rota "/google/list" com um token de autorização válido. Finalmente, o teste verifica se a resposta HTTP retorna um código de status 200 e se o conteúdo JSON retornado é igual à lista de arquivos simulados. Se ambas as verificações passarem, o teste é considerado bem-sucedido.
 
-    </details>
+        </details>
+        
+        <details><summary>test_list_files_invalid_token</summary>
 
-    </details><summary>test_download_file</summary>
+        ```python
+        def test_list_files_invalid_token():
+            client = app.test_client()
+            response = client.get("/google/list", headers={"token": "invalid_token"})
+            assert response.status_code == 500
+        ```
 
-    ```python
-    @mock.patch("requests.post")
-    @mock.patch("requests.put")
-    def test_upload_file(mock_put, mock_post):
-        # Define o retorno simulado da requisição feita pelo requests.post()
-        mock_post.return_value.status_code = 200
-        mock_post.return_value.json.return_value = {
-            "selfLink": "https://www.googleapis.com/drive/v2/files/123"
-        }
+        Este é um teste da função list_files() quando é fornecido um token inválido. O teste é executado usando o cliente de teste do Flask para enviar uma solicitação GET para a rota '/google/list', com o cabeçalho 'token' definido como 'invalid_token'. Em seguida, é feita uma afirmação para verificar se o código de status da resposta é 500 (erro interno do servidor), o que significa que o token fornecido não é válido e não é possível listar os arquivos.
 
-        # Define o retorno simulado da requisição feita pelo requests.put()
-        mock_put.return_value.status_code = 200
+        </details>
 
-        # Define as variáveis necessárias para a rota
-        file_name = "test_file"
-        token = "valid_token"
-        origin = "google"
+        <details><summary>test_download_file</summary>
 
-        # Cria um arquivo de teste
-        if not os.path.exists(f"./downloads/{origin}"):
-            os.makedirs(f"./downloads/{origin}")
-        with open(f"./downloads/{origin}/{file_name}", "wb") as f:
-            f.write(b"test content")
+        ```python
+        @mock.patch("requests.get")
+        def test_download_file(mock_get):
+            # Define o retorno simulado da requisição feita pelo requests.get()
+            mock_get.return_value.iter_content.return_value = [b"test content"]
+            mock_get.return_value.status_code = 200
+            # Define as variáveis necessárias para a rota
+            file_id = "123"
+            file_name = "test_file"
+            token = "valid_token"
 
-        # Faz a requisição para a rota
-        with app.app_context():
-            response = upload_file(file_name, token, origin)
+            # Faz a requisição para a rota
+            with app.app_context():
+                response = download_file(file_id, file_name, token)
+                # Verifica se a resposta é bem-sucedida e possui o conteúdo esperado
+                assert response.status_code == 200
+                assert response.json == {
+                    "title": file_name,
+                    "time": pytest.approx(0, abs=0.1),  # Verifica que o tempo é próximo de zero
+                    "size": len(b"test content"),
+                }
+                # Verifica se o arquivo foi criado corretamente
+                assert os.path.exists(f"./downloads/google/{file_name}")
+                with open(f"./downloads/google/{file_name}", "rb") as f:
+                    assert f.read() == b"test content"
+                os.remove(f"./downloads/google/{file_name}")
+                assert not os.path.exists(f"./downloads/google/{file_name}")
+        ```
 
-            # Verifica se a resposta é bem-sucedida e possui o conteúdo esperado
-            assert response.status_code == 200
-            assert response.json == {
-                "title": file_name,
-                "time": pytest.approx(0, abs=0.1),  # Verifica que o tempo é próximo de zero
-                "size": len(b"test content"),
+        Esse é um teste da função download_file() que verifica se o download de um arquivo do Google Drive é feito corretamente. Para isso, ele utiliza a biblioteca pytest e a biblioteca unittest.mock para criar um objeto mock que simula a resposta da requisição feita pelo requests.get(). Em seguida, a função download_file() é chamada com um file_id, um file_name e um token válidos. O teste verifica se a resposta da função é bem-sucedida (código de status 200), se o tempo retornado é próximo de zero, se o tamanho do arquivo baixado corresponde ao tamanho esperado e se o arquivo foi criado e removido corretamente na pasta de downloads. Esse teste ajuda a garantir que a função download_file() está funcionando corretamente e é uma boa prática de desenvolvimento de software para evitar erros no código em produção.
+
+        </details>
+
+        <details><summary>test_upload_file</summary>
+
+        ```python
+        @mock.patch("requests.post")
+        @mock.patch("requests.put")
+        def test_upload_file(mock_put, mock_post):
+            # Define o retorno simulado da requisição feita pelo requests.post()
+            mock_post.return_value.status_code = 200
+            mock_post.return_value.json.return_value = {
+                "selfLink": "https://www.googleapis.com/drive/v2/files/123"
             }
-            # Verifica se o arquivo foi removido corretamente
-            assert not os.path.exists(f"./downloads/{origin}/{file_name}")
-    ```
 
-    Esse é um teste de unidade para uma função upload_file() que simula a requisição para upload de um arquivo em um serviço de armazenamento em nuvem. A função utiliza os módulos requests.post e requests.put para simular a criação do arquivo na nuvem e o upload do conteúdo. O teste cria um arquivo de teste na pasta de downloads da aplicação e chama a função com os parâmetros necessários para fazer o upload desse arquivo para o serviço de armazenamento. O teste usa mock.patch para substituir as funções requests.post e requests.put por versões simuladas, que retornam um código de status HTTP 200 para simular uma requisição bem-sucedida. O teste então verifica se a resposta da função está correta, ou seja, se o código de status é 200 e se o JSON retornado possui as informações esperadas do arquivo, como nome, tamanho e tempo de upload. Por fim, o teste verifica se o arquivo de teste foi removido corretamente após a conclusão do upload.
+            # Define o retorno simulado da requisição feita pelo requests.put()
+            mock_put.return_value.status_code = 200
 
-    </details>
+            # Define as variáveis necessárias para a rota
+            file_name = "test_file"
+            token = "valid_token"
+            origin = "google"
+
+            # Cria um arquivo de teste
+            if not os.path.exists(f"./downloads/{origin}"):
+                os.makedirs(f"./downloads/{origin}")
+            with open(f"./downloads/{origin}/{file_name}", "wb") as f:
+                f.write(b"test content")
+
+            # Faz a requisição para a rota
+            with app.app_context():
+                response = upload_file(file_name, token, origin)
+
+                # Verifica se a resposta é bem-sucedida e possui o conteúdo esperado
+                assert response.status_code == 200
+                assert response.json == {
+                    "title": file_name,
+                    "time": pytest.approx(0, abs=0.1),  # Verifica que o tempo é próximo de zero
+                    "size": len(b"test content"),
+                }
+                # Verifica se o arquivo foi removido corretamente
+                assert not os.path.exists(f"./downloads/{origin}/{file_name}")
+        ```
+
+        Esse é um teste de unidade para uma função upload_file() que simula a requisição para upload de um arquivo em um serviço de armazenamento em nuvem. A função utiliza os módulos requests.post e requests.put para simular a criação do arquivo na nuvem e o upload do conteúdo. O teste cria um arquivo de teste na pasta de downloads da aplicação e chama a função com os parâmetros necessários para fazer o upload desse arquivo para o serviço de armazenamento. O teste usa mock.patch para substituir as funções requests.post e requests.put por versões simuladas, que retornam um código de status HTTP 200 para simular uma requisição bem-sucedida. O teste então verifica se a resposta da função está correta, ou seja, se o código de status é 200 e se o JSON retornado possui as informações esperadas do arquivo, como nome, tamanho e tempo de upload. Por fim, o teste verifica se o arquivo de teste foi removido corretamente após a conclusão do upload.
+
+        </details>
 
     - Deploy usando Dockerfile
 
-    ```Dockerfile
-    FROM python:3.11-bullseye
-    COPY ./requirements.txt /app/requirements.txt
-    WORKDIR /app
-    RUN pip install -r requirements.txt
-    COPY . /app
-    ENTRYPOINT [ "flask" ]
-    CMD [ "run","--host=0.0.0.0","--port=5000"]
-    ```
+        ```Dockerfile
+        FROM python:3.11-bullseye
+        COPY ./requirements.txt /app/requirements.txt
+        WORKDIR /app
+        RUN pip install -r requirements.txt
+        COPY . /app
+        ENTRYPOINT [ "flask" ]
+        CMD [ "run","--host=0.0.0.0","--port=5000"]
+        ```
 
     - Deploy usando docker-compose
 
-    ```yaml
-    version: "3.3"
+        ```yaml
+        version: "3.3"
 
-    services:
+        services:
 
-    prometheus:
-        image: prom/prometheus
-        ports:
-        - "9090:9090"
-        volumes:
-        - ${PWD}/prometheus.yml:/etc/prometheus/prometheus.yml
+        prometheus:
+            image: prom/prometheus
+            ports:
+            - "9090:9090"
+            volumes:
+            - ${PWD}/prometheus.yml:/etc/prometheus/prometheus.yml
 
-    grafana:
-        hostname: grafana
-        image: grafana/grafana
-        ports:
-        - 3000:3000
+        grafana:
+            hostname: grafana
+            image: grafana/grafana
+            ports:
+            - 3000:3000
 
-    mysql:
-        image: mysql:latest
-        restart: always
-        environment:
-        MYSQL_ROOT_PASSWORD: example
-        MYSQL_DATABASE: cloudin
-        MYSQL_USER: dbuser
-        MYSQL_PASSWORD: dbuser
-        volumes:
-        - ./mysql-data:/var/lib/mysql
-        ports:
-        - "3307:3306"
+        mysql:
+            image: mysql:latest
+            restart: always
+            environment:
+            MYSQL_ROOT_PASSWORD: example
+            MYSQL_DATABASE: cloudin
+            MYSQL_USER: dbuser
+            MYSQL_PASSWORD: dbuser
+            volumes:
+            - ./mysql-data:/var/lib/mysql
+            ports:
+            - "3307:3306"
 
-    app:
-        build:
-        context: .
-        dockerfile: Dockerfile
-        restart: always
-        depends_on:
-        - mysql
-        - prometheus
-        ports:
-        - "5000:5000"
-        environment:
-        - SQLALCHEMY_DATABASE_URI=mysql://dbuser:dbuser@mysql:3306/cloudin
-    ```
+        app:
+            build:
+            context: .
+            dockerfile: Dockerfile
+            restart: always
+            depends_on:
+            - mysql
+            - prometheus
+            ports:
+            - "5000:5000"
+            environment:
+            - SQLALCHEMY_DATABASE_URI=mysql://dbuser:dbuser@mysql:3306/cloudin
+        ```
 
-- CD
-    - K3D Cluster
-    - K8s Deployment
-- Monitoramento
-    - Prometheus
-    - Grafana
-
+    - CD
+        - K3D Cluster
+        - K8s Deployment
+    - Monitoramento
+        - Prometheus
+        - Grafana
+    
 </details></h4>
