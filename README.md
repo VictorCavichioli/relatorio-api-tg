@@ -22,12 +22,10 @@ Tenho 19 anos e trabalho com DevOps. <br/>
 
 #### **Python**
 
-Python foi a primeiras linguagem que estudei, no primeiro semestre da graduação. Hoje como DevOps minhas principais atribuições são utilizando python, pela Fatec também
-já fiz um projeto em Python de um assistente virtual, no meu trabalho utilizamos Python para integrar outros serviços, realizar operações de verificação no cluster e
-no **Banco de Dados**.
+Python foi a primeira linguagem estudada no primeiro semestre da graduação. Atualmente, como DevOps, as principais atribuições são realizadas utilizando Python, também pela Fatec. Um projeto anterior envolveu o desenvolvimento de um assistente virtual em Python. No trabalho, Python é utilizado para integrar outros serviços, realizar operações de verificação no cluster e no **banco de dados**.
 
 #### **Java**
-Java foi a terceira linguagem de programação que aprendi, antes de trabalhar com Python eu trabalhei uma pouco na parte de Billing, e muitos dos serviços são feitos em Java utilizando Spring Boot, juntando isso com os APIs na Fatec que foram em Java, agrego muito valor quando estamos falando em Java e principalmente REST APIs.
+Java foi a terceira linguagem de programação aprendida. Antes de trabalhar com Python, houve um envolvimento prévio na área de faturamento, onde muitos dos serviços foram desenvolvidos em Java utilizando Spring Boot. Além disso, os projetos de API na Fatec também foram desenvolvidos em Java. Essa experiência agrega muito valor quando se trata de Java, especialmente no contexto de REST APIs.
 
 #### **Docker**
 Docker é uma plataforma de virtualização de aplicativos que permite criar, empacotar e executar aplicativos em um ambiente isolado, conhecido como contêiner. Isso ajuda a garantir que os aplicativos sejam executados da mesma maneira em diferentes sistemas operacionais e ambientes, o que simplifica o processo de implantação e reduz os problemas de compatibilidade. Além disso, o Docker permite que vários contêineres compartilhem recursos de hardware, como CPU e memória, sem interferir uns nos outros. Essa capacidade de isolamento e compartilhamento de recursos é crucial para a construção de aplicativos escaláveis, confiáveis e eficientes. 
@@ -50,8 +48,7 @@ Sistemas distribuídos são sistemas de software que consistem em múltiplos com
 </details></h4>
 
 #### **Projetos Integradores durante a graduação**
-Durante a minha gradução, trabalhei no desenvolvimento de trabalhos chamados de "Projetos integradores". Um projeto integrador tem o objetivo de solucionar um problema do mundo real, utilizando os conhecimentos adquiridos durante a graduação.<br/>
-Abaixo todos estes projetos serão descritos, detalhando o problema, solução proposta (e entregue), e os aprendizamos extraídos de cada um deles.
+Durante a graduação, foram desenvolvidos projetos integradores, os quais visam solucionar problemas do mundo real, utilizando os conhecimentos adquiridos durante o curso. A seguir, serão descritos todos esses projetos, incluindo detalhes sobre o problema enfrentado, a solução proposta (e entregue), e os aprendizados obtidos em cada um deles.
 
 <h4><details>
 <summary>Projeto 1: 1º Semestre de 2021</summary>
@@ -72,11 +69,11 @@ Projeto consistia em criar uma assistente virtual feito em python. Entre os requ
 ### **Tecnologias adotadas na solução**
 
 ### **Banco de Dados**: SqLite
-Embora não fosse requisito, utilizamos o SqLite para guardar informações de comparação e quando vamos
-realizar uma consulta ou uma comparação, é feito uma query no Banco.
+Foi utilizado o SqLite para guardar informações de comparação e quando é
+realizado uma consulta ou uma comparação, é feito uma query no Banco.
 
 ### **Back-end**: Python
-Para relização da API utilizamos a linguagem Python, com algumas bibliotecas, são elas:
+Para relização da API foi utilizado a linguagem Python, com algumas bibliotecas, são elas:
  - speech_recognition (Para reconhecimento de voz);
  - pyttsx3 (Para síntese de texto em voz);
  - requests (Para realizar requisições na web);
@@ -97,8 +94,10 @@ Para relização da API utilizamos a linguagem Python, com algumas bibliotecas, 
         reproducao.say(mensagem)
         reproducao.runAndWait()
     ```
-    Essa função basicamente recebe uma mensagem e reproduz ela usando a voz do google, se imprimir receber True,
-    a mensagem é escrita no chat. Como ela é genérica, foi usada em basicamente todos os arquivos do projeto.
+
+    A função ```sai_som()``` recebe uma mensagem e através da lib *pyttsx3* é reproduzido o som utilizando a voz
+    do google, além disso, atráves da da variável booleana ```imprimir``` é possíbel definir se a mensagem será printada
+    nos logs do serviço. Por ser uma função genérica, é utilizada em várias partes do produto.
 
     <details><summary>Função assistente</summary>
 
@@ -125,8 +124,8 @@ Para relização da API utilizamos a linguagem Python, com algumas bibliotecas, 
     ```
     </details>
 
-    Aqui temos a primeira parte da matriz do assistente, o que estou dizendo aqui primeiramente é que vamos armazenar
-    a informação dita pelo microfone na variável 'user_name', que utilizaremos em toda a execução.
+    A função ```assistente()``` é a matriz do produto, onde é captada a informação dita pelo cliente utilizando o microfone, no caso 
+    a primeira parte recebe o nome, que será armazenada na variável *user_name*, que é utilizada em toda a instância de sessão.
 
     <details><summary>Recognizer</summary>
 
@@ -158,8 +157,8 @@ Para relização da API utilizamos a linguagem Python, com algumas bibliotecas, 
                 sai_som(resposta_erro_aleatoria)
     ```
 
-    Aqui temos o coração da operação, o usuário é levado a um menu que mostra as funcionalidades implementadas
-    e ele terá de escolher uma, para cada função executamos basicamente o mesmo bloco if abaixo:
+    Posterior ao recebimento do nome, o usuário é levado a um menu que mostra as funcionalidades implementadas,
+    onde terá de escolher uma, para cada função é executado um redirecionamento:
 
     ```python
     if '<funcionalidade_desejada>' in entrada:
@@ -169,9 +168,9 @@ Para relização da API utilizamos a linguagem Python, com algumas bibliotecas, 
         sai_som('{}'.format(resposta)) 
     ```
     </details>
+
     Todas as funcionalidades foram divididas em arquivos separados e importadas na matriz e chamadas quando a entrada era 
-    igual a flag que atrelamos a ela.
-<br/>
+    igual a flag que foi atrelada a ela.
 
 - Requisição e interpretação de dados vindos da web;
 
@@ -197,9 +196,9 @@ Para relização da API utilizamos a linguagem Python, com algumas bibliotecas, 
             sai_som('Valor Atual R$: ' + cotação ['<moeda_desejada_sigla>']['bid'])
     ```
     </details>
-    Aqui basicamente estamos primeiramente coletando os valores de cotação e passando para formato json,
-    e de acordo com o input do usuário, retornando as informações da moeda.
-<br/>
+
+    A função ```cotacao()``` é responsável por coletar os valores de cotação de moedas, passar para 
+    o formato json e retornar a informação da moeda de acordo com a requisição do usuário, 
 
 - Tratamento de erro.
 
@@ -226,21 +225,20 @@ Para relização da API utilizamos a linguagem Python, com algumas bibliotecas, 
     }
     ```
     </details>
-    Primeiramente para tratar os erros eu defini algumas configurações no arquivo config.py, para padronizar
-    retorno de erros, fazendo com que retornasse o valor de erro e o assistente falar uma frase típica.
+
+    Para realizar o tratamento de erros, foi necessário definir configurações no arquivo ```config.py```
+    para padronizar retorno de falar, o que faz com que o assistente retorne frases pré-definidas de acordo
+    com o input do usuário.
 
     ```python
     except sr.UnknownValueError:
         sai_som(resposta_erro_aleatoria)
     ```
-<br/>
 
 #### **Aprendizados Efetivos**
 
-Como esse foi o primeiro projeto que trabalhei, não somente na Fatec, mas com programação de fato, tive que
-estudar bastante, aprendi como funciona uma linguagem interpretada e compilada, como iniciar um projeto do
-zero, como tratar dados vindos da web e utilizar no sistema de acordo com a requisição feita pelo usuário,
-além de definir escopo de funções.
+Sendo este o primeiro projeto em que se trabalhou, não apenas na Fatec, mas também na área de programação em geral, exigiu um estudo intenso. Durante o projeto, foi adquirido conhecimento sobre o funcionamento de linguagens interpretadas e compiladas, como iniciar um projeto do zero, como lidar com dados provenientes da web e utilizá-los no sistema de acordo com as solicitações feitas pelo usuário, além de definir o escopo das funções.
+
 </details></h4>
 
 <h4><details>
@@ -317,7 +315,9 @@ Para relização da API utilizamos a linguagem Java, com algumas bibliotecas, s�
     }
     ```
     </details>
-    Em algumas operações que faziamos, era comum os erros voltarem de maneira não estruturada, para facilitar a leitura foi criado então essa forma de tratamento de exeception para que o erro fosse mais fácil de se ler.
+
+    Em algumas operações, é comum os erros voltarem de maneira não estruturada, para facilitar a leitura foi criado então essa forma de tratamento de exception para que o erro fosse mais fácil de se ler e compreensível.
+
 - Leitura de dados passados pelo usuário:
 
     <details><summary>Leitor</summary>
@@ -355,7 +355,8 @@ Para relização da API utilizamos a linguagem Java, com algumas bibliotecas, s�
     }
     ```
     </details>
-    Em outra classe do sistema temos um menu, e para utilizar era necessário leitura do teclado, para isso foi definido o Leito, com alguns métodos para garantir a eficácia, e que poderíamos utilizar de maneira bem estruturada.
+
+    Em outra classe do sistema é definida um menu, e para utilizar é necessário leitura do teclado, para isso foi definido o ```Leitor```, com alguns métodos para garantir a eficácia, e que torna possível a utilização de maneira bem estruturada.
 
 - Métrica de tamanho de **Banco de Dados**:
 
@@ -376,7 +377,8 @@ Para relização da API utilizamos a linguagem Java, com algumas bibliotecas, s�
     ```
     </details>
 
-    Por fim, também foi feito a implementação de alguns métodos responsáveis por coletar métricas, nesse caso, de como obter o tamanho de **Banco de Dados**.
+    Para a análise de algumas métricas, foi feito a implementação do método ```tamanhoBancos()``` que retorna uma formatação com o
+    nome, tamanho e dados do banco.
 
     <details><summary>Coleta de métricas</summary>
 
@@ -417,12 +419,11 @@ Para relização da API utilizamos a linguagem Java, com algumas bibliotecas, s�
     ```
     </details>
 
-    Aqui temos basicamente um fluxo onde conecta a aplicação no **Banco de Dados** e para cada Banco dentro do SGBD realiza a operação de coletar e armazenar as informações, posterior a isso, é retornado a lista e desconecta do **Banco de Dados**.
+    Foi feito também um fluxo onde conecta a aplicação no **Banco de Dados** e para cada Banco dentro do SGBD realiza a operação de coletar e armazenar as informações, posterior a isso, é retornado a lista e desconecta do **Banco de Dados**.
 
 #### **Aprendizados Efetivos**
 
-Como esse foi o primeiro projeto que trabalhei com Java, não somente na Fatec, mas com programação de fato, tive que
-estudar bastante, aprendi como funciona o Java, como realizar a conexão com um **Banco de Dados**, como tratar dados vindos do SGBD e utilizar no sistema de acordo com a requisição feita pelo usuário, além de definir escopo de funções.
+Sendo este o primeiro projeto em que se trabalhou com Java, não apenas na Fatec, mas na área de programação em geral, foi necessário realizar estudos intensos. Durante o projeto, foi adquirido conhecimento sobre o funcionamento do Java, como estabelecer conexão com um banco de dados, como tratar dados provenientes do SGBD e utilizá-los no sistema de acordo com as solicitações feitas pelo usuário, além de definir o escopo das funções.
 
 </details></h4>
 
@@ -511,7 +512,7 @@ Para construção da nos interface utilizamos o Angular, por alguns motivos, ele
     ```
     </details>
 
-    Fui responsável por realizar a exposição de alguns endpoins baseado no modelo básico de dados. Como podemos ver, definindo a classe como um RestController e mapeando ela para uma URL desejada estaremos expondo aquele ponto de acesso quando iniciamos o TomCat, realizamos a exposição da entidade para que seja acessada via a uma URL na web, com o domínio que quisermos. Nesse caso, tudo que é relacionado a entidade Category terá seu ponto de acesso nesse endpoint que definimos, por ele realizamos as operações que desejamos e as devidas manipulações utilizando os métodos HTTPs para que sejam feitas operações no BD, na tabela Category.
+    Foi realizada a exposição de alguns endpoins baseado no modelo básico de dados. Como é possível ver, definindo a classe como um *RestController* e mapeando ela para uma URL desejada estaremos expondo aquele ponto de acesso quando é iniciado o TomCat, realizando a exposição da entidade para que seja acessada via a uma URL na web, com o domínio que requerido. Nesse caso, tudo que é relacionado a entidade ```Category``` terá seu ponto de acesso nesse endpoint definido, por ele é realizado operações desejadas e as devidas manipulações utilizando os métodos HTTPs para que sejam feitas operações no **Banco de Dados**, na tabela ```Category```.
 
     <details><summary>CategoryService</summary>
 
@@ -571,12 +572,11 @@ Para construção da nos interface utilizamos o Angular, por alguns motivos, ele
     ```
     </details>
 
-    Aqui temos um exemplo de um dos services que trabalhei, a camada de serviço é reponsável pelas regras de negócio da aplicação, ou seja, o que define o que a aplicação faz, o comportamento dela, aqui temos métodos de pesquisa, de inserção, de deleção, update, totalmente personalizados para a entidade em questão no caso a entidade "Category". É importante separar os Controllers dos Services não só por questão de organização, mas para garantir eficiência também, validações e regrar de negócio não são feitas nos controllers, para isso que defimos serviços.
-<br/>
+    A camada de serviço é reponsável pelas regras de negócio da aplicação, ou seja, o que define o que a aplicação faz, o comportamento dela, no exemplo acima são feitos métodos de pesquisa, de inserção, de deleção e update, totalmente personalizados para a entidade em questão, no caso a entidade ```Category```. É importante separar os Controllers dos Services, não apenas por questão de organização, mas para garantir eficiência também, não é recomendado fazer validações e regras de negócio nos controllers, é necessário definir serviços.
 
 - Modelo básico de dados;
 
-    Como fui responsável pelo template inicial do projeto, produzi o modelo básico de dados, que seria as classes que representam entidades:
+    Foi produzido o modelo básico de dados, que seriam as classes que representam entidades:
 
     <details><summary>Product Entity</summary>
 
@@ -624,11 +624,12 @@ Para construção da nos interface utilizamos o Angular, por alguns motivos, ele
     ```
     </details>
 
-    Como vemos acima, esse é um exemplo de como é feito uma entidade utilizando o spring-boot, elas necessitam da anotação @Entity para serem compreendidas como classes que são representações de entidades/tabelas, temos também outras anotações que são colocadas nos atributos para defini-los, cada atributo da classe é uma coluna da tabela.
+    É possível ver acima um exemplo de como é feito uma entidade utilizando o ```spring-boot```, elas necessitam da anotação ```@Entity``` para serem compreendidas como classes que são representações de entidades/tabelas, é incluído também outras anotações que são colocadas nos atributos para defini-los, cada atributo da classe é uma coluna da tabela.
 
 
 - Módulo de configurações da aplicação;
-    Também foi necessário que tivessemos um módulo responsável por realizar configurações antes da inicialização do TomCat, fiquei responsável por isso e desenvolvi algumas funções que tinham características específicas, como pro exemplo um configuration que definisse a nossa WebConfig, quais URLs poderiam estar acessando nosso Back-end, quais métodos seriam permitidos e assim por diante, com o intuito de não ter que repetir código em todos os endpoints que fossem implementados.
+
+    Houve a necessidade de um módulo responsável por realizar configurações antes da inicialização do TomCat, por isso foi desenvolvido algumas funções que tinham características específicas, como por exemplo a ```WebConfig```, quais URLs poderiam estar acessando o Back-end, quais métodos seriam permitidos e assim por diante, com o intuito de não ter de repetir código em todos os endpoints que fossem implementados.
 
     <details><summary>Configurações de CORS</summary>
 
@@ -664,9 +665,7 @@ Para construção da nos interface utilizamos o Angular, por alguns motivos, ele
     ```
     </details>
 
-    Essa classe acima, por exemplo, define algumas configurações web para o módulo CORS, aqui estamos basicamente
-    definindo quais urls poderam realizar requisições para o Back-end.
-
+    A classe acima, define algumas configurações web para o módulo CORS, definindo quais urls poderam realizar requisições para o Back-end. Esse código é necessário para configurar e habilitar o filtro CORS na aplicação Spring Boot. O filtro CORS é usado para controlar quais origens, cabeçalhos e métodos HTTP são permitidos em solicitações feitas a partir de um domínio diferente. Essa configuração é especialmente útil em aplicações que fornecem uma API RESTful e precisam permitir solicitações CORS de clientes em diferentes origens.
 
 - Integração do **Front-end** e **Back-end** utilizando Typescript;
 
@@ -728,8 +727,7 @@ Para construção da nos interface utilizamos o Angular, por alguns motivos, ele
     ```
     </details>
 
-    Fiz também parte da integração do serviço em Angular com o Back-end, através do uso dos services do angular, onde eram criados métodos que enviavam objetos para as URLs definidas no Back-end de acordo com as regras pre-definidas utilizando o módulo HTTP do Angular.
-
+    Foi realizado a integração do serviço em Angular com o Back-end em Spring Boot, através do uso dos services do angular, onde são criados métodos que enviam objetos para as URLs definidas no Back-end de acordo com as regras pre-definidas utilizando o módulo HTTP do Angular.
 
 - Desenvolvimento de algumas telas responsivas.
 
@@ -825,7 +823,7 @@ Para construção da nos interface utilizamos o Angular, por alguns motivos, ele
 
 #### **Aprendizados Efetivos**
 
-Durante esse projeto eu ainda não tinha muita noção de como funcionava a o conjunto do Back-end e Front-end, como que se utilizava os protocolos de comunicação entre serviços feitos em diferentes linguagens e nem quais configurações havia de ser feito tanto no back quanto no front para garantir que essa comunicação acontessesse de maneira controlada e esperada, portanto entendo que os meus **Aprendizados Efetivos** foram como integrar microservices, como relizar modularizar configurações que devem subir na inicialização do TomCat e como estabelecer protocolos de comunicação e expor a aplicação como um todo de maneira adequada para a web.
+Durante esse projeto, o autor ainda não tinha muita noção de como funciona o conjunto do Back-end e Front-end, como utilizar os protocolos de comunicação entre serviços feitos em diferentes linguagens, nem quais configurações devem ser feitas tanto no back-end quanto no front-end para garantir uma comunicação controlada e esperada. Nesse contexto, os aprendizados efetivos foram: integração de microservices, modularização de configurações para inicialização do TomCat e estabelecimento de protocolos de comunicação e exposição adequada da aplicação como um todo para a web.
 
 </details></h4>
 
@@ -837,7 +835,7 @@ Subter
 
 ### **Objetivo do Projeto**
 
-Temos um desafio de sincronização dos dados administrativos, financeiros e operacionais referentes aos serviços prestados pela empresa. A falta de organização dos dados acarreta lentidão para atender chamados, e confusão na interpretação dos indicadores comerciais e financeiros.
+Existe um desafio de sincronização dos dados administrativos, financeiros e operacionais relacionados aos serviços prestados pela empresa. A falta de organização dos dados resulta em lentidão no atendimento de chamados e na interpretação confusa dos indicadores comerciais e financeiros.
 
 - Requisitos Funcionais
 
@@ -857,13 +855,13 @@ Temos um desafio de sincronização dos dados administrativos, financeiros e ope
 ### **Tecnologias adotadas na solução**
 
 ### **Banco de Dados**: Oracle Cloud
-Como requisitado pela Fatec, utilizamos um **Banco de Dados** Oracle Cloud para armazenar o conteúdo das tabelas.
+Como requisitado pela Fatec, foi utilizado um **Banco de Dados** Oracle Cloud para armazenar o conteúdo das tabelas.
 
 ### **Back-end**: Java e Spring Boot
-Para relização da API utilizamos a linguagem Java (Outro requisito Fatec) e o framework rest Spring Boot 
+Para relização da API foi utilizado a linguagem Java e o framework rest Spring Boot.
 
 ### **Front-end**: VueJs, CSS, Bootstrap
-Para construção da nos interface utilizamos o VueJs, como requisitado pela fatec.
+Para construção da interface foi utilizado o VueJs.
 
 ### **Ferramentas**: IntelliJ IDEA, Docker, Visual Studio Code, GitHub e Figma
 
@@ -925,12 +923,12 @@ Para construção da nos interface utilizamos o VueJs, como requisitado pela fat
     ```
     </details>
 
-    Fui responsável por realizar a exposição de alguns endpoins baseado no modelo básico de dados. Como podemos ver, definindo a classe como um RestController e mapeando ela para uma URL desejada estaremos expondo aquele ponto de acesso quando iniciamos o TomCat, realizamos a exposição da entidade para que seja acessada via a uma URL na web, com o domínio que quisermos. Nesse caso, tudo que é relacionado a entidade Chamado terá seu ponto de acesso nesse endpoint que definimos, por ele realizamos as operações que desejamos e as devidas manipulações utilizando os métodos HTTPs para que sejam feitas operações no BD, na tabela Chamado.
+    Foi realizada a exposição de alguns endpoints baseados no modelo básico de dados. Ao definir a classe como um RestController e mapeá-la para uma URL desejada, é possível expor aquele ponto de acesso ao iniciar o TomCat. A entidade é exposta para ser acessada por meio de uma URL na web, com o domínio desejado. Nesse caso, todas as operações relacionadas à entidade "Chamado" são acessadas por meio desse endpoint definido. Utilizam-se os métodos HTTP para realizar as operações desejadas e as manipulações adequadas, permitindo operações no banco de dados, na tabela ```Chamado```.
 
 
 - Modelo básico de dados:
 
-    Como fui responsável pelo template inicial do projeto, produzi o modelo básico de dados, que seria as classes que representam entidades, utilizando como guia a modelagem feita por outro membro do time.
+    Foi realizado o modelo básico de dados, que seria as classes que representam entidades, utilizando como guia a modelagem feita por outro membro do time.
 
     <details><summary>Chamado Entity</summary>
 
@@ -1009,12 +1007,11 @@ Para construção da nos interface utilizamos o VueJs, como requisitado pela fat
     ```
     </details>
 
-    Como vemos acima, esse é um exemplo de como é feito uma entidade utilizando o spring-boot, elas necessitam da anotação @Entity para serem compreendidas como classes que são representações de entidades/tabelas, temos também outras anotações que são colocadas nos atributos para defini-los, cada atributo da classe é uma coluna da tabela.
-
+    O exemplo acima ilustra a criação de uma entidade utilizando o Spring Boot. As entidades são representações de tabelas e requerem a anotação @Entity para serem reconhecidas como tal. Além disso, existem outras anotações que são aplicadas aos atributos para defini-los. Cada atributo da classe representa uma coluna na tabela.
 
 - Módulo de configurações da aplicação:
 
-    Também foi necessário que tivessemos um módulo responsável por realizar configurações antes da inicialização do TomCat, fiquei responsável por isso e desenvolvi algumas funções que tinham características específicas, como pro exemplo um configuration que definisse a nossa WebConfig, quais URLs poderiam estar acessando nosso Back-end, quais métodos seriam permitidos e assim por diante, com o intuito de não ter que repetir código em todos os endpoints que fossem implementados.
+    Houve a necessidade de um módulo responsável por realizar configurações antes da inicialização do TomCat, por isso foi desenvolvido algumas funções que tinham características específicas, como por exemplo a ```WebConfig```, quais URLs poderiam estar acessando o Back-end, quais métodos seriam permitidos e assim por diante, com o intuito de não ter de repetir código em todos os endpoints que fossem implementados.
 
     <details><summary>Configurações de CORS</summary>
 
@@ -1050,8 +1047,7 @@ Para construção da nos interface utilizamos o VueJs, como requisitado pela fat
     ```
     </details>
 
-    Essa classe acima, por exemplo, define algumas configurações web para o módulo CORS, aqui estamos basicamente
-    definindo quais urls poderam realizar requisições para o Back-end.
+    A classe acima, define algumas configurações web para o módulo CORS, definindo quais urls poderam realizar requisições para o Back-end. Esse código é necessário para configurar e habilitar o filtro CORS na aplicação Spring Boot. O filtro CORS é usado para controlar quais origens, cabeçalhos e métodos HTTP são permitidos em solicitações feitas a partir de um domínio diferente. Essa configuração é especialmente útil em aplicações que fornecem uma API RESTful e precisam permitir solicitações CORS de clientes em diferentes origens.
 
 
 - Security:
@@ -1106,7 +1102,7 @@ Para construção da nos interface utilizamos o VueJs, como requisitado pela fat
     ```
     </details>
 
-    Esse código implementa um filtro de autenticação JWT em uma aplicação web.
+    O código acima implementa um filtro de autenticação JWT em uma aplicação web.
 
     A classe **JWTAuthenticationFilter** é uma subclasse de **UsernamePasswordAuthenticationFilter**, que é usada para autenticar usuários usando seus nomes de usuário e senhas. No método **attemptAuthentication()**, a classe extrai os dados de nome de usuário e senha da requisição HTTP e cria um token de autenticação do tipo **UsernamePasswordAuthenticationToken**. O token de autenticação é então enviado para o **AuthenticationManager**, que valida as credenciais do usuário.
 
@@ -1156,7 +1152,7 @@ Para construção da nos interface utilizamos o VueJs, como requisitado pela fat
     ```
     </details>
 
-    Esse código é uma implementação de um filtro de autorização baseado em JWT (JSON Web Token). A classe **JWTAuthorizationFilter** extende a classe OncePerRequestFilter, que é um filtro do Spring que garante que o filtro seja executado apenas uma vez por solicitação.
+    O código acima é uma implementação de um filtro de autorização baseado em JWT (JSON Web Token). A classe **JWTAuthorizationFilter** extende a classe OncePerRequestFilter, que é um filtro do Spring que garante que o filtro seja executado apenas uma vez por solicitação.
 
     A classe tem uma lista de caminhos ignorados, que são as rotas que não precisam ser autenticadas. Quando uma solicitação é feita para um desses caminhos, o filtro é ignorado e o controle é passado para o próximo filtro da cadeia.
 
@@ -1240,7 +1236,7 @@ Para construção da nos interface utilizamos o VueJs, como requisitado pela fat
     ```
     </details>
 
-    Esse código implementa a configuração de segurança em uma aplicação Spring Boot. A classe extende a classe WebSecurityConfigurerAdapter, que permite a configuração de regras de segurança da aplicação.
+    O código acima implementa a configuração de segurança em uma aplicação Spring Boot. A classe extende a classe WebSecurityConfigurerAdapter, que permite a configuração de regras de segurança da aplicação.
 
     O método **configure(HttpSecurity http)** configura as regras de segurança para a aplicação. Por exemplo, as URLs públicas são permitidas para os PUBLIC_MATCHERS, tanto para as solicitações GET quanto para as POST. Qualquer outra solicitação exige autenticação e autorização. O método também adiciona filtros para autenticação e autorização.
 
@@ -1274,7 +1270,7 @@ Para construção da nos interface utilizamos o VueJs, como requisitado pela fat
     ```
     </details>
 
-    Esse código define uma classe chamada **ApplicationUserDetails** que implementa a interface **UserDetailsService**. 
+    O código acima define uma classe chamada **ApplicationUserDetails** que implementa a interface **UserDetailsService**. 
 
     A interface UserDetailsService é usada pelo Spring Security para carregar informações de usuário durante a autenticação. A implementação ApplicationUserDetails implementa o método loadUserByUsername, que recebe um nome de usuário como parâmetro e retorna um objeto UserDetails que representa as informações do usuário encontrado.
 
@@ -1290,17 +1286,12 @@ Para construção da nos interface utilizamos o VueJs, como requisitado pela fat
     }
     ```
 
-    Aqui temos um exemplo de como é interpretado as roles definidas no service nos endpoints, quando você realiza o login, acontece a autenticação e é verificado qual é a role daquele usuário, e a role e token são guardados na sessão, enquanto o usuário utiliza o sistema, tudo que é exposto em um endpoint é anotado com **@PreAuthorize("hasAnyRole('ROLE', 'ROLE', ...)")**, que define quais níveis de usuário podem realizar a operação requisitada.
+    O código acima é um exemplo de como as roles definidas no serviço são interpretadas nos endpoints. Durante o processo de login, ocorre a autenticação e é verificado qual é a role atribuída ao usuário. A role e o token são armazenados na sessão. Ao utilizar o sistema, todos os endpoints expostos são anotados com **@PreAuthorize("hasAnyRole('ROLE', 'ROLE', ...)")**, definindo quais níveis de usuário têm permissão para realizar a operação requisitada.
 
 
 - JsonView:
 
-    Quando temos classes relacionadas, como por exemplo, Empresa e Serviço, é comum a necessidade de ser visualizado esses dados,
-    tanto em uma tabela ou em outra. Porém o que acontece se quisermos visualizar dados da empresa e também os serviços atrelados
-    àquela empresa? Se simplesmente utilizarmos uma operação de get, sem configurações iniciais, a requisição vai entrar em Loop
-    por causa do relacionamento e retornar um erro. Então decidimos assim usar um componente de JsonIgnore em um dos atributos de 
-    relacionamentos dessa classe para que não quebre, mas continuamos com o problema de não conseguir visualizar esses dados, e 
-    para isso que utilizamos o JsonView.
+    Quando são feitas classes relacionadas, como Empresa e Serviço, é comum surgir a necessidade de visualizar esses dados, tanto em uma tabela quanto em outra. No entanto, surge um desafio quando queremos visualizar dados da empresa juntamente com os serviços relacionados a ela. Se for utilizado uma operação de GET sem configurações adicionais, a requisição entrará em loop devido ao relacionamento e resultará em um erro. Para contornar esse problema, foi optado por utilizar um componente JsonIgnore em um dos atributos de relacionamento da classe, evitando o loop, entretanto ainda houve a dificuldade de não conseguir visualizar esses dados em conjunto. Portanto, foi decidido utilizar o JsonView para resolver esse problema.
 
     <details><summary>JsonView</summary>
 
@@ -1329,8 +1320,8 @@ Para construção da nos interface utilizamos o VueJs, como requisitado pela fat
     ```
     </details>
 
-    Essa classe é a referência pro JsonView, cada método representa a abstração que será usada como View para cada tabela que temos,
-    e cada atributo da entidade, recebera uma anotação para o seu JsonView respectivo.
+    Essa classe é a referência pro JsonView, cada método representa a abstração que será usada como View para cada tabela,
+    e cada atributo da entidade recebera uma anotação para o JsonView respectivo.
 
     <details><summary>Usuario Entity</summary>
 
@@ -1357,13 +1348,10 @@ Para construção da nos interface utilizamos o VueJs, como requisitado pela fat
 
     }
     ```
+
     </details>
 
-    Nesse código vemos como é configurado o View, em cada atributo da classe é colocado a anotação
-    **@JsonView**, que recebe uma chave, que primeiramente tem apenas o View da classe, note que
-    o atributo do relacionamento com empresa também receve o **@JsonView**, então por que não temos
-    um erro quando tentandos fazer o get? Porque estamos definindo atributos de maneira isolada,
-    veja abaixo.
+    Nesse código, é possível observar a configuração do JsonView. Em cada atributo da classe, é adicionada a anotação **@JsonView**, que recebe uma chave correspondente ao View da classe. Vale ressaltar que o atributo de relacionamento com a empresa também possui a anotação **@JsonView**. No entanto, não ocorre um erro ao obter os dados devido à definição isolada dos atributos.
 
     ```java
     @JsonView({View.UsuarioView.class, View.ChamadoView.class, View.EmpresaView.class})
@@ -1373,7 +1361,7 @@ Para construção da nos interface utilizamos o VueJs, como requisitado pela fat
     Utilizando esse exemplo, veja que a primeira anotação de View é a da própria classe Usuario, e logo
     após é definido que outros Views de classes que se relacionam com Usuario podem realizar um get naquele
     atributo, e por isso, mesmo coletando todos os atributos em alguns casos, se a anotação não for colocada
-    no relacionamento, não teremos problema para visualizar o que queremos.
+    no relacionamento, não há problema na visualização desses dados.
 
 - Dockerfile;
     Back-end|
@@ -1399,57 +1387,130 @@ Para construção da nos interface utilizamos o VueJs, como requisitado pela fat
     EXPOSE 4200
     CMD [ "http-server", "dist" ]
     ```
-    Por fim, defini o Dockerfile para ambos os serviços e através dele podemos gerar as images e utilizar como containers,
-    dessa forma, não é necessário nada para rodar, além do docker engine.
+
+    Por fim, o Dockerfile foi configurado para ambos os serviços, permitindo gerar as imagens e utilizá-las como containers. Dessa forma, não é necessário mais nada além do Docker Engine para executá-los.
 
 #### **Aprendizados Efetivos**
 
-Durante esse projeto eu ainda não tinha muita noção de como definir níveis de acesso e como adequar regras de security para ser utilizado em todo o sistema, garantindo uma aplicação com um nível adequado de security e safety. Também não tinha conhecimento de como otimizar a entrada de dados e filtrar utilizando JsonView e de como configurar as imagens para posteriomente serem utilizadas com um **Banco de Dados** em cloud. portanto entendo que os meus **Aprendizados Efetivos**foram baseados em definir níveis de acesso e configurar uma camada do serviços que cuida de autenticação e autorização, como definir filtros de dados e como construir a imagem e usar todo o serviço
-com um **Banco de Dados** na cloud.
+Durante esse projeto, o autor não possuía uma ampla noção de como definir níveis de acesso e adequar regras de segurança para serem utilizadas em todo o sistema, visando garantir uma aplicação com um nível adequado de segurança e proteção. Também não tinha conhecimento sobre como otimizar a entrada de dados e realizar filtragens usando o **JsonView**, nem sobre como configurar imagens para posterior uso com um banco de dados na nuvem. Portanto, entende-se que os aprendizados efetivos obtidos foram baseados na definição de níveis de acesso e configuração de uma camada de serviços responsável por autenticação e autorização, na definição de filtros de dados e na construção de imagens para utilização com um banco de dados na nuvem.
+
 </details></h4>
 
 <h4><details>
 <summary>Projeto 5: 1º Semestre de 2023</summary>
 
-### **Parceiro Acadêmico**
-MidAll
+<div align="center">
+  <img src="https://user-images.githubusercontent.com/74321890/228393527-9bd20785-93b0-4da2-b774-97e81e59e6e4.svg" width="40%">
+</div>
 
-### **Objetivo do Projeto**
+![Badge](https://img.shields.io/badge/STATUS-EM_ANDAMENTO-yellow?style=flat-square&logo=)
 
-Automatizar a jornada de download dos arquivos, armazenados em uma plataforma de vídeos, realizando essa transferência para cloud, através do desenvolvimento de uma aplicação como serviço, tendo como funcionalidade com o usuário somente um menu de configuração, que terão os parâmetros necessários para que o serviço de download processe automaticamente, gerando alertas caso ocorra erro no processamento. Salvar os metadados dos arquivos, para construção de um dashboard para acompanhamento da execução do serviço e posterior análise de resultados e indicadores (ex: quantidade de arquivos transferidos, quantidade de bytes transferidos, tempo de transferência e etc).
 
-Requisitos Funcionais:
+## Tabela de Conteúdos
 
-- Aplicação 1 - Construir uma aplicação que rodará servidor local para configuração e parametrização do serviço;
+- [Tabela de Conteúdos](#tabela-de-conteúdos)
+- [Descrição](#descrição)
+- [Cliente](#cliente)
+- [Ilustração das Funcionalidades](#ilustração-das-funcionalidades)
+- [Demonstração](#demonstração)
+- [Epic das Sprints](#epic-das-sprints)
+- [Backlog do Produto](#backlog-do-produto)
+- [Tecnologias](#tecnologias)
+- [Integrantes](#integrantes)
+- [Cronograma da API](#cronograma-da-api)
 
-- Aplicação 1 - Nessa aplicação, criar tela para configuração do sistema (com todas as configurações que a aplicação atual já tem), incluindo também a limitação de consumo de banda de rede e tempo para verificação de novos arquivos para download;
+## Descrição
 
-- Aplicação 1 - Criar também, tela para configuração da conta de acesso a api (guardar de um jeito seguro);
+<p align="justify">
+O software Cloud-In é uma aplicação orquestradora de transferência automática de arquivos entre sistemas de armazenamento online. Por meio de sua interface minimalista e interativa, o usuário consegue cadastrar suas credenciais e configurar transferências conforme sua necessidade, dando início a jornada de download e upload entre os storages.
 
-- Aplicação 1 - Emitir alerta no S.O. avisando que novos arquivos foram baixados;
+## Cliente
 
-- Aplicação 1 - Criar tela de histórico de arquivos baixados;
+<p align="justify">
+A MidAll nasceu para simplificar a jornada de evolução do seu negócio, visando alcançar qualquer visão estratégica. Nossa missão é preparar negócios para o futuro em uma nova era de disrupções de mercado somadas aos desafios pós pandemia. Acreditamos que Tecnologia, Dados e Inovação orientados para a geração de valor ao cliente são o ambiente de negócios perfeito para promissores resultados.
 
-- Aplicação 2 - Construir uma API que será o serviço que buscará os arquivos que devem ser enviados para Cloud;
+## Ilustração das Funcionalidades
 
-- Aplicação 2 - Conectar com a api de arquivos (utilizar outro fornecedor, diferente do usado no requisito anterior. Pode ser Google Drive, AWS S3, Dropbox e etc.);
+Para acessar nosso *protótipo*, clique [aqui](https://www.figma.com/proto/HTiqfRS44iny1eBx9loAVv/Cloud-In?page-id=8%3A17&node-id=188-177&viewport=-1283%2C35%2C0.19&scaling=min-zoom&starting-point-node-id=188%3A177).
 
-- Aplicação 2 - Realizar o download dos arquivos, seguindo as configurações realizadas na aplicação 1;
+## Demonstração
 
-- Criar dashboard para acompanhamento das execuções (pode ser construído).
+Para acessar a playlist do projeto, clique [aqui](https://www.youtube.com/watch?v=AGRvBq9Xq4U&list=PLUOBqJKbljZsvHbaHWKrQ3z0l9l2Uo_f0):
 
-### **Tecnologias adotadas na solução**
+[<img src="https://user-images.githubusercontent.com/74321890/228991716-687c07f9-3b6a-4cea-b855-677b51b2b20a.svg" width="60%" height="60%">](https://www.youtube.com/watch?v=AGRvBq9Xq4U&list=PLUOBqJKbljZsvHbaHWKrQ3z0l9l2Uo_f0 "Cloud-in vídeo Demonstração")
 
-### **Banco de Dados**: MySQL, SQLite
-Como requisitado pelo, utilizamos um Banco de Dados relacional local para a aplicação que ficará do lado do cliente, como a escolha do BD era opcional optamos por utilizar o SQLite, e na segunda aplicação, utilizamos MySQL.
+## Epic das Sprints
 
-### **Back-end**: Python, Flask
-Para relização da API utilizamos a linguagem Python, e para expor a aplicação utilizamos o framework Flask.
+| Sprint | Epic |
+| -------| --------- |
+| Sprint 1 | Transação manual de arquivos, Notificações e Autenticação nos drives |
+| Sprint 2 | Transação automática e Coleta de metadados |
+| Sprint 3 | Dashboard de metadados |
+| Sprint 4 | Configurações personalizadas da transação |
 
-### **Front-end**: VueJS, CSS, Bootstrap
-Para construção da nos interface utilizamos o VueJS.
+## Backlog do Produto
 
-### **Ferramentas**: Visual Studio Code, GitHub, Jira e Figma
+- [X] ![Epic](https://user-images.githubusercontent.com/89356780/229957736-64a40537-3607-421a-afdd-e581db9e55ea.svg) **SPRINT 1:**  Funcionalidades Básicas
+- [X] ![Story](https://user-images.githubusercontent.com/89356780/229957815-ea747c93-b861-40c7-8a2d-bc43c1b2973a.svg) Autenticação com o S3
+- [X] ![Story](https://user-images.githubusercontent.com/89356780/229957815-ea747c93-b861-40c7-8a2d-bc43c1b2973a.svg) Autenticação com o Google drive
+- [X] ![Story](https://user-images.githubusercontent.com/89356780/229957815-ea747c93-b861-40c7-8a2d-bc43c1b2973a.svg) Template da aplicação
+- [X] ![Story](https://user-images.githubusercontent.com/89356780/229957815-ea747c93-b861-40c7-8a2d-bc43c1b2973a.svg) Operações de arquivos do S3 (download, upload e listagem)
+- [X] ![Story](https://user-images.githubusercontent.com/89356780/229957815-ea747c93-b861-40c7-8a2d-bc43c1b2973a.svg) Operações de arquivos do Google drive (download, upload e listagem)
+- [X] ![Story](https://user-images.githubusercontent.com/89356780/229957815-ea747c93-b861-40c7-8a2d-bc43c1b2973a.svg) Transferência de arquivos individuais
+- [X] ![Story](https://user-images.githubusercontent.com/89356780/229957815-ea747c93-b861-40c7-8a2d-bc43c1b2973a.svg) Alertas e notificações
+- [X] ![Story](https://user-images.githubusercontent.com/89356780/229957815-ea747c93-b861-40c7-8a2d-bc43c1b2973a.svg) Histórico de transferências
+- [X] ![Epic](https://user-images.githubusercontent.com/89356780/229957736-64a40537-3607-421a-afdd-e581db9e55ea.svg) **SPRINT 2:**  Transação automática de arquivos e coleta de metadados
+- [X] ![Story](https://user-images.githubusercontent.com/89356780/229957815-ea747c93-b861-40c7-8a2d-bc43c1b2973a.svg) Salvar credenciais para transação automática
+- [X] ![Story](https://user-images.githubusercontent.com/89356780/229957815-ea747c93-b861-40c7-8a2d-bc43c1b2973a.svg) Pesquisa recorrente ao drive
+- [X] ![Story](https://user-images.githubusercontent.com/89356780/229957815-ea747c93-b861-40c7-8a2d-bc43c1b2973a.svg) Transação automática
+- [X] ![Story](https://user-images.githubusercontent.com/89356780/229957815-ea747c93-b861-40c7-8a2d-bc43c1b2973a.svg) Coleta de metadados de tamanho e tempo na transferência
+- [X] ![Story](https://user-images.githubusercontent.com/89356780/229957815-ea747c93-b861-40c7-8a2d-bc43c1b2973a.svg) Resposta da transferência automática para o frontend
+- [X] ![Story](https://user-images.githubusercontent.com/89356780/229957815-ea747c93-b861-40c7-8a2d-bc43c1b2973a.svg) Padronização de rotas
+- [X] ![Story](https://user-images.githubusercontent.com/89356780/229957815-ea747c93-b861-40c7-8a2d-bc43c1b2973a.svg) Testes de unidade e de integração nas funções de transação
+- [ ] ![Epic](https://user-images.githubusercontent.com/89356780/229957736-64a40537-3607-421a-afdd-e581db9e55ea.svg) **SPRINT 3:**  Dashboard de metadados
+- [ ] ![Story](https://user-images.githubusercontent.com/89356780/229957815-ea747c93-b861-40c7-8a2d-bc43c1b2973a.svg) Coleta de metadados armazenados no backend
+- [ ] ![Story](https://user-images.githubusercontent.com/89356780/229957815-ea747c93-b861-40c7-8a2d-bc43c1b2973a.svg) Armazenamento de metadados na aplicação local
+- [ ] ![Story](https://user-images.githubusercontent.com/89356780/229957815-ea747c93-b861-40c7-8a2d-bc43c1b2973a.svg) Dashboard em Power BI para visualização dos dados
+- [ ] ![Story](https://user-images.githubusercontent.com/89356780/229957815-ea747c93-b861-40c7-8a2d-bc43c1b2973a.svg) Implementação do power BI no frontend
+- [ ] ![Epic](https://user-images.githubusercontent.com/89356780/229957736-64a40537-3607-421a-afdd-e581db9e55ea.svg) **SPRINT 4:**  Configurações personalizadas da transação
+- [ ] ![Story](https://user-images.githubusercontent.com/89356780/229957815-ea747c93-b861-40c7-8a2d-bc43c1b2973a.svg) Configurar tempo de pesquisa recorrente ao drive de origem
+- [ ] ![Story](https://user-images.githubusercontent.com/89356780/229957815-ea747c93-b861-40c7-8a2d-bc43c1b2973a.svg) Configurar banda usada na transação
+- [ ] ![Story](https://user-images.githubusercontent.com/89356780/229957815-ea747c93-b861-40c7-8a2d-bc43c1b2973a.svg) Configurar tipo de transferência
+- [ ] ![Story](https://user-images.githubusercontent.com/89356780/229957815-ea747c93-b861-40c7-8a2d-bc43c1b2973a.svg) Setup da aplicação desktop
+
+## Tecnologias
+
+<img src="https://img.shields.io/badge/-Vue.js-4FC08D?logo=Vue.js&logoColor=white&style=for-the-badge" alt="badge"> 
+<img src="https://img.shields.io/badge/-Flask-000000?logo=Flask&logoColor=white&style=for-the-badge" alt="badge">  
+<img src="https://img.shields.io/badge/-MySQL-4479A1?logo=MYSQL&logoColor=white&style=for-the-badge" alt="badge">
+<img src="https://img.shields.io/badge/-Docker-2496ED?logo=Docker&logoColor=white&style=for-the-badge" alt="badge">
+<img src="https://img.shields.io/badge/-GitHub%20Actions-2088FF?logo=GitHub-Actions&logoColor=white&style=for-the-badge" alt="badge">
+
+## Integrantes
+
+ - Betriz Medeiros (PO)
+ - Pedro Motta (SM)
+ - Abraão Henrique (DEV)
+ - Hamilton Zanini (DEV)
+ - Kauã Borgarelli (DEV)
+ - Renata Garcia (DEV)
+ - Victor Cavichioli (DEV)
+
+Para mais informações[^2], clique [aqui](https://github.com/DolphinDatabase/Cloud-In/wiki/Development-Team).
+
+## Cronograma da API
+
+| Data | Evento |
+| -------| --------- |
+| 13/02 a 03/03 | Kick-off. |
+| 23/03 a 02/04 | [Sprint 1](https://github.com/DolphinDatabase/Cloud-In/blob/main/Sprints/SPRINT1.md) |
+| 03/04 a 23/04 | [Sprint 2](https://github.com/DolphinDatabase/Cloud-In/blob/main/Sprints/SPRINT2.md) |
+| 24/04 a 14/05 | Sprint 3 |
+| 15/05 a 04/06 | Sprint 4 |
+| 13/06 e 14/06 | Feira de Soluções. |
+
+[^1]: Vídeo produzido e editado pelos integrantes do grupo.
+[^2]: Equipe responsável pelo desenvolvimento do Projeto Integrador.
 
 ### **Contribuições pessoais**
 
@@ -1754,53 +1815,6 @@ Para construção da nos interface utilizamos o VueJS.
         COPY . /app
         ENTRYPOINT [ "flask" ]
         CMD [ "run","--host=0.0.0.0","--port=5000"]
-        ```
-
-    - Deploy usando docker-compose
-
-        ```yaml
-        version: "3.3"
-
-        services:
-
-        prometheus:
-            image: prom/prometheus
-            ports:
-            - "9090:9090"
-            volumes:
-            - ${PWD}/prometheus.yml:/etc/prometheus/prometheus.yml
-
-        grafana:
-            hostname: grafana
-            image: grafana/grafana
-            ports:
-            - 3000:3000
-
-        mysql:
-            image: mysql:latest
-            restart: always
-            environment:
-            MYSQL_ROOT_PASSWORD: example
-            MYSQL_DATABASE: cloudin
-            MYSQL_USER: dbuser
-            MYSQL_PASSWORD: dbuser
-            volumes:
-            - ./mysql-data:/var/lib/mysql
-            ports:
-            - "3307:3306"
-
-        app:
-            build:
-            context: .
-            dockerfile: Dockerfile
-            restart: always
-            depends_on:
-            - mysql
-            - prometheus
-            ports:
-            - "5000:5000"
-            environment:
-            - SQLALCHEMY_DATABASE_URI=mysql://dbuser:dbuser@mysql:3306/cloudin
         ```
 
     - CD
