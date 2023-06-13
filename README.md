@@ -249,7 +249,7 @@ Necto Systems
 
 ### **Objetivo do Projeto**
 
-Desenvolvido para uma aplicação de coleta de informações do servidor para geração de série histórica. Nossa missão é desenvolver uma aplicação para coletar métricas periodicamente de um ou mais Sistemas Gerenciadores de **Banco de Dados** remoto. Através desta ferramenta o usuário terá informações para tomar decisões quanto a necessidade de manutenções, balanceamento e aumento de capacidade e melhoria no seus SGBDs, databases e na sua infra (Servidores).
+Desenvolvido para uma aplicação de coleta de informações do servidor para geração de série histórica. A missão é desenvolver uma aplicação para coletar métricas periodicamente de um ou mais Sistemas Gerenciadores de **Banco de Dados** remoto. Através desta ferramenta o usuário terá informações para tomar decisões quanto a necessidade de manutenções, balanceamento e aumento de capacidade e melhoria no seus SGBDs, databases e na sua infra (Servidores).
 
 Requisitos Funcionais:
 
@@ -266,11 +266,11 @@ Requisitos Não Funcionais:
 ### **Tecnologias adotadas na solução**
 
 ### **Banco de Dados**: Postgress
-Como pedido pelo cliente, utilizamos o Postgress e todo o software for desenhado de acordo com os mecanismos
+Como pedido pelo cliente, foi utilizado o Postgress e todo o software for desenhado de acordo com os mecanismos
 do Postgress.
 
 ### **Back-end**: Java
-Para relização da API utilizamos a linguagem Java, com algumas bibliotecas, são elas:
+Para relização da API foi utilizado a linguagem Java, com algumas bibliotecas, são elas:
   - java.sql (Para fazer operações no **Banco de Dados**);
   - java.io (Para manipular entrada e saída de arquivos);
   - java.util (Para utilizar toda a estrutura de dados fornecida pelo Java);
@@ -440,14 +440,14 @@ A empresa MidAll situada no Parque Tecnológico de São José dos Campos, propô
 ### **Tecnologias adotadas na solução**
 
 ### **Banco de Dados**: Microsoft SQL Server
-Como requisitado pela Fatec, utilizamos um **Banco de Dados** relacional para armazenar o conteúdo das tabelas, como a escolha do BD era opcional optamos por utilizar
+Como requisitado pela Fatec, foi utilizado um **Banco de Dados** relacional para armazenar o conteúdo das tabelas, como a escolha do BD era opcional foi optado por utilizar
 o Microsoft SQL Server
 
 ### **Back-end**: Java e Spring Boot
-Para relização da API utilizamos a linguagem Java (Outro requisito Fatec) e o framework rest Spring Boot 
+Para relização da API foi utilizado a linguagem Java (Outro requisito Fatec) e o framework rest Spring Boot 
 
 ### **Front-end**: Angular, CSS, Bootstrap
-Para construção da nos interface utilizamos o Angular, por alguns motivos, ele é um framework typescript, que é uma linguagem de progamação semelhante o Java e ao mesmo tempo tendo as caracteríticas do javascript, também utilizamos o Angular pois uma das dores do cliente era atualização simultânea de dados, o que podemos fazer facilmente com Angular utilizando o recurso two-way data binding.
+Para construção da interface foi utilizado o Angular, por alguns motivos, ele é um framework typescript, que é uma linguagem de progamação semelhante o Java e ao mesmo tempo tendo as caracteríticas do javascript, também foi utilizado o Angular pois um do requisitos do cliente era atualização simultânea de dados, o que é possíbel fazer facilmente com Angular utilizando o recurso two-way data binding.
 
 ### **Ferramentas**: IntelliJ IDEA, Visual Studio Code, GitHub e Figma
 
@@ -1287,7 +1287,6 @@ Para construção da interface foi utilizado o VueJs.
 
     O código acima é um exemplo de como as roles definidas no serviço são interpretadas nos endpoints. Durante o processo de login, ocorre a autenticação e é verificado qual é a role atribuída ao usuário. A role e o token são armazenados na sessão. Ao utilizar o sistema, todos os endpoints expostos são anotados com **@PreAuthorize("hasAnyRole('ROLE', 'ROLE', ...)")**, definindo quais níveis de usuário têm permissão para realizar a operação requisitada.
 
-
 - JsonView:
 
     Quando são feitas classes relacionadas, como Empresa e Serviço, é comum surgir a necessidade de visualizar esses dados, tanto em uma tabela quanto em outra. No entanto, surge um desafio quando queremos visualizar dados da empresa juntamente com os serviços relacionados a ela. Se for utilizado uma operação de GET sem configurações adicionais, a requisição entrará em loop devido ao relacionamento e resultará em um erro. Para contornar esse problema, foi optado por utilizar um componente JsonIgnore em um dos atributos de relacionamento da classe, evitando o loop, entretanto ainda houve a dificuldade de não conseguir visualizar esses dados em conjunto. Portanto, foi decidido utilizar o JsonView para resolver esse problema.
@@ -1426,11 +1425,11 @@ O software Cloud-In é uma aplicação orquestradora de transferência automáti
 ## Cliente
 
 <p align="justify">
-A MidAll nasceu para simplificar a jornada de evolução do seu negócio, visando alcançar qualquer visão estratégica. Nossa missão é preparar negócios para o futuro em uma nova era de disrupções de mercado somadas aos desafios pós pandemia. Acreditamos que Tecnologia, Dados e Inovação orientados para a geração de valor ao cliente são o ambiente de negócios perfeito para promissores resultados.
+A MidAll nasceu para simplificar a jornada de evolução do seu negócio, visando alcançar qualquer visão estratégica. A missão é preparar negócios para o futuro em uma nova era de disrupções de mercado somadas aos desafios pós pandemia. A empresa acredita que Tecnologia, Dados e Inovação orientados para a geração de valor ao cliente são o ambiente de negócios perfeito para promissores resultados.
 
 ## Ilustração das Funcionalidades
 
-Para acessar nosso *protótipo*, clique [aqui](https://www.figma.com/proto/HTiqfRS44iny1eBx9loAVv/Cloud-In?page-id=8%3A17&node-id=188-177&viewport=-1283%2C35%2C0.19&scaling=min-zoom&starting-point-node-id=188%3A177).
+Para acessar o *protótipo*, clique [aqui](https://www.figma.com/proto/HTiqfRS44iny1eBx9loAVv/Cloud-In?page-id=8%3A17&node-id=188-177&viewport=-1283%2C35%2C0.19&scaling=min-zoom&starting-point-node-id=188%3A177).
 
 ## Demonstração
 
@@ -1484,7 +1483,7 @@ Para acessar a playlist do projeto, clique [aqui](https://www.youtube.com/watch?
 - [X] ![Story](https://user-images.githubusercontent.com/89356780/229957815-ea747c93-b861-40c7-8a2d-bc43c1b2973a.svg) Recurring poll time setting
 - [X] ![Story](https://user-images.githubusercontent.com/89356780/229957815-ea747c93-b861-40c7-8a2d-bc43c1b2973a.svg) Transfer time setting
 - [X] ![Story](https://user-images.githubusercontent.com/89356780/229957815-ea747c93-b861-40c7-8a2d-bc43c1b2973a.svg) Maximum bandwidth setting
-- [X] ![Story](https://user-images.githubusercontent.com/89356780/229957815-ea747c93-b861-40c7-8a2d-bc43c1b2973a.svg)Transfer optimization
+- [X] ![Story](https://user-images.githubusercontent.com/89356780/229957815-ea747c93-b861-40c7-8a2d-bc43c1b2973a.svg) Transfer optimization
 
 ## Tecnologias
 
@@ -1515,9 +1514,6 @@ Para acessar a playlist do projeto, clique [aqui](https://www.youtube.com/watch?
 | 24/04 a 14/05 | [Sprint 3](https://github.com/DolphinDatabase/Cloud-In/blob/main/Sprints/SPRINT3.md) |
 | 15/05 a 04/06 | [Sprint 4](https://github.com/DolphinDatabase/Cloud-In/blob/main/Sprints/SPRINT4.md) |
 | 13/06 e 14/06 | Feira de Soluções. |
-
-[^1]: Vídeo produzido e editado pelos integrantes do grupo.
-[^2]: Equipe responsável pelo desenvolvimento do Projeto Integrador.
 
 ### **Contribuições pessoais**
 
