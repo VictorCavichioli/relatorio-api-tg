@@ -1448,35 +1448,44 @@ Para acessar a playlist do projeto, clique [aqui](https://www.youtube.com/watch?
 | Sprint 3 | Dashboard de metadados |
 | Sprint 4 | Configurações personalizadas da transação |
 
-## Backlog do Produto
+## Product Backlog
 
-- [X] ![Epic](https://user-images.githubusercontent.com/89356780/229957736-64a40537-3607-421a-afdd-e581db9e55ea.svg) **SPRINT 1:**  Funcionalidades Básicas
-- [X] ![Story](https://user-images.githubusercontent.com/89356780/229957815-ea747c93-b861-40c7-8a2d-bc43c1b2973a.svg) Autenticação com o S3
-- [X] ![Story](https://user-images.githubusercontent.com/89356780/229957815-ea747c93-b861-40c7-8a2d-bc43c1b2973a.svg) Autenticação com o Google drive
-- [X] ![Story](https://user-images.githubusercontent.com/89356780/229957815-ea747c93-b861-40c7-8a2d-bc43c1b2973a.svg) Template da aplicação
-- [X] ![Story](https://user-images.githubusercontent.com/89356780/229957815-ea747c93-b861-40c7-8a2d-bc43c1b2973a.svg) Operações de arquivos do S3 (download, upload e listagem)
-- [X] ![Story](https://user-images.githubusercontent.com/89356780/229957815-ea747c93-b861-40c7-8a2d-bc43c1b2973a.svg) Operações de arquivos do Google drive (download, upload e listagem)
-- [X] ![Story](https://user-images.githubusercontent.com/89356780/229957815-ea747c93-b861-40c7-8a2d-bc43c1b2973a.svg) Transferência de arquivos individuais
-- [X] ![Story](https://user-images.githubusercontent.com/89356780/229957815-ea747c93-b861-40c7-8a2d-bc43c1b2973a.svg) Alertas e notificações
-- [X] ![Story](https://user-images.githubusercontent.com/89356780/229957815-ea747c93-b861-40c7-8a2d-bc43c1b2973a.svg) Histórico de transferências
-- [X] ![Epic](https://user-images.githubusercontent.com/89356780/229957736-64a40537-3607-421a-afdd-e581db9e55ea.svg) **SPRINT 2:**  Transação automática de arquivos e coleta de metadados
-- [X] ![Story](https://user-images.githubusercontent.com/89356780/229957815-ea747c93-b861-40c7-8a2d-bc43c1b2973a.svg) Salvar credenciais para transação automática
-- [X] ![Story](https://user-images.githubusercontent.com/89356780/229957815-ea747c93-b861-40c7-8a2d-bc43c1b2973a.svg) Pesquisa recorrente ao drive
-- [X] ![Story](https://user-images.githubusercontent.com/89356780/229957815-ea747c93-b861-40c7-8a2d-bc43c1b2973a.svg) Transação automática
-- [X] ![Story](https://user-images.githubusercontent.com/89356780/229957815-ea747c93-b861-40c7-8a2d-bc43c1b2973a.svg) Coleta de metadados de tamanho e tempo na transferência
-- [X] ![Story](https://user-images.githubusercontent.com/89356780/229957815-ea747c93-b861-40c7-8a2d-bc43c1b2973a.svg) Resposta da transferência automática para o frontend
-- [X] ![Story](https://user-images.githubusercontent.com/89356780/229957815-ea747c93-b861-40c7-8a2d-bc43c1b2973a.svg) Padronização de rotas
-- [X] ![Story](https://user-images.githubusercontent.com/89356780/229957815-ea747c93-b861-40c7-8a2d-bc43c1b2973a.svg) Testes de unidade e de integração nas funções de transação
-- [ ] ![Epic](https://user-images.githubusercontent.com/89356780/229957736-64a40537-3607-421a-afdd-e581db9e55ea.svg) **SPRINT 3:**  Dashboard de metadados
-- [ ] ![Story](https://user-images.githubusercontent.com/89356780/229957815-ea747c93-b861-40c7-8a2d-bc43c1b2973a.svg) Coleta de metadados armazenados no backend
-- [ ] ![Story](https://user-images.githubusercontent.com/89356780/229957815-ea747c93-b861-40c7-8a2d-bc43c1b2973a.svg) Armazenamento de metadados na aplicação local
-- [ ] ![Story](https://user-images.githubusercontent.com/89356780/229957815-ea747c93-b861-40c7-8a2d-bc43c1b2973a.svg) Dashboard em Power BI para visualização dos dados
-- [ ] ![Story](https://user-images.githubusercontent.com/89356780/229957815-ea747c93-b861-40c7-8a2d-bc43c1b2973a.svg) Implementação do power BI no frontend
-- [ ] ![Epic](https://user-images.githubusercontent.com/89356780/229957736-64a40537-3607-421a-afdd-e581db9e55ea.svg) **SPRINT 4:**  Configurações personalizadas da transação
-- [ ] ![Story](https://user-images.githubusercontent.com/89356780/229957815-ea747c93-b861-40c7-8a2d-bc43c1b2973a.svg) Configurar tempo de pesquisa recorrente ao drive de origem
-- [ ] ![Story](https://user-images.githubusercontent.com/89356780/229957815-ea747c93-b861-40c7-8a2d-bc43c1b2973a.svg) Configurar banda usada na transação
-- [ ] ![Story](https://user-images.githubusercontent.com/89356780/229957815-ea747c93-b861-40c7-8a2d-bc43c1b2973a.svg) Configurar tipo de transferência
-- [ ] ![Story](https://user-images.githubusercontent.com/89356780/229957815-ea747c93-b861-40c7-8a2d-bc43c1b2973a.svg) Setup da aplicação desktop
+- [X] ![Epic](https://user-images.githubusercontent.com/89356780/229957736-64a40537-3607-421a-afdd-e581db9e55ea.svg) **SPRINT 1:**  Basic Features
+- [X] ![Story](https://user-images.githubusercontent.com/89356780/229957815-ea747c93-b861-40c7-8a2d-bc43c1b2973a.svg) S3 Authentication
+- [X] ![Story](https://user-images.githubusercontent.com/89356780/229957815-ea747c93-b861-40c7-8a2d-bc43c1b2973a.svg) Google Drive Authentication
+- [X] ![Story](https://user-images.githubusercontent.com/89356780/229957815-ea747c93-b861-40c7-8a2d-bc43c1b2973a.svg) Application Template
+- [X] ![Story](https://user-images.githubusercontent.com/89356780/229957815-ea747c93-b861-40c7-8a2d-bc43c1b2973a.svg) File Operation in S3 (Download, Upload and listing)
+- [X] ![Story](https://user-images.githubusercontent.com/89356780/229957815-ea747c93-b861-40c7-8a2d-bc43c1b2973a.svg) File Operation in Google Drive (Download, Upload and listing)
+- [X] ![Story](https://user-images.githubusercontent.com/89356780/229957815-ea747c93-b861-40c7-8a2d-bc43c1b2973a.svg) Individual file transfer
+- [X] ![Story](https://user-images.githubusercontent.com/89356780/229957815-ea747c93-b861-40c7-8a2d-bc43c1b2973a.svg) Notifications
+- [X] ![Story](https://user-images.githubusercontent.com/89356780/229957815-ea747c93-b861-40c7-8a2d-bc43c1b2973a.svg) Transfer history
+- [X] ![Epic](https://user-images.githubusercontent.com/89356780/229957736-64a40537-3607-421a-afdd-e581db9e55ea.svg) **SPRINT 2:**  Automatic transfer and Metadata collection
+- [X] ![Story](https://user-images.githubusercontent.com/89356780/229957815-ea747c93-b861-40c7-8a2d-bc43c1b2973a.svg) Save credentials for automatic transaction
+- [X] ![Story](https://user-images.githubusercontent.com/89356780/229957815-ea747c93-b861-40c7-8a2d-bc43c1b2973a.svg) Recurring drive search
+- [X] ![Story](https://user-images.githubusercontent.com/89356780/229957815-ea747c93-b861-40c7-8a2d-bc43c1b2973a.svg) Automatic transfer
+- [X] ![Story](https://user-images.githubusercontent.com/89356780/229957815-ea747c93-b861-40c7-8a2d-bc43c1b2973a.svg) Collection of size and time metadata on transfer
+- [X] ![Story](https://user-images.githubusercontent.com/89356780/229957815-ea747c93-b861-40c7-8a2d-bc43c1b2973a.svg) Automatic transfer response to frontend
+- [X] ![Story](https://user-images.githubusercontent.com/89356780/229957815-ea747c93-b861-40c7-8a2d-bc43c1b2973a.svg) Standardization of routes
+- [X] ![Story](https://user-images.githubusercontent.com/89356780/229957815-ea747c93-b861-40c7-8a2d-bc43c1b2973a.svg) Unit and Integration tests
+- [X] ![Epic](https://user-images.githubusercontent.com/89356780/229957736-64a40537-3607-421a-afdd-e581db9e55ea.svg) **SPRINT 3:**  Metadata Dashboard
+- [X] ![Story](https://user-images.githubusercontent.com/89356780/229957815-ea747c93-b861-40c7-8a2d-bc43c1b2973a.svg) Error Handling
+- [X] ![Story](https://user-images.githubusercontent.com/89356780/229957815-ea747c93-b861-40c7-8a2d-bc43c1b2973a.svg) Report Screen
+- [X] ![Story](https://user-images.githubusercontent.com/89356780/229957815-ea747c93-b861-40c7-8a2d-bc43c1b2973a.svg) Power BI report
+- [X] ![Story](https://user-images.githubusercontent.com/89356780/229957815-ea747c93-b861-40c7-8a2d-bc43c1b2973a.svg) SQL Server configuration
+- [X] ![Story](https://user-images.githubusercontent.com/89356780/229957815-ea747c93-b861-40c7-8a2d-bc43c1b2973a.svg) ETL with SQL Server
+- [X] ![Story](https://user-images.githubusercontent.com/89356780/229957815-ea747c93-b861-40c7-8a2d-bc43c1b2973a.svg) Power BI Refresh configuration
+- [X] ![Story](https://user-images.githubusercontent.com/89356780/229957815-ea747c93-b861-40c7-8a2d-bc43c1b2973a.svg) Unit test
+- [X] ![Story](https://user-images.githubusercontent.com/89356780/229957815-ea747c93-b861-40c7-8a2d-bc43c1b2973a.svg) Integration test
+- [X] ![Story](https://user-images.githubusercontent.com/89356780/229957815-ea747c93-b861-40c7-8a2d-bc43c1b2973a.svg) Github Actions pipeline to tests
+- [X] ![Epic](https://user-images.githubusercontent.com/89356780/229957736-64a40537-3607-421a-afdd-e581db9e55ea.svg) **SPRINT 4:**  Custom transfer configuration
+- [X] ![Story](https://user-images.githubusercontent.com/89356780/229957815-ea747c93-b861-40c7-8a2d-bc43c1b2973a.svg) CD - Kubernets
+- [X] ![Story](https://user-images.githubusercontent.com/89356780/229957815-ea747c93-b861-40c7-8a2d-bc43c1b2973a.svg) Gitflow documentation
+- [X] ![Story](https://user-images.githubusercontent.com/89356780/229957815-ea747c93-b861-40c7-8a2d-bc43c1b2973a.svg) Pre-commit and black configuration
+- [X] ![Story](https://user-images.githubusercontent.com/89356780/229957815-ea747c93-b861-40c7-8a2d-bc43c1b2973a.svg) Monitoring - Zabbix
+- [X] ![Story](https://user-images.githubusercontent.com/89356780/229957815-ea747c93-b861-40c7-8a2d-bc43c1b2973a.svg) Recurring poll time setting
+- [X] ![Story](https://user-images.githubusercontent.com/89356780/229957815-ea747c93-b861-40c7-8a2d-bc43c1b2973a.svg) Transfer time setting
+- [X] ![Story](https://user-images.githubusercontent.com/89356780/229957815-ea747c93-b861-40c7-8a2d-bc43c1b2973a.svg) Maximum bandwidth setting
+- [X] ![Story](https://user-images.githubusercontent.com/89356780/229957815-ea747c93-b861-40c7-8a2d-bc43c1b2973a.svg)Transfer optimization
 
 ## Tecnologias
 
@@ -1485,6 +1494,7 @@ Para acessar a playlist do projeto, clique [aqui](https://www.youtube.com/watch?
 <img src="https://img.shields.io/badge/-MySQL-4479A1?logo=MYSQL&logoColor=white&style=for-the-badge" alt="badge">
 <img src="https://img.shields.io/badge/-Docker-2496ED?logo=Docker&logoColor=white&style=for-the-badge" alt="badge">
 <img src="https://img.shields.io/badge/-GitHub%20Actions-2088FF?logo=GitHub-Actions&logoColor=white&style=for-the-badge" alt="badge">
+<img src="https://img.shields.io/badge/-Kubernetes-326CE5?logo=Kubernetes&logoColor=white&style=for-the-badge" alt="badge">
 
 ## Integrantes
 
@@ -1496,8 +1506,6 @@ Para acessar a playlist do projeto, clique [aqui](https://www.youtube.com/watch?
  - Renata Garcia (DEV)
  - Victor Cavichioli (DEV)
 
-Para mais informações[^2], clique [aqui](https://github.com/DolphinDatabase/Cloud-In/wiki/Development-Team).
-
 ## Cronograma da API
 
 | Data | Evento |
@@ -1505,8 +1513,8 @@ Para mais informações[^2], clique [aqui](https://github.com/DolphinDatabase/Cl
 | 13/02 a 03/03 | Kick-off. |
 | 23/03 a 02/04 | [Sprint 1](https://github.com/DolphinDatabase/Cloud-In/blob/main/Sprints/SPRINT1.md) |
 | 03/04 a 23/04 | [Sprint 2](https://github.com/DolphinDatabase/Cloud-In/blob/main/Sprints/SPRINT2.md) |
-| 24/04 a 14/05 | Sprint 3 |
-| 15/05 a 04/06 | Sprint 4 |
+| 24/04 a 14/05 | [Sprint 3](https://github.com/DolphinDatabase/Cloud-In/blob/main/Sprints/SPRINT3.md) |
+| 15/05 a 04/06 | [Sprint 4](https://github.com/DolphinDatabase/Cloud-In/blob/main/Sprints/SPRINT4.md) |
 | 13/06 e 14/06 | Feira de Soluções. |
 
 [^1]: Vídeo produzido e editado pelos integrantes do grupo.
@@ -1730,25 +1738,20 @@ Para mais informações[^2], clique [aqui](https://github.com/DolphinDatabase/Cl
         ```python
         @mock.patch("requests.get")
         def test_download_file(mock_get):
-            # Define o retorno simulado da requisição feita pelo requests.get()
             mock_get.return_value.iter_content.return_value = [b"test content"]
             mock_get.return_value.status_code = 200
-            # Define as variáveis necessárias para a rota
             file_id = "123"
             file_name = "test_file"
             token = "valid_token"
 
-            # Faz a requisição para a rota
             with app.app_context():
                 response = download_file(file_id, file_name, token)
-                # Verifica se a resposta é bem-sucedida e possui o conteúdo esperado
                 assert response.status_code == 200
                 assert response.json == {
                     "title": file_name,
-                    "time": pytest.approx(0, abs=0.1),  # Verifica que o tempo é próximo de zero
+                    "time": pytest.approx(0, abs=0.1),
                     "size": len(b"test content"),
                 }
-                # Verifica se o arquivo foi criado corretamente
                 assert os.path.exists(f"./downloads/google/{file_name}")
                 with open(f"./downloads/google/{file_name}", "rb") as f:
                     assert f.read() == b"test content"
@@ -1766,42 +1769,101 @@ Para mais informações[^2], clique [aqui](https://github.com/DolphinDatabase/Cl
         @mock.patch("requests.post")
         @mock.patch("requests.put")
         def test_upload_file(mock_put, mock_post):
-            # Define o retorno simulado da requisição feita pelo requests.post()
             mock_post.return_value.status_code = 200
             mock_post.return_value.json.return_value = {
                 "selfLink": "https://www.googleapis.com/drive/v2/files/123"
             }
 
-            # Define o retorno simulado da requisição feita pelo requests.put()
             mock_put.return_value.status_code = 200
 
-            # Define as variáveis necessárias para a rota
             file_name = "test_file"
             token = "valid_token"
             origin = "google"
 
-            # Cria um arquivo de teste
             if not os.path.exists(f"./downloads/{origin}"):
                 os.makedirs(f"./downloads/{origin}")
             with open(f"./downloads/{origin}/{file_name}", "wb") as f:
                 f.write(b"test content")
 
-            # Faz a requisição para a rota
             with app.app_context():
                 response = upload_file(file_name, token, origin)
 
-                # Verifica se a resposta é bem-sucedida e possui o conteúdo esperado
                 assert response.status_code == 200
                 assert response.json == {
                     "title": file_name,
-                    "time": pytest.approx(0, abs=0.1),  # Verifica que o tempo é próximo de zero
+                    "time": pytest.approx(0, abs=0.1),
                     "size": len(b"test content"),
                 }
-                # Verifica se o arquivo foi removido corretamente
                 assert not os.path.exists(f"./downloads/{origin}/{file_name}")
         ```
 
         Esse é um teste de unidade para uma função upload_file() que simula a requisição para upload de um arquivo em um serviço de armazenamento em nuvem. A função utiliza os módulos requests.post e requests.put para simular a criação do arquivo na nuvem e o upload do conteúdo. O teste cria um arquivo de teste na pasta de downloads da aplicação e chama a função com os parâmetros necessários para fazer o upload desse arquivo para o serviço de armazenamento. O teste usa mock.patch para substituir as funções requests.post e requests.put por versões simuladas, que retornam um código de status HTTP 200 para simular uma requisição bem-sucedida. O teste então verifica se a resposta da função está correta, ou seja, se o código de status é 200 e se o JSON retornado possui as informações esperadas do arquivo, como nome, tamanho e tempo de upload. Por fim, o teste verifica se o arquivo de teste foi removido corretamente após a conclusão do upload.
+
+        </details>
+
+        <details><summary>test_autoscale.py</summary>
+
+        ```python
+        CHART_DIR = "cloudin-midall"
+        CHART_NAME = "cloudin-midall-1.0.0.tgz"
+        RELEASE_NAME = "cloudin"
+        NAMESPACE = "k8s-test"
+        INITIAL_REPLICAS = 1
+        FINAL_REPLICAS = 3
+
+        @pytest.fixture(scope="session")
+        def setup_teardown():
+            subprocess.run(["helm", "package", CHART_DIR])
+
+            config.kube_config.load_kube_config(context="k3d-mycluster")
+
+            api = client.CoreV1Api()
+            api.create_namespace(body=client.V1Namespace(metadata=client.V1ObjectMeta(name=NAMESPACE)))
+
+            yield
+
+            subprocess.run(["helm", "uninstall", RELEASE_NAME, "-n", NAMESPACE])
+
+            api.delete_namespace(name=NAMESPACE, body=client.V1DeleteOptions())
+
+        def make_get_requests(url):
+            for _ in range(100):
+                response = requests.get(url)
+                assert response.status_code == 200
+
+        def test_autoscaling(setup_teardown):
+            CHART = "{CHART_DIR}/{CHART_NAME}"
+            subprocess.run(["helm", "install", RELEASE_NAME, "-n", NAMESPACE, CHART, "--wait"])
+
+            sleep(10)
+
+            api = client.AppsV1Api()
+            deployment = api.read_namespaced_deployment(name=RELEASE_NAME, namespace=NAMESPACE)
+            assert deployment.spec.replicas == INITIAL_REPLICAS
+
+            threads = []
+            for _ in range(1000):
+                t = threading.Thread(target=make_get_requests, args=("http://localhost/config/test",))
+                threads.append(t)
+                t.start()
+
+            for t in threads:
+                t.join()
+
+            sleep(60)
+
+            deployment = api.read_namespaced_deployment(name=RELEASE_NAME, namespace=NAMESPACE)
+            assert deployment.spec.replicas >= FINAL_REPLICAS
+        ```
+
+        O teste de autoscaling apresentado tem como objetivo verificar o funcionamento do dimensionamento automático (autoscaling) em um ambiente Kubernetes. O teste segue os seguintes passos:
+
+        - É definido um conjunto de variáveis que especificam as informações necessárias para o teste, como o diretório do chart, o nome do release, o namespace, o número inicial de réplicas e o número final de réplicas esperado após o autoscaling.
+        - É definida uma fixture setup_teardown() que é executada antes e depois do teste. Essa fixture empacota o chart, carrega a configuração do Kubernetes, cria um namespace para o teste e, em seguida, executa o código de teste. Após a conclusão do teste, a fixture desinstala o release e exclui o namespace criado.
+        - É definida uma função make_get_requests() que envia 100 solicitações GET para a URL fornecida. O objetivo é simular o tráfego que acionará o autoscaling.
+        - O teste em si, test_autoscaling(), inicia a instalação do chart usando o Helm, aguarda um intervalo de tempo para que as réplicas iniciais sejam implantadas e, em seguida, verifica se o número de réplicas é igual ao valor inicial esperado.
+
+        Em seguida, o teste inicia 1000 threads para enviar solicitações GET em paralelo para a URL especificada, simulando um aumento de tráfego. As threads são aguardadas até que todas sejam concluídas. Após um intervalo de espera, o teste verifica novamente o número de réplicas implantadas e verifica se é maior ou igual ao número final de réplicas esperado.O teste geral verifica se o dimensionamento automático está funcionando corretamente, observando se o número de réplicas é ajustado de acordo com o aumento de tráfego simulado.
 
         </details>
 
@@ -1817,11 +1879,213 @@ Para mais informações[^2], clique [aqui](https://github.com/DolphinDatabase/Cl
         CMD [ "run","--host=0.0.0.0","--port=5000"]
         ```
 
+        Um Dockerfile é um arquivo de texto que contém um conjunto de instruções para construir uma imagem Docker. Ele define o ambiente e as configurações necessárias para criar uma imagem Docker reproduzível e portátil. O Dockerfile especifica cada etapa do processo de construção da imagem, desde a escolha da imagem base até a instalação de dependências, cópia de arquivos, configuração de variáveis de ambiente e a definição do comando de inicialização do container. Essas instruções são executadas sequencialmente pelo Docker durante a construção da imagem, resultando em uma imagem final pronta para ser executada em um container Docker. O Dockerfile é uma parte fundamental do processo de construção e implantação de aplicativos em contêineres Docker, pois permite a automação e a padronização da criação de imagens.
+
     - CD
-        - K3D Cluster
-        - K8s Deployment
-    - Monitoramento
-        - Prometheus
-        - Grafana
+        
+        <details><summary>K3D Cluster</summary>
+
+        Com o objetivo de criar um ambiente k8s para teste antes de utilizar o cluster AKS, foi realizado a configuração e a documentação do cluster k3d. K3d é uma ferramenta de linha de comando projetada para simplificar o gerenciamento de clusters de Kubernetes localmente. Ele permite criar, implantar e gerenciar clusters Kubernetes em seu ambiente de desenvolvimento ou teste. Com o K3d, você pode provisionar rapidamente clusters Kubernetes leves em contêineres Docker, o que facilita a execução de várias instâncias do Kubernetes em uma única máquina. É uma opção popular para desenvolvedores que desejam testar e depurar aplicativos em um ambiente Kubernetes local.
+
+        Depois de instalado as dependências, é necessário apenas rodar o seguinte comando:
+        ```bash
+        k3d cluster create --config k3d-simple-cluster.yaml
+        ```
+
+        O guia completo de setup está presente no [repositório do projeto.](https://github.com/DolphinDatabase/Cloudin-backend#readme)
+
+        </details>
+
+        <details><summary>AKS Cluster</summary>
+
+        O Serviço de Kubernetes do Azure (AKS) oferece a maneira mais rápida de começar a desenvolver e implantar aplicativos nativos de nuvem no Azure, em datacenters ou na borda com pipelines internos do código para a nuvem e verificadores de integridade. Obtenha gerenciamento e governança unificados para clusters do Kubernetes locais, de borda e multinuvem. Interopere com os serviços de segurança, identidade, gerenciamento de custos e migração do Azure.
+
+        </details>
+
+        <details><summary>Deployment</summary>
+
+        ```yaml
+        apiVersion: apps/v1
+        kind: Deployment
+        metadata:
+        name: cloudin-midall
+        labels:
+            app: cloudin-midall
+        spec:
+        replicas: {{ .Values.replicas }}
+        selector:
+            matchLabels:
+            app: cloudin-midall
+        template:
+            metadata:
+            labels:
+                app: cloudin-midall
+            spec:
+            containers:
+                - name: backend
+                image: {{ include "cloudin-midall.getImage" . }}
+                ports:
+                    - containerPort: {{ .Values.backend.ports.containerPort }}
+                env:
+                - name: DATABASE_URL
+                    value: mysql://dbuser:dbuser@cloudin-midall-mysql:3306/cloudin
+        {{ include "cloudin-midall.probeAndResources" .Values.backend.ports.containerPort | nindent 10 }}
+        ```
+
+        Um "Deployment" é usado para criar e gerenciar instâncias de aplicativos em um cluster Kubernetes. Ele especifica as configurações para replicação, seleção de pods, modelo de pod e containers associados. No caso utilizado no projeto, o Deployment chamado "cloudin-midall" está sendo configurado para criar um replicaSet com o número de réplicas definido pelo valor definido no values.yaml. O container "backend" é definido com sua imagem e configurações de porta e variável de ambiente.
+
+        Um Deployment é adequado para aplicativos que não possuem estado, ou seja, não armazenam dados persistentes. Ele gerencia a implantação de réplicas de pods de forma controlada, permitindo atualizações, rollback e dimensionamento automático. Os pods criados por um Deployment não possuem identidade única e não mantêm conexões persistentes com o armazenamento.
+
+        </details>
+
+        <details><summary>Statefulset</summary>
+
+        ```yaml
+        apiVersion: apps/v1
+        kind: StatefulSet
+        metadata:
+        name: cloudin-midall-mysql
+        labels:
+            app: cloudin-midall-mysql
+        spec:
+        serviceName: cloudin-midall-mysql
+        replicas: 1
+        selector:
+            matchLabels:
+            app: cloudin-midall-mysql
+        template:
+            metadata:
+            labels:
+                app: cloudin-midall-mysql
+            spec:
+            containers:
+                - name: mysql
+                image: mysql:latest
+                ports:
+                    - containerPort: 3306
+                env:
+                    - name: MYSQL_ROOT_PASSWORD
+                    value: "example"
+                    - name: MYSQL_DATABASE
+                    value: "cloudin"
+                    - name: MYSQL_USER
+                    value: "dbuser"
+                    - name: MYSQL_PASSWORD
+                    value: "dbuser"
+                resources:
+                    limits:
+                    cpu: 100m
+                    memory: 512Mi
+                    requests:
+                    cpu: 80m
+                    memory: 128Mi
+        ```
+
+        Foi definido um "StatefulSet" no Kubernetes para executar uma instância do banco de dados MySQL. O StatefulSet é nomeado como "cloudin-midall-mysql" e possui uma réplica. O serviço associado ao StatefulSet também é chamado de "cloudin-midall-mysql". A definição do pod inclui um container chamado "mysql" que usa a imagem mais recente do MySQL. A porta 3306 é exposta para comunicação. Variáveis de ambiente são configuradas para definir a senha do usuário root do MySQL, o nome do banco de dados, o nome de usuário e a senha do usuário do banco de dados. Restrições de recursos são definidas para limitar o uso de CPU e memória do container.
+
+        Um "StatefulSet" é usado para aplicativos que possuem estado e requerem identidade única e armazenamento persistente para seus pods. Ele fornece garantias de ordem e estabilidade durante a criação, atualização e exclusão dos pods. Cada pod em um StatefulSet é atribuído a um identificador exclusivo e mantém seu próprio estado persistente. Isso é especialmente útil para bancos de dados e outras aplicações que exigem armazenamento persistente e consistência de estado entre os pods.
+
+        </details>
+
+        <details><summary>Service ClusterIP</summary>
+
+        ```yaml
+        apiVersion: v1
+        kind: Service
+        metadata:
+        name: cloudin-midall-mysql
+        labels:
+            app: cloudin-midall-mysql
+        spec:
+        type: ClusterIP
+        ports:
+            - port: 3306
+            targetPort: 3306
+            protocol: TCP
+            name: mysql
+        selector:
+            app: cloudin-midall-mysql
+        ```
+
+        O Service ClusterIP é um tipo de serviço no Kubernetes que expõe um conjunto de pods para comunicação interna dentro do cluster. Ele fornece um endereço IP interno estático para o serviço, permitindo que outros recursos dentro do cluster se conectem a ele. O serviço "cloudin-midall-mysql" é definido como um Service ClusterIP. Ele mapeia a porta 3306 para o targetPort 3306 em protocolo TCP, que é o padrão para comunicação com o banco de dados MySQL. O seletor "app: cloudin-midall-mysql" garante que o Service encaminhe o tráfego para os pods que possuem a mesma etiqueta. Esse tipo de serviço é adequado para comunicação interna e não é acessível de fora do cluster.
+
+        </details>
+
+        <details><summary>Service LoadBalancer</summary>
+
+        ```yaml
+        apiVersion: v1
+        kind: Service
+        metadata:
+        name: cloudin-midall
+        labels:
+            app: cloudin-midall
+        spec:
+        type: LoadBalancer
+        ports:
+        - port: {{ .Values.backend.ports.containerPort }}
+            targetPort: {{ .Values.backend.ports.containerPort }}
+            protocol: TCP
+            name: http
+        selector:
+            app: cloudin-midall
+        ```
+
+        O Service LoadBalancer é um tipo de serviço no Kubernetes que expõe um conjunto de pods para o tráfego externo, permitindo que o aplicativo seja acessado de fora do cluster. Ele provisiona automaticamente um balanceador de carga externo, como um balanceador de carga na nuvem, que distribui o tráfego para os pods do serviço. O serviço "cloudin-midall" é definido como um Service LoadBalancer. Ele mapeia uma determinada porta, definida pelo valor ".Values.backend.ports.containerPort", para o targetPort correspondente. O protocolo especificado é TCP e o nome do serviço é "http". O seletor "app: cloudin-midall" garante que o Service encaminhe o tráfego para os pods com a mesma etiqueta. Esse tipo de serviço é adequado para expor um aplicativo para o tráfego externo, permitindo a acessibilidade de fora do cluster, através do balanceador de carga fornecido pelo ambiente de execução do Kubernetes, como um balanceador de carga na nuvem.
+
+        </details>
+
+        <details><summary>HorizontalPodAutoscaler</summary>
+        
+        ```yaml
+        apiVersion: autoscaling/v2
+        kind: HorizontalPodAutoscaler
+        metadata:
+        name: cloudin-midall-hpa
+        spec:
+        scaleTargetRef:
+            apiVersion: apps/v1
+            kind: Deployment
+            name: cloudin-midall
+        minReplicas: 1
+        maxReplicas: 5
+        metrics:
+            - type: Resource
+            resource:
+                name: cpu
+                target:
+                type: Utilization
+                averageUtilization: 80
+        ```
+
+        O HorizontalPodAutoscaler (HPA) é um recurso do Kubernetes que permite o dimensionamento automático do número de réplicas de um Deployment ou outro objeto de escala horizontal. O HPA chamado "cloudin-midall-hpa" está configurado para dimensionar automaticamente o número de réplicas do Deployment "cloudin-midall". O número mínimo de réplicas é definido como 1 e o número máximo como 5. O HPA utiliza métricas para tomar decisões de dimensionamento. A métrica utilizada é a utilização média de CPU, onde o HPA tentará manter a utilização de CPU em torno de 80%. Com base nessa métrica, o HPA aumentará ou diminuirá o número de réplicas do Deployment para atender às demandas de tráfego. Isso permite que o cluster Kubernetes ajuste automaticamente a capacidade de processamento conforme necessário, garantindo um dimensionamento eficiente dos recursos do aplicativo.
+
+        </details>
+
+        <details><summary>Ingress</summary>
+        
+        ```yaml
+        apiVersion: networking.k8s.io/v1
+        kind: Ingress
+        metadata:
+        name: cloudin-midall
+        annotations:
+            kubernetes.io/ingress.class: azure/application-gateway
+        spec:
+        rules:
+        - http:
+            paths:
+            - path: /
+                pathType: Prefix
+                backend:
+                service:
+                    name: cloudin-midall
+                    port:
+                    number: 5000
+        ```
+
+        O Ingress é um recurso no Kubernetes que permite a exposição de serviços HTTP e HTTPS externamente ao cluster. O Ingress chamado "cloudin-midall" é definido com a anotação "kubernetes.io/ingress.class" configurada como "azure/application-gateway", indicando que o Ingress será gerenciado pelo Application Gateway do Azure. A especificação do Ingress inclui regras para roteamento do tráfego. No exemplo, há uma única regra que encaminha todo o tráfego HTTP que chega à raiz ("/") para o serviço chamado "cloudin-midall" na porta 5000. O campo "pathType" é definido como "Prefix", o que significa que o Ingress corresponderá a URLs que começam com o caminho especificado. O Ingress permite a configuração flexível do roteamento do tráfego externo para serviços internos no Kubernetes, fornecendo uma camada de controle de acesso e balanceamento de carga.
+
+        </details>
     
 </details></h4>
