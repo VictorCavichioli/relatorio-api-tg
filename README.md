@@ -103,22 +103,22 @@ Python foi a primeira linguagem estudada no primeiro semestre da graduação. At
 Java foi a terceira linguagem de programação aprendida. Antes de trabalhar com Python, houve um envolvimento prévio na área de faturamento, onde muitos dos serviços foram desenvolvidos em Java utilizando Spring Boot. Além disso, os projetos de API na Fatec também foram desenvolvidos em Java. Essa experiência agrega muito valor quando se trata de Java, especialmente no contexto de REST APIs.
 
 ### **Docker**
-Docker é uma plataforma de virtualização de aplicativos que permite criar, empacotar e executar aplicativos em um ambiente isolado, conhecido como contêiner. Isso ajuda a garantir que os aplicativos sejam executados da mesma maneira em diferentes sistemas operacionais e ambientes, o que simplifica o processo de implantação e reduz os problemas de compatibilidade. Além disso, o Docker permite que vários contêineres compartilhem recursos de hardware, como CPU e memória, sem interferir uns nos outros. Essa capacidade de isolamento e compartilhamento de recursos é crucial para a construção de aplicativos escaláveis, confiáveis e eficientes [\[1\]](#references). 
+Docker é uma plataforma de virtualização de aplicativos que permite criar, empacotar e executar aplicativos em um ambiente isolado, conhecido como contêiner. Isso ajuda a garantir que os aplicativos sejam executados da mesma maneira em diferentes sistemas operacionais e ambientes, o que simplifica o processo de implantação e reduz os problemas de compatibilidade. Além disso, o Docker permite que vários contêineres compartilhem recursos de hardware, como CPU e memória, sem interferir uns nos outros. Essa capacidade de isolamento e compartilhamento de recursos é crucial para a construção de aplicativos escaláveis, confiáveis e eficientes [\[1\]](#referências). 
 
 ### **Kubernetes**
-Kubernetes é uma plataforma de orquestração de contêineres que automatiza a implantação, a escala e a gestão de aplicativos em contêineres. Ele permite que os usuários gerenciem e orquestrem contêineres em grande escala, em diferentes ambientes de infraestrutura, como data centers, nuvens públicas e privadas. Com o Kubernetes, os usuários podem implantar aplicativos rapidamente, com alta disponibilidade e resiliência, além de gerenciar o tráfego de rede e balanceamento de carga entre os contêineres. O Kubernetes também oferece recursos avançados, como implantações canário, atualizações automáticas e rollbacks de aplicativos, o que permite uma gestão mais eficiente e segura de aplicativos críticos de negócios. Em resumo, o Kubernetes é uma ferramenta essencial para construir e gerenciar aplicativos escaláveis e altamente disponíveis na era da nuvem [\[2\]](#references).
+Kubernetes é uma plataforma de orquestração de contêineres que automatiza a implantação, a escala e a gestão de aplicativos em contêineres. Ele permite que os usuários gerenciem e orquestrem contêineres em grande escala, em diferentes ambientes de infraestrutura, como data centers, nuvens públicas e privadas. Com o Kubernetes, os usuários podem implantar aplicativos rapidamente, com alta disponibilidade e resiliência, além de gerenciar o tráfego de rede e balanceamento de carga entre os contêineres. O Kubernetes também oferece recursos avançados, como implantações canário, atualizações automáticas e rollbacks de aplicativos, o que permite uma gestão mais eficiente e segura de aplicativos críticos de negócios. Em resumo, o Kubernetes é uma ferramenta essencial para construir e gerenciar aplicativos escaláveis e altamente disponíveis na era da nuvem [\[2\]](#referências).
 
 ### **Helm**
-Helm é uma ferramenta de gerenciamento de pacotes para Kubernetes que ajuda a simplificar e automatizar a implantação de aplicativos em contêineres. Ele permite que os usuários definam e instalem pacotes de aplicativos, conhecidos como charts, em um cluster Kubernetes de maneira fácil e repetitiva. Helm também oferece recursos avançados, como a capacidade de atualizar, listar e remover charts, além de integrar-se com outras ferramentas de orquestração, como o Kubernetes Dashboard e o Terraform. Com Helm, os usuários podem padronizar e automatizar a implantação de aplicativos em diferentes ambientes, o que reduz o tempo e o esforço necessários para configurar e gerenciar um cluster Kubernetes. Em resumo, Helm é uma ferramenta importante para gerenciar a complexidade da implantação de aplicativos em Kubernetes, permitindo que os usuários se concentrem no desenvolvimento e na inovação de seus aplicativos [\[3\]](#references).
+Helm é uma ferramenta de gerenciamento de pacotes para Kubernetes que ajuda a simplificar e automatizar a implantação de aplicativos em contêineres. Ele permite que os usuários definam e instalem pacotes de aplicativos, conhecidos como charts, em um cluster Kubernetes de maneira fácil e repetitiva. Helm também oferece recursos avançados, como a capacidade de atualizar, listar e remover charts, além de integrar-se com outras ferramentas de orquestração, como o Kubernetes Dashboard e o Terraform. Com Helm, os usuários podem padronizar e automatizar a implantação de aplicativos em diferentes ambientes, o que reduz o tempo e o esforço necessários para configurar e gerenciar um cluster Kubernetes. Em resumo, Helm é uma ferramenta importante para gerenciar a complexidade da implantação de aplicativos em Kubernetes, permitindo que os usuários se concentrem no desenvolvimento e na inovação de seus aplicativos [\[3\]](#referências).
 
 ### **Apache Cassandra**
-Apache Cassandra é um banco de dados NoSQL distribuído, altamente escalável e tolerante a falhas. Ele foi projetado para gerenciar grandes volumes de dados estruturados em vários data centers e na nuvem, oferecendo alta disponibilidade e desempenho constante, mesmo em escala global. Cassandra usa uma arquitetura descentralizada e distribuída, com replicação de dados automática e consistência eventual, o que significa que os dados podem ser gravados e lidos em vários nós simultaneamente. Além disso, Cassandra oferece recursos avançados, como compressão de dados, suporte a transações ACID, e uma linguagem de consulta baseada em SQL, o CQL. Esses recursos tornam o Cassandra uma ferramenta importante para aplicativos que exigem escalabilidade e disponibilidade, como serviços de mensagens, mídias sociais, jogos online e IoT [\[4\]](#references).
+Apache Cassandra é um banco de dados NoSQL distribuído, altamente escalável e tolerante a falhas. Ele foi projetado para gerenciar grandes volumes de dados estruturados em vários data centers e na nuvem, oferecendo alta disponibilidade e desempenho constante, mesmo em escala global. Cassandra usa uma arquitetura descentralizada e distribuída, com replicação de dados automática e consistência eventual, o que significa que os dados podem ser gravados e lidos em vários nós simultaneamente. Além disso, Cassandra oferece recursos avançados, como compressão de dados, suporte a transações ACID, e uma linguagem de consulta baseada em SQL, o CQL. Esses recursos tornam o Cassandra uma ferramenta importante para aplicativos que exigem escalabilidade e disponibilidade, como serviços de mensagens, mídias sociais, jogos online e IoT [\[4\]](#referências).
 
 ### **Testes de software**
-Testes de software são uma prática essencial no desenvolvimento de aplicativos que ajudam a garantir que os aplicativos atendam aos requisitos de qualidade, segurança e desempenho. Eles incluem uma série de atividades que vão desde a identificação de requisitos de teste, planejamento de testes, design de casos de teste, execução de testes, avaliação de resultados e relatórios de bugs. Existem vários tipos de testes de software, incluindo testes funcionais, testes de integração, testes de desempenho, testes de segurança e testes de aceitação do usuário, entre outros. A adoção de uma estratégia de teste sólida pode ajudar a reduzir o risco de bugs e falhas no aplicativo, melhorar a eficiência do desenvolvimento e aumentar a satisfação do usuário final [\[5\]](#references).
+Testes de software são uma prática essencial no desenvolvimento de aplicativos que ajudam a garantir que os aplicativos atendam aos requisitos de qualidade, segurança e desempenho. Eles incluem uma série de atividades que vão desde a identificação de requisitos de teste, planejamento de testes, design de casos de teste, execução de testes, avaliação de resultados e relatórios de bugs. Existem vários tipos de testes de software, incluindo testes funcionais, testes de integração, testes de desempenho, testes de segurança e testes de aceitação do usuário, entre outros. A adoção de uma estratégia de teste sólida pode ajudar a reduzir o risco de bugs e falhas no aplicativo, melhorar a eficiência do desenvolvimento e aumentar a satisfação do usuário final [\[5\]](#referências).
 
 ### **Sistemas Distribuídos**
-Sistemas distribuídos são sistemas de software que consistem em múltiplos componentes independentes, que podem ser executados em diferentes computadores e se comunicam entre si para realizar uma tarefa específica. Eles são projetados para lidar com grandes volumes de dados, lidar com falhas e serem escaláveis, permitindo que os aplicativos sejam distribuídos em várias máquinas para aumentar a capacidade de processamento. Alguns exemplos de sistemas distribuídos incluem aplicativos de comércio eletrônico, redes sociais, sistemas bancários e de gerenciamento de estoque. A construção de sistemas distribuídos requer uma compreensão profunda de arquiteturas de software, protocolos de rede, segurança, gerenciamento de recursos e balanceamento de carga, entre outros conceitos. Além disso, os sistemas distribuídos podem ser difíceis de depurar e testar, tornando a construção de aplicativos escaláveis e tolerantes a falhas um desafio para os desenvolvedores [\[6\]](#references).
+Sistemas distribuídos são sistemas de software que consistem em múltiplos componentes independentes, que podem ser executados em diferentes computadores e se comunicam entre si para realizar uma tarefa específica. Eles são projetados para lidar com grandes volumes de dados, lidar com falhas e serem escaláveis, permitindo que os aplicativos sejam distribuídos em várias máquinas para aumentar a capacidade de processamento. Alguns exemplos de sistemas distribuídos incluem aplicativos de comércio eletrônico, redes sociais, sistemas bancários e de gerenciamento de estoque. A construção de sistemas distribuídos requer uma compreensão profunda de arquiteturas de software, protocolos de rede, segurança, gerenciamento de recursos e balanceamento de carga, entre outros conceitos. Além disso, os sistemas distribuídos podem ser difíceis de depurar e testar, tornando a construção de aplicativos escaláveis e tolerantes a falhas um desafio para os desenvolvedores [\[6\]](#referências).
 
 </details></h4>
 
@@ -392,7 +392,7 @@ Para relização da API foi utilizado a linguagem Java, com algumas bibliotecas,
     ```
     </details>
 
-    Em algumas operações, é comum os erros voltarem de maneira não estruturada, para facilitar a leitura foi criado então essa forma de tratamento de exception para que o erro fosse mais fácil de se ler e compreensível [\[7\]](#references).
+    Em algumas operações, é comum os erros voltarem de maneira não estruturada, para facilitar a leitura foi criado então essa forma de tratamento de exception para que o erro fosse mais fácil de se ler e compreensível [\[7\]](#referências).
 
 - <h4 id="leitura-p2">Leitura de Dados Passados pelo Usuário</h4>
 
@@ -522,7 +522,7 @@ Como requisitado pela Fatec, foi utilizado um **Banco de Dados** relacional para
 Para relização da API foi utilizado a linguagem Java (Outro requisito Fatec) e o framework rest Spring Boot 
 
 ### **Front-end**: Angular, CSS, Bootstrap
-Para construção da interface foi utilizado o Angular, por alguns motivos, ele é um framework que suporta typescript, e segundo a definição da documentação oficial ele oferece todos os recursos do JavaScript e uma camada adicional sobre eles: o sistema de tipos TypeScript [\[8\]](#references), também foi utilizado o Angular pois um do requisitos do cliente era atualização simultânea de dados, o que é possíbel fazer facilmente com Angular utilizando o recurso two-way data binding [\[9\]](#references).
+Para construção da interface foi utilizado o Angular, por alguns motivos, ele é um framework que suporta typescript, e segundo a definição da documentação oficial ele oferece todos os recursos do JavaScript e uma camada adicional sobre eles: o sistema de tipos TypeScript [\[8\]](#referências), também foi utilizado o Angular pois um do requisitos do cliente era atualização simultânea de dados, o que é possíbel fazer facilmente com Angular utilizando o recurso two-way data binding [\[9\]](#referências).
 
 <h3 id="ferramentas-p3">Ferramentas: IntelliJ IDEA, Visual Studio Code, GitHub e Figma</h3>
 
@@ -587,7 +587,7 @@ Para construção da interface foi utilizado o Angular, por alguns motivos, ele 
     ```
     </details>
 
-    Foi realizada a exposição de alguns endpoins baseado no modelo básico de dados. Como é possível ver, definindo a classe como um *RestController* e mapeando ela para uma URL desejada estaremos expondo aquele ponto de acesso quando é iniciado o TomCat, realizando a exposição da entidade para que seja acessada via a uma URL na web, com o domínio que requerido [\[10\]](#references). Nesse caso, tudo que é relacionado a entidade ```Category``` terá seu ponto de acesso nesse endpoint definido, por ele é realizado operações desejadas e as devidas manipulações utilizando os métodos HTTPs para que sejam feitas operações no **Banco de Dados**, na tabela ```Category```.
+    Foi realizada a exposição de alguns endpoins baseado no modelo básico de dados. Como é possível ver, definindo a classe como um *RestController* e mapeando ela para uma URL desejada estaremos expondo aquele ponto de acesso quando é iniciado o TomCat, realizando a exposição da entidade para que seja acessada via a uma URL na web, com o domínio que requerido [\[10\]](#referências). Nesse caso, tudo que é relacionado a entidade ```Category``` terá seu ponto de acesso nesse endpoint definido, por ele é realizado operações desejadas e as devidas manipulações utilizando os métodos HTTPs para que sejam feitas operações no **Banco de Dados**, na tabela ```Category```.
 
     <details><summary>CategoryService</summary>
 
@@ -647,7 +647,7 @@ Para construção da interface foi utilizado o Angular, por alguns motivos, ele 
     ```
     </details>
 
-    A camada de serviço é reponsável pelas regras de negócio da aplicação, ou seja, o que define o que a aplicação faz, o comportamento dela [\[11\]](#references), no exemplo acima são feitos métodos de pesquisa, de inserção, de deleção e update, totalmente personalizados para a entidade em questão, no caso a entidade ```Category```. É importante separar os Controllers dos Services, não apenas por questão de organização, mas para garantir eficiência também, não é recomendado fazer validações e regras de negócio nos controllers, é necessário definir serviços [\[12\]](#references).
+    A camada de serviço é reponsável pelas regras de negócio da aplicação, ou seja, o que define o que a aplicação faz, o comportamento dela [\[11\]](#referências), no exemplo acima são feitos métodos de pesquisa, de inserção, de deleção e update, totalmente personalizados para a entidade em questão, no caso a entidade ```Category```. É importante separar os Controllers dos Services, não apenas por questão de organização, mas para garantir eficiência também, não é recomendado fazer validações e regras de negócio nos controllers, é necessário definir serviços [\[12\]](#referências).
 
 - <h4 id="modelo-p3">Modelo Básico de Dados</h4>
 
@@ -699,7 +699,7 @@ Para construção da interface foi utilizado o Angular, por alguns motivos, ele 
     ```
     </details>
 
-    É possível ver acima um exemplo de como é feito uma entidade utilizando o ```spring-boot```, elas necessitam da anotação ```@Entity``` para serem compreendidas como classes que são representações de entidades/tabelas, é incluído também outras anotações que são colocadas nos atributos para defini-los, cada atributo da classe é uma coluna da tabela [\[13\]](#references).
+    É possível ver acima um exemplo de como é feito uma entidade utilizando o ```spring-boot```, elas necessitam da anotação ```@Entity``` para serem compreendidas como classes que são representações de entidades/tabelas, é incluído também outras anotações que são colocadas nos atributos para defini-los, cada atributo da classe é uma coluna da tabela [\[13\]](#referências).
 
 
 - <h4 id="configuração-p3">Módulo de Configurações da Aplicação</h4>
@@ -740,7 +740,7 @@ Para construção da interface foi utilizado o Angular, por alguns motivos, ele 
     ```
     </details>
 
-    A classe acima, define algumas configurações web para o módulo CORS, definindo quais urls poderam realizar requisições para o Back-end. Esse código é necessário para configurar e habilitar o filtro CORS na aplicação Spring Boot. O filtro CORS é usado para controlar quais origens, cabeçalhos e métodos HTTP são permitidos em solicitações feitas a partir de um domínio diferente. Essa configuração é especialmente útil em aplicações que fornecem uma API RESTful e precisam permitir solicitações CORS de clientes em diferentes origens [\[14\]](#references).
+    A classe acima, define algumas configurações web para o módulo CORS, definindo quais urls poderam realizar requisições para o Back-end. Esse código é necessário para configurar e habilitar o filtro CORS na aplicação Spring Boot. O filtro CORS é usado para controlar quais origens, cabeçalhos e métodos HTTP são permitidos em solicitações feitas a partir de um domínio diferente. Essa configuração é especialmente útil em aplicações que fornecem uma API RESTful e precisam permitir solicitações CORS de clientes em diferentes origens [\[14\]](#referências).
 
 - <h4 id="integração-p3">Integração do Front-end e Back-end Utilizando Typescript</h4>
 
@@ -802,7 +802,7 @@ Para construção da interface foi utilizado o Angular, por alguns motivos, ele 
     ```
     </details>
 
-    Foi realizado a integração do serviço em Angular com o Back-end em Spring Boot, através do uso dos services do angular, onde são criados métodos que enviam objetos para as URLs definidas no Back-end de acordo com as regras pre-definidas utilizando o módulo HTTP do Angular [\[15\]](#references).
+    Foi realizado a integração do serviço em Angular com o Back-end em Spring Boot, através do uso dos services do angular, onde são criados métodos que enviam objetos para as URLs definidas no Back-end de acordo com as regras pre-definidas utilizando o módulo HTTP do Angular [\[15\]](#referências).
 
 - <h4 id="desenvolvimento-p3">Desenvolvimento de Telas Responsivas</h4>
 
@@ -998,7 +998,7 @@ Para construção da interface foi utilizado o VueJs.
     ```
     </details>
 
-    Foi realizada a exposição de alguns endpoints baseados no modelo básico de dados. Ao definir a classe como um RestController e mapeá-la para uma URL desejada, é possível expor aquele ponto de acesso ao iniciar o TomCat. A entidade é exposta para ser acessada por meio de uma URL na web, com o domínio desejado. Nesse caso, todas as operações relacionadas à entidade "Chamado" são acessadas por meio desse endpoint definido. Utilizam-se os métodos HTTP para realizar as operações desejadas e as manipulações adequadas, permitindo operações no banco de dados, na tabela ```Chamado``` [\[10\]](#references).
+    Foi realizada a exposição de alguns endpoints baseados no modelo básico de dados. Ao definir a classe como um RestController e mapeá-la para uma URL desejada, é possível expor aquele ponto de acesso ao iniciar o TomCat. A entidade é exposta para ser acessada por meio de uma URL na web, com o domínio desejado. Nesse caso, todas as operações relacionadas à entidade "Chamado" são acessadas por meio desse endpoint definido. Utilizam-se os métodos HTTP para realizar as operações desejadas e as manipulações adequadas, permitindo operações no banco de dados, na tabela ```Chamado``` [\[10\]](#referências).
 
 - <h4 id="modelo-p4">Modelo Básico de Dados</h4>
 
@@ -1081,7 +1081,7 @@ Para construção da interface foi utilizado o VueJs.
     ```
     </details>
 
-    O exemplo acima ilustra a criação de uma entidade utilizando o Spring Boot. As entidades são representações de tabelas e requerem a anotação @Entity para serem reconhecidas como tal. Além disso, existem outras anotações que são aplicadas aos atributos para defini-los. Cada atributo da classe representa uma coluna na tabela [\[13\]](#references).
+    O exemplo acima ilustra a criação de uma entidade utilizando o Spring Boot. As entidades são representações de tabelas e requerem a anotação @Entity para serem reconhecidas como tal. Além disso, existem outras anotações que são aplicadas aos atributos para defini-los. Cada atributo da classe representa uma coluna na tabela [\[13\]](#referências).
 
 - <h4 id="configuração-p4">Módulo de Configurações da Aplicação</h4>
 
@@ -1121,7 +1121,7 @@ Para construção da interface foi utilizado o VueJs.
     ```
     </details>
 
-    A classe acima, define algumas configurações web para o módulo CORS, definindo quais urls poderam realizar requisições para o Back-end. Esse código é necessário para configurar e habilitar o filtro CORS na aplicação Spring Boot. O filtro CORS é usado para controlar quais origens, cabeçalhos e métodos HTTP são permitidos em solicitações feitas a partir de um domínio diferente. Essa configuração é especialmente útil em aplicações que fornecem uma API RESTful e precisam permitir solicitações CORS de clientes em diferentes origens [\[14\]](#references).
+    A classe acima, define algumas configurações web para o módulo CORS, definindo quais urls poderam realizar requisições para o Back-end. Esse código é necessário para configurar e habilitar o filtro CORS na aplicação Spring Boot. O filtro CORS é usado para controlar quais origens, cabeçalhos e métodos HTTP são permitidos em solicitações feitas a partir de um domínio diferente. Essa configuração é especialmente útil em aplicações que fornecem uma API RESTful e precisam permitir solicitações CORS de clientes em diferentes origens [\[14\]](#referências).
 
 
 - <h4 id="security-p4">Security</h4>
@@ -1180,7 +1180,7 @@ Para construção da interface foi utilizado o VueJs.
 
     A classe **JWTAuthenticationFilter** é uma subclasse de **UsernamePasswordAuthenticationFilter**, que é usada para autenticar usuários usando seus nomes de usuário e senhas. No método **attemptAuthentication()**, a classe extrai os dados de nome de usuário e senha da requisição HTTP e cria um token de autenticação do tipo **UsernamePasswordAuthenticationToken**. O token de autenticação é então enviado para o **AuthenticationManager**, que valida as credenciais do usuário.
 
-    Se as credenciais do usuário forem validadas com sucesso, o método **successfulAuthentication()** é chamado. Nesse método, um token JWT é criado usando a biblioteca java-jwt. O token contém o nome de usuário, uma data de expiração, um emissor e as permissões do usuário (também chamadas de funções). O token é então adicionado ao objeto Map e enviado como uma resposta HTTP com um status de 200 [\[16\]](#references).
+    Se as credenciais do usuário forem validadas com sucesso, o método **successfulAuthentication()** é chamado. Nesse método, um token JWT é criado usando a biblioteca java-jwt. O token contém o nome de usuário, uma data de expiração, um emissor e as permissões do usuário (também chamadas de funções). O token é então adicionado ao objeto Map e enviado como uma resposta HTTP com um status de 200 [\[16\]](#referências).
 
     <details><summary>JWTAuthorizationFilter</summary>
 
@@ -1226,7 +1226,7 @@ Para construção da interface foi utilizado o VueJs.
     ```
     </details>
 
-    O código acima é uma implementação de um filtro de autorização baseado em JWT (JSON Web Token). A classe **JWTAuthorizationFilter** extende a classe OncePerRequestFilter, que é um filtro do Spring que garante que o filtro seja executado apenas uma vez por solicitação [\[17\]](#references).
+    O código acima é uma implementação de um filtro de autorização baseado em JWT (JSON Web Token). A classe **JWTAuthorizationFilter** extende a classe OncePerRequestFilter, que é um filtro do Spring que garante que o filtro seja executado apenas uma vez por solicitação [\[17\]](#referências).
 
     A classe tem uma lista de caminhos ignorados, que são as rotas que não precisam ser autenticadas. Quando uma solicitação é feita para um desses caminhos, o filtro é ignorado e o controle é passado para o próximo filtro da cadeia.
 
@@ -1310,7 +1310,7 @@ Para construção da interface foi utilizado o VueJs.
     ```
     </details>
 
-    O código acima implementa a configuração de segurança em uma aplicação Spring Boot. A classe extende a classe WebSecurityConfigurerAdapter, que permite a configuração de regras de segurança da aplicação [\[18\]](#references).
+    O código acima implementa a configuração de segurança em uma aplicação Spring Boot. A classe extende a classe WebSecurityConfigurerAdapter, que permite a configuração de regras de segurança da aplicação [\[18\]](#referências).
 
     O método **configure(HttpSecurity http)** configura as regras de segurança para a aplicação. Por exemplo, as URLs públicas são permitidas para os PUBLIC_MATCHERS, tanto para as solicitações GET quanto para as POST. Qualquer outra solicitação exige autenticação e autorização. O método também adiciona filtros para autenticação e autorização.
 
@@ -1346,7 +1346,7 @@ Para construção da interface foi utilizado o VueJs.
 
     O código acima define uma classe chamada **ApplicationUserDetails** que implementa a interface **UserDetailsService**. 
 
-    A interface UserDetailsService é usada pelo Spring Security para carregar informações de usuário durante a autenticação. A implementação ApplicationUserDetails implementa o método loadUserByUsername, que recebe um nome de usuário como parâmetro e retorna um objeto UserDetails que representa as informações do usuário encontrado [\[19\]](#references).
+    A interface UserDetailsService é usada pelo Spring Security para carregar informações de usuário durante a autenticação. A implementação ApplicationUserDetails implementa o método loadUserByUsername, que recebe um nome de usuário como parâmetro e retorna um objeto UserDetails que representa as informações do usuário encontrado [\[19\]](#referências).
 
     O código usa uma instância do ApplicationUserRepository (injetado por meio do construtor) para procurar um ApplicationUser por e-mail (que é considerado o nome de usuário nesse caso). Se o usuário não for encontrado, uma exceção UsernameNotFoundException é lançada. Se o usuário for encontrado, um log é criado com informações de depuração e o objeto ApplicationUser é retornado como UserDetails.
 
@@ -1395,7 +1395,7 @@ Para construção da interface foi utilizado o VueJs.
     </details>
 
     Essa classe é a referência pro JsonView, cada método representa a abstração que será usada como View para cada tabela,
-    e cada atributo da entidade recebera uma anotação para o JsonView respectivo [\[20\]](#references).
+    e cada atributo da entidade recebera uma anotação para o JsonView respectivo [\[20\]](#referências).
 
     <details><summary>Usuario Entity</summary>
 
@@ -1851,13 +1851,13 @@ O objetivo é criar uma aplicação orquestradora de transferência automática 
         CMD [ "run","--host=0.0.0.0","--port=5000"]
         ```
 
-        Um Dockerfile é um arquivo de texto que contém um conjunto de instruções para construir uma imagem Docker. Ele define o ambiente e as configurações necessárias para criar uma imagem Docker reproduzível e portátil. O Dockerfile especifica cada etapa do processo de construção da imagem, desde a escolha da imagem base até a instalação de dependências, cópia de arquivos, configuração de variáveis de ambiente e a definição do comando de inicialização do container. Essas instruções são executadas sequencialmente pelo Docker durante a construção da imagem, resultando em uma imagem final pronta para ser executada em um container Docker. O Dockerfile é uma parte fundamental do processo de construção e implantação de aplicativos em contêineres Docker, pois permite a automação e a padronização da criação de imagens [\[21\]](#references).
+        Um Dockerfile é um arquivo de texto que contém um conjunto de instruções para construir uma imagem Docker. Ele define o ambiente e as configurações necessárias para criar uma imagem Docker reproduzível e portátil. O Dockerfile especifica cada etapa do processo de construção da imagem, desde a escolha da imagem base até a instalação de dependências, cópia de arquivos, configuração de variáveis de ambiente e a definição do comando de inicialização do container. Essas instruções são executadas sequencialmente pelo Docker durante a construção da imagem, resultando em uma imagem final pronta para ser executada em um container Docker. O Dockerfile é uma parte fundamental do processo de construção e implantação de aplicativos em contêineres Docker, pois permite a automação e a padronização da criação de imagens [\[21\]](#referências).
 
 - <h4 id="cd-p5">Continuous Delivery</h4>
     
     <details id="k3d-p5"><summary>K3D Cluster</summary>
 
-    Com o objetivo de criar um ambiente k8s para teste antes de utilizar o cluster AKS, foi realizado a configuração e a documentação do cluster k3d. K3d é uma ferramenta de linha de comando projetada para simplificar o gerenciamento de clusters de Kubernetes localmente. Ele permite criar, implantar e gerenciar clusters Kubernetes em seu ambiente de desenvolvimento ou teste. Com o K3d, você pode provisionar rapidamente clusters Kubernetes leves em contêineres Docker, o que facilita a execução de várias instâncias do Kubernetes em uma única máquina. É uma opção popular para desenvolvedores que desejam testar e depurar aplicativos em um ambiente Kubernetes local [\[22\]](#references).
+    Com o objetivo de criar um ambiente k8s para teste antes de utilizar o cluster AKS, foi realizado a configuração e a documentação do cluster k3d. K3d é uma ferramenta de linha de comando projetada para simplificar o gerenciamento de clusters de Kubernetes localmente. Ele permite criar, implantar e gerenciar clusters Kubernetes em seu ambiente de desenvolvimento ou teste. Com o K3d, você pode provisionar rapidamente clusters Kubernetes leves em contêineres Docker, o que facilita a execução de várias instâncias do Kubernetes em uma única máquina. É uma opção popular para desenvolvedores que desejam testar e depurar aplicativos em um ambiente Kubernetes local [\[22\]](#referências).
 
     Depois de instalado as dependências, é necessário apenas rodar o seguinte comando:
     ```bash
@@ -1870,7 +1870,7 @@ O objetivo é criar uma aplicação orquestradora de transferência automática 
 
     <details id="aks-p5"><summary>AKS Cluster</summary>
 
-    O Serviço de Kubernetes do Azure (AKS) oferece a maneira mais rápida de começar a desenvolver e implantar aplicativos nativos de nuvem no Azure, em datacenters ou na borda com pipelines internos do código para a nuvem e verificadores de integridade. Obtenha gerenciamento e governança unificados para clusters do Kubernetes locais, de borda e multinuvem. Interopere com os serviços de segurança, identidade, gerenciamento de custos e migração do Azure [\[23\]](#references).
+    O Serviço de Kubernetes do Azure (AKS) oferece a maneira mais rápida de começar a desenvolver e implantar aplicativos nativos de nuvem no Azure, em datacenters ou na borda com pipelines internos do código para a nuvem e verificadores de integridade. Obtenha gerenciamento e governança unificados para clusters do Kubernetes locais, de borda e multinuvem. Interopere com os serviços de segurança, identidade, gerenciamento de custos e migração do Azure [\[23\]](#referências).
 
     </details>
 
@@ -1906,7 +1906,7 @@ O objetivo é criar uma aplicação orquestradora de transferência automática 
 
     Um "Deployment" é usado para criar e gerenciar instâncias de aplicativos em um cluster Kubernetes. Ele especifica as configurações para replicação, seleção de pods, modelo de pod e containers associados. No caso utilizado no projeto, o Deployment chamado "cloudin-midall" está sendo configurado para criar um replicaSet com o número de réplicas definido pelo valor definido no values.yaml. O container "backend" é definido com sua imagem e configurações de porta e variável de ambiente.
 
-    Um Deployment é adequado para aplicativos que não possuem estado, ou seja, não armazenam dados persistentes. Ele gerencia a implantação de réplicas de pods de forma controlada, permitindo atualizações, rollback e dimensionamento automático. Os pods criados por um Deployment não possuem identidade única e não mantêm conexões persistentes com o armazenamento [\[24\]](#references).
+    Um Deployment é adequado para aplicativos que não possuem estado, ou seja, não armazenam dados persistentes. Ele gerencia a implantação de réplicas de pods de forma controlada, permitindo atualizações, rollback e dimensionamento automático. Os pods criados por um Deployment não possuem identidade única e não mantêm conexões persistentes com o armazenamento [\[24\]](#referências).
 
     </details>
 
@@ -1955,7 +1955,7 @@ O objetivo é criar uma aplicação orquestradora de transferência automática 
 
     Foi definido um "StatefulSet" no Kubernetes para executar uma instância do banco de dados MySQL. O StatefulSet é nomeado como "cloudin-midall-mysql" e possui uma réplica. O serviço associado ao StatefulSet também é chamado de "cloudin-midall-mysql". A definição do pod inclui um container chamado "mysql" que usa a imagem mais recente do MySQL. A porta 3306 é exposta para comunicação. Variáveis de ambiente são configuradas para definir a senha do usuário root do MySQL, o nome do banco de dados, o nome de usuário e a senha do usuário do banco de dados. Restrições de recursos são definidas para limitar o uso de CPU e memória do container.
 
-    Um "StatefulSet" é usado para aplicativos que possuem estado e requerem identidade única e armazenamento persistente para seus pods. Ele fornece garantias de ordem e estabilidade durante a criação, atualização e exclusão dos pods. Cada pod em um StatefulSet é atribuído a um identificador exclusivo e mantém seu próprio estado persistente. Isso é especialmente útil para bancos de dados e outras aplicações que exigem armazenamento persistente e consistência de estado entre os pods [\[25\]](#references).
+    Um "StatefulSet" é usado para aplicativos que possuem estado e requerem identidade única e armazenamento persistente para seus pods. Ele fornece garantias de ordem e estabilidade durante a criação, atualização e exclusão dos pods. Cada pod em um StatefulSet é atribuído a um identificador exclusivo e mantém seu próprio estado persistente. Isso é especialmente útil para bancos de dados e outras aplicações que exigem armazenamento persistente e consistência de estado entre os pods [\[25\]](#referências).
 
     </details>
 
@@ -1979,7 +1979,7 @@ O objetivo é criar uma aplicação orquestradora de transferência automática 
         app: cloudin-midall-mysql
     ```
 
-    O Service ClusterIP é um tipo de serviço no Kubernetes que expõe um conjunto de pods para comunicação interna dentro do cluster. Ele fornece um endereço IP interno estático para o serviço, permitindo que outros recursos dentro do cluster se conectem a ele. O serviço "cloudin-midall-mysql" é definido como um Service ClusterIP. Ele mapeia a porta 3306 para o targetPort 3306 em protocolo TCP, que é o padrão para comunicação com o banco de dados MySQL. O seletor "app: cloudin-midall-mysql" garante que o Service encaminhe o tráfego para os pods que possuem a mesma etiqueta. Esse tipo de serviço é adequado para comunicação interna e não é acessível de fora do cluster [\[26\]](#references).
+    O Service ClusterIP é um tipo de serviço no Kubernetes que expõe um conjunto de pods para comunicação interna dentro do cluster. Ele fornece um endereço IP interno estático para o serviço, permitindo que outros recursos dentro do cluster se conectem a ele. O serviço "cloudin-midall-mysql" é definido como um Service ClusterIP. Ele mapeia a porta 3306 para o targetPort 3306 em protocolo TCP, que é o padrão para comunicação com o banco de dados MySQL. O seletor "app: cloudin-midall-mysql" garante que o Service encaminhe o tráfego para os pods que possuem a mesma etiqueta. Esse tipo de serviço é adequado para comunicação interna e não é acessível de fora do cluster [\[26\]](#referências).
 
     </details>
 
@@ -2003,7 +2003,7 @@ O objetivo é criar uma aplicação orquestradora de transferência automática 
         app: cloudin-midall
     ```
 
-    O Service LoadBalancer é um tipo de serviço no Kubernetes que expõe um conjunto de pods para o tráfego externo, permitindo que o aplicativo seja acessado de fora do cluster. Ele provisiona automaticamente um balanceador de carga externo, como um balanceador de carga na nuvem, que distribui o tráfego para os pods do serviço. O serviço "cloudin-midall" é definido como um Service LoadBalancer. Ele mapeia uma determinada porta, definida pelo valor ".Values.backend.ports.containerPort", para o targetPort correspondente. O protocolo especificado é TCP e o nome do serviço é "http". O seletor "app: cloudin-midall" garante que o Service encaminhe o tráfego para os pods com a mesma etiqueta. Esse tipo de serviço é adequado para expor um aplicativo para o tráfego externo, permitindo a acessibilidade de fora do cluster, através do balanceador de carga fornecido pelo ambiente de execução do Kubernetes, como um balanceador de carga na nuvem [\[27\]](#references).
+    O Service LoadBalancer é um tipo de serviço no Kubernetes que expõe um conjunto de pods para o tráfego externo, permitindo que o aplicativo seja acessado de fora do cluster. Ele provisiona automaticamente um balanceador de carga externo, como um balanceador de carga na nuvem, que distribui o tráfego para os pods do serviço. O serviço "cloudin-midall" é definido como um Service LoadBalancer. Ele mapeia uma determinada porta, definida pelo valor ".Values.backend.ports.containerPort", para o targetPort correspondente. O protocolo especificado é TCP e o nome do serviço é "http". O seletor "app: cloudin-midall" garante que o Service encaminhe o tráfego para os pods com a mesma etiqueta. Esse tipo de serviço é adequado para expor um aplicativo para o tráfego externo, permitindo a acessibilidade de fora do cluster, através do balanceador de carga fornecido pelo ambiente de execução do Kubernetes, como um balanceador de carga na nuvem [\[27\]](#referências).
 
     </details>
 
@@ -2056,7 +2056,7 @@ O objetivo é criar uma aplicação orquestradora de transferência automática 
                 number: 5000
     ```
 
-    O Ingress é um recurso no Kubernetes que permite a exposição de serviços HTTP e HTTPS externamente ao cluster. O Ingress chamado "cloudin-midall" é definido com a anotação "kubernetes.io/ingress.class" configurada como "azure/application-gateway", indicando que o Ingress será gerenciado pelo Application Gateway do Azure. A especificação do Ingress inclui regras para roteamento do tráfego. No exemplo, há uma única regra que encaminha todo o tráfego HTTP que chega à raiz ("/") para o serviço chamado "cloudin-midall" na porta 5000. O campo "pathType" é definido como "Prefix", o que significa que o Ingress corresponderá a URLs que começam com o caminho especificado. O Ingress permite a configuração flexível do roteamento do tráfego externo para serviços internos no Kubernetes, fornecendo uma camada de controle de acesso e balanceamento de carga [\[29\]](#references).
+    O Ingress é um recurso no Kubernetes que permite a exposição de serviços HTTP e HTTPS externamente ao cluster. O Ingress chamado "cloudin-midall" é definido com a anotação "kubernetes.io/ingress.class" configurada como "azure/application-gateway", indicando que o Ingress será gerenciado pelo Application Gateway do Azure. A especificação do Ingress inclui regras para roteamento do tráfego. No exemplo, há uma única regra que encaminha todo o tráfego HTTP que chega à raiz ("/") para o serviço chamado "cloudin-midall" na porta 5000. O campo "pathType" é definido como "Prefix", o que significa que o Ingress corresponderá a URLs que começam com o caminho especificado. O Ingress permite a configuração flexível do roteamento do tráfego externo para serviços internos no Kubernetes, fornecendo uma camada de controle de acesso e balanceamento de carga [\[29\]](#referências).
 
     </details>
 
