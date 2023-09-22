@@ -55,25 +55,31 @@
     - [Tecnologias Utilizadas](#tecnologias-p5)
     - [Ferramentas Utilizadas](#ferramentas-p5)
     - [Contribuições Pessoais](#contribuições-p5)
-	- [Google Drive API](#google-p5)
-		- [Download](#download-p5)
-		- [Upload](#upload-p5)
-		- [Listar Arquivos](#list-p5)
-		- [Padronização de Retornos](#padronização-p5)
-		- [Config Errors](#config-p5)
-	- [Continuous Integration](#ci-p5)
-		- [Testes de Software](#ts-p5)
-	- [Continuous Delivery](#cd-p5)
-		- [K3D Cluster](#k3d-p5)
-		- [AKS Cluster](#aks-p5)
-		- [Kubernetes Deployment](#deployment-p5)
-		- [Kubernetes StatefulSet](#statefulset-p5)
-		- [Kubernetes Service ClusterIP](#service-ip-p5)
-		- [Kubernetes Service LoadBalancer](#service-lb-p5)
-		- [Kubernetes HorizontalPodAutoscaler](#hpa-p5)
-		- [Kubernetes Ingress](#ingress-p5)
+        - [Google Drive API](#google-p5)
+            - [Download](#download-p5)
+            - [Upload](#upload-p5)
+            - [Listar Arquivos](#list-p5)
+            - [Padronização de Retornos](#padronização-p5)
+            - [Config Errors](#config-p5)
+        - [Continuous Integration](#ci-p5)
+            - [Testes de Software](#ts-p5)
+        - [Continuous Delivery](#cd-p5)
+            - [K3D Cluster](#k3d-p5)
+            - [AKS Cluster](#aks-p5)
+            - [Kubernetes Deployment](#deployment-p5)
+            - [Kubernetes StatefulSet](#statefulset-p5)
+            - [Kubernetes Service ClusterIP](#service-ip-p5)
+            - [Kubernetes Service LoadBalancer](#service-lb-p5)
+            - [Kubernetes HorizontalPodAutoscaler](#hpa-p5)
+            - [Kubernetes Ingress](#ingress-p5)
     - [Aprendizados Efetivos](#aprendizados-p4)
     - [Demonstração das Funcionalidades](#demo-p5)
+- [Projeto 6 - Visiona](#projeto-6)
+    - [Parceiro Acadêmico](#parceiro-p6)
+    - [Objetivo do Projeto](#objetivo-p6)
+    - [Tecnologias Utilizadas](#tecnologias-p6)
+    - [Ferramentas Utilizadas](#ferramentas-p6)
+    - [Contribuições Pessoais](#contribuições-p6)
 - [Conclusões](#conclusões)
 - [Referências](#referências)
 
@@ -313,7 +319,7 @@ Para relização da API foi utilizado a linguagem Python, com algumas biblioteca
 
 <h3 id="aprendizados-p1">Aprendizados Efetivos</h3>
 
-Sendo este o primeiro projeto em que se trabalhou, não apenas na Fatec, mas também na área de programação em geral, exigiu um estudo intenso. Durante o projeto, foi adquirido conhecimento sobre o funcionamento de linguagens interpretadas e compiladas, como iniciar um projeto do zero, como lidar com dados provenientes da web e utilizá-los no sistema de acordo com as solicitações feitas pelo usuário, além de definir o escopo das funções.
+Sendo este o primeiro projeto em que se trabalhou, não apenas na Fatec, mas também na área de programação em geral, exigiu um estudo intenso. Durante o projeto, foi adquirido conhecimento sobre o funcionamento de linguagens interpretadas e compiladas, como iniciar um projeto do zero, como lidar com dados provenientes da web e utilizá-los no sistema de acordo com as solicitações feitas pelo usuário, além de definir o escopo das funções. Reposítório do projeto Julius presente no GitHub através do seguinte [link](https://github.com/VictorCavichioli/Julius).
 
 </details></h4>
 
@@ -499,7 +505,7 @@ Para relização da API foi utilizado a linguagem Java, com algumas bibliotecas,
 
 <h3 id="aprendizados-p2">Aprendizados Efetivos</h3>
 
-Sendo este o primeiro projeto em que se trabalhou com Java, não apenas na Fatec, mas na área de programação em geral, foi necessário realizar estudos intensos. Durante o projeto, foi adquirido conhecimento sobre o funcionamento do Java, como estabelecer conexão com um banco de dados, como tratar dados provenientes do SGBD e utilizá-los no sistema de acordo com as solicitações feitas pelo usuário, além de definir o escopo das funções.
+Sendo este o primeiro projeto em que se trabalhou com Java, não apenas na Fatec, mas na área de programação em geral, foi necessário realizar estudos intensos. Durante o projeto, foi adquirido conhecimento sobre o funcionamento do Java, como estabelecer conexão com um banco de dados, como tratar dados provenientes do SGBD e utilizá-los no sistema de acordo com as solicitações feitas pelo usuário, além de definir o escopo das funções. Reposítório do projeto Vigilant presente no GitHub através do seguinte [link](https://github.com/VictorCavichioli/Necto-Project).
 
 </details></h4>
 
@@ -897,7 +903,7 @@ Para construção da interface foi utilizado o Angular, por alguns motivos, ele 
 
 <h3 id="aprendizados-p3">Aprendizados Efetivos</h3>
 
-Durante esse projeto, o autor ainda não tinha muita noção de como funciona o conjunto do Back-end e Front-end, como utilizar os protocolos de comunicação entre serviços feitos em diferentes linguagens, nem quais configurações devem ser feitas tanto no back-end quanto no front-end para garantir uma comunicação controlada e esperada. Nesse contexto, os aprendizados efetivos foram: integração de microservices, modularização de configurações para inicialização do TomCat e estabelecimento de protocolos de comunicação e exposição adequada da aplicação como um todo para a web.
+Durante esse projeto, o autor ainda não tinha muita noção de como funciona o conjunto do Back-end e Front-end, como utilizar os protocolos de comunicação entre serviços feitos em diferentes linguagens, nem quais configurações devem ser feitas tanto no back-end quanto no front-end para garantir uma comunicação controlada e esperada. Nesse contexto, os aprendizados efetivos foram: integração de microservices, modularização de configurações para inicialização do TomCat e estabelecimento de protocolos de comunicação e exposição adequada da aplicação como um todo para a web. Reposítório do projeto PromoAll presente no GitHub através do seguinte [link](https://github.com/VictorCavichioli/doc-docker-MidAll).
 
 </details></h4>
 
@@ -1467,7 +1473,7 @@ Para construção da interface foi utilizado o VueJs.
 
 <h3 id="aprendizados-p4">Aprendizados Efetivos</h3>
 
-Durante esse projeto, o autor não possuía uma ampla noção de como definir níveis de acesso e adequar regras de segurança para serem utilizadas em todo o sistema, visando garantir uma aplicação com um nível adequado de segurança e proteção. Também não tinha conhecimento sobre como otimizar a entrada de dados e realizar filtragens usando o **JsonView**, nem sobre como configurar imagens para posterior uso com um banco de dados na nuvem. Portanto, entende-se que os aprendizados efetivos obtidos foram baseados na definição de níveis de acesso e configuração de uma camada de serviços responsável por autenticação e autorização, na definição de filtros de dados e na construção de imagens para utilização com um banco de dados na nuvem.
+Durante esse projeto, o autor não possuía uma ampla noção de como definir níveis de acesso e adequar regras de segurança para serem utilizadas em todo o sistema, visando garantir uma aplicação com um nível adequado de segurança e proteção. Também não tinha conhecimento sobre como otimizar a entrada de dados e realizar filtragens usando o **JsonView**, nem sobre como configurar imagens para posterior uso com um banco de dados na nuvem. Portanto, entende-se que os aprendizados efetivos obtidos foram baseados na definição de níveis de acesso e configuração de uma camada de serviços responsável por autenticação e autorização, na definição de filtros de dados e na construção de imagens para utilização com um banco de dados na nuvem. Reposítório do projeto ERP-Subter presente no GitHub através do seguinte [link](https://github.com/VictorCavichioli/doc-docker-subter).
 
 </details></h4>
 
@@ -2056,18 +2062,104 @@ O objetivo é criar uma aplicação orquestradora de transferência automática 
                 number: 5000
     ```
 
-    O Ingress é um recurso no Kubernetes que permite a exposição de serviços HTTP e HTTPS externamente ao cluster. O Ingress chamado "cloudin-midall" é definido com a anotação "kubernetes.io/ingress.class" configurada como "azure/application-gateway", indicando que o Ingress será gerenciado pelo Application Gateway do Azure. A especificação do Ingress inclui regras para roteamento do tráfego. No exemplo, há uma única regra que encaminha todo o tráfego HTTP que chega à raiz ("/") para o serviço chamado "cloudin-midall" na porta 5000. O campo "pathType" é definido como "Prefix", o que significa que o Ingress corresponderá a URLs que começam com o caminho especificado. O Ingress permite a configuração flexível do roteamento do tráfego externo para serviços internos no Kubernetes, fornecendo uma camada de controle de acesso e balanceamento de carga [\[29\]](#referências).
+    O Ingress é um recurso no Kubernetes que permite expor serviços HTTP e HTTPS externamente ao cluster. O Ingress chamado "cloudin-midall" é definido com a anotação "kubernetes.io/ingress.class" configurada como "azure/application-gateway", indicando que será gerenciado pelo Application Gateway Azure. A especificação do Ingress inclui regras para roteamento do tráfego. No exemplo, há uma única regra que encaminha tráfego HTTP que chega à raiz ("/") para o serviço chamado "cloudin-midall" na porta 5000. O campo "pathType" é definido como "Prefix", o que significa que o Ingress corresponderá a URLs que começam com o caminho especificado. O Ingress permite a configuração flexível do roteamento do tráfego externo para serviços internos no Kubernetes, fornecendo uma camada de controle de acesso e balanceamento de carga [\[29\]](#referências).
 
     </details>
 
 <h3 id="aprendizados-p5">Aprendizados Efetivos</h3>
-Durante o desenvolvido do projeto foi aprendizado a implantar e monitorar clusters kubernetes para produção e para testes, como realizar integração contínua utilizando Github Actions, usabilidade do serviço Amazon S3 e como realizar operações de listener para realizar de sincronização e transferência automáticas sem interferência humana. Além disso, foi realizado testes de integração e de unidade com o GoogleService, S3Service e K8SApi ao qual o autor ainda tinha dúvidas de como funcionavam que durante o semestre foram sanadas e a partir do aprendizado foi desenvolvido uma base mais sólida para futuros trabalhos.
+Durante o desenvolvido do projeto o autor aprendeu a implantar e monitorar clusters Kubernetes para produção e para testes, como realizar integração contínua utilizando Github Actions, usabilidade do serviço Amazon S3 e como realizar operações de listener para realizar sincronização e transferência automáticas sem interferência humana. Além disso, realizou testes de integração e de unidade com o GoogleService, S3Service e K8SApi, onde havia dúvidas funcionais que durante o semestre foram sanadas e a partir do aprendizado foi desenvolvido uma base mais sólida para futuros trabalhos. Reposítório do projeto CloudIn presente no GitHub através do seguinte [link](https://github.com/VictorCavichioli/Cloud-In).
 
 <h3 id="demo-p5">Demonstração das Funcionalidades</h3>
 
 Para acessar a playlist do projeto, clique [aqui](https://www.youtube.com/watch?v=AGRvBq9Xq4U&list=PLUOBqJKbljZsvHbaHWKrQ3z0l9l2Uo_f0):
 
 [<img src="https://user-images.githubusercontent.com/74321890/228991716-687c07f9-3b6a-4cea-b855-677b51b2b20a.svg" width="60%" height="60%">](https://www.youtube.com/watch?v=AGRvBq9Xq4U&list=PLUOBqJKbljZsvHbaHWKrQ3z0l9l2Uo_f0 "Cloud-in vídeo Demonstração")
+
+</details></h4>
+
+<h4><details id="projeto-6" open>
+<summary>Projeto 6: 2º Semestre de 2023</summary>
+
+<h3 id="parceiro-p6">Parceiro Acadêmico</h3>
+Visiona
+
+Resultante de uma iniciativa inédita do Governo Brasileiro para incentivar a criação de uma empresa integradora da indústria espacial, a Visiona é uma joint venture entre a Embraer Defesa & Segurança e a Telebras.
+
+<h3 id="objetivo-p6">Objetivo do Projeto</h3>
+
+<h3 id="tecnologias-p6">Tecnologias Utilizadas</h3>
+
+<img src="https://img.shields.io/badge/-Vue.js-4FC08D?logo=Vue.js&logoColor=white&style=for-the-badge" alt="badge"> 
+<img src="https://img.shields.io/badge/-Flask-000000?logo=Flask&logoColor=white&style=for-the-badge" alt="badge">  
+<img src="https://img.shields.io/badge/-MySQL-4479A1?logo=MYSQL&logoColor=white&style=for-the-badge" alt="badge">
+<img src="https://img.shields.io/badge/-Docker-2496ED?logo=Docker&logoColor=white&style=for-the-badge" alt="badge">
+<img src="https://img.shields.io/badge/-GitHub%20Actions-2088FF?logo=GitHub-Actions&logoColor=white&style=for-the-badge" alt="badge">
+<img src="https://img.shields.io/badge/-Kubernetes-326CE5?logo=Kubernetes&logoColor=white&style=for-the-badge" alt="badge">
+
+<h3 id="ferramentos-p6">Ferramentas</h3>
+Back-end/Front-end: Visual Studio Code
+CI/CD: GitHub Actions
+
+<h3 id="contribuições-p6">Contribuições pessoais</h3>
+
+- <h4 id="devops-p6">DevOps</h4>
+    - <h5 id="StatefulSet-p6">StatefulSet</h5>
+
+        <details><summary>PostGIS StatefulSet</summary>
+        
+        ```yaml
+        apiVersion: apps/v1
+        kind: StatefulSet
+        metadata:
+        name: postgis
+        spec:
+        serviceName: postgis-service
+        replicas: 1
+        selector:
+            matchLabels:
+            app: postgis
+        template:
+            metadata:
+            labels:
+                app: postgis
+            spec:
+            containers:
+                - name: postgis
+                image: postgis/postgis:11-3.3
+                ports:
+                    - containerPort: 5432
+                envFrom:
+                    - configMapRef:
+                        name: postgres-env        
+                volumeMounts:
+                    - name: postgresql-db-disk
+                    mountPath: /data
+            volumes:
+                - name: postgresql-db-disk
+                persistentVolumeClaim:
+                    claimName: postgresql-db-disk
+        ```
+
+        Foi definido um "StatefulSet" no Kubernetes para executar uma instância do banco de dados MySQL. O StatefulSet é nomeado como "postgis-service" e possui uma réplica. A definição do pod inclui um container chamado "postgis" que usa a imagem postgis/postgis:11-3.3. A porta 5432 é exposta para comunicação. Variáveis de ambiente são configuradas para definir a senha do usuário root do PostGIS, o nome do banco de dados, o nome de usuário e a senha do usuário do banco de dados.
+
+        Um "StatefulSet" é usado para aplicativos que possuem estado e requerem identidade única e armazenamento persistente para seus pods. Ele fornece garantias de ordem e estabilidade durante a criação, atualização e exclusão dos pods. Cada pod em um StatefulSet é atribuído a um identificador exclusivo e mantém seu próprio estado persistente. Isso é especialmente útil para bancos de dados e outras aplicações que exigem armazenamento persistente e consistência de estado entre os pods [\[25\]](#referências).
+        </details>
+
+    - <h5 id="chart-p6">Helm</h5>
+
+        <details><summary>Configuração do Helm Chart</summary></details>
+
+    - <h5 id="volumes-p6">Volumes Persistentes</h5>
+
+        <details><summary>AKS</summary></details>
+
+    - <h5 id="aks-p6">Azure Kubernetes Service</h5>
+
+        <details><summary>AKS</summary></details>
+
+<h3 id="aprendizados-p6">Aprendizados Efetivos</h3>
+
+<h3 id="demo-p6">Demonstração das Funcionalidades</h3>
 
 </details></h4>
 
