@@ -80,6 +80,16 @@
     - [Tecnologias Utilizadas](#tecnologias-p6)
     - [Ferramentas Utilizadas](#ferramentas-p6)
     - [Contribuições Pessoais](#contribuições-p6)
+        - [DevOps](#devops-p6)
+            - [StatefulSet](#StatefulSet-p6)
+            - [Helm](#chart-p6)
+            - [Volumes Persistentes](#volumes-p6)
+            - [Azure Kubernetes Service](#aks-p6)
+        - [Performance e Persistências NoSQL](#performance-p6)
+            - [Modelagem NoSQL Apache Cassandra](#cassandra-p6)
+            - [Criação de Camada de Cacha usando Redis Queue](#redis-p6)
+        - [Teste de Software](#test-p6)
+            - [Teste de Carga com Locust](#locust-p6)
 - [Conclusões](#conclusões)
 - [Referências](#referências)
 
@@ -2103,6 +2113,7 @@ CI/CD: GitHub Actions
 <h3 id="contribuições-p6">Contribuições pessoais</h3>
 
 - <h4 id="devops-p6">DevOps</h4>
+
     - <h5 id="StatefulSet-p6">StatefulSet</h5>
 
         <details><summary>PostGIS StatefulSet</summary>
@@ -2140,22 +2151,155 @@ CI/CD: GitHub Actions
                     claimName: postgresql-db-disk
         ```
 
-        Foi definido um "StatefulSet" no Kubernetes para executar uma instância do banco de dados MySQL. O StatefulSet é nomeado como "postgis-service" e possui uma réplica. A definição do pod inclui um container chamado "postgis" que usa a imagem postgis/postgis:11-3.3. A porta 5432 é exposta para comunicação. Variáveis de ambiente são configuradas para definir a senha do usuário root do PostGIS, o nome do banco de dados, o nome de usuário e a senha do usuário do banco de dados.
+        Foi definido um "StatefulSet" no Kubernetes para executar uma instância do banco de dados PostgreSQL com extensões para processamento geoespacial. O StatefulSet é nomeado como "postgis" e possui uma réplica. A definição do pod inclui um container chamado "postgis" que usa a imagem postgis/postgis:11-3.3. A porta 5432 é exposta para comunicação. Variáveis de ambiente são configuradas para definir a senha do usuário root do PostGIS, o nome do banco de dados, o nome de usuário e a senha do usuário do banco de dados.
 
         Um "StatefulSet" é usado para aplicativos que possuem estado e requerem identidade única e armazenamento persistente para seus pods. Ele fornece garantias de ordem e estabilidade durante a criação, atualização e exclusão dos pods. Cada pod em um StatefulSet é atribuído a um identificador exclusivo e mantém seu próprio estado persistente. Isso é especialmente útil para bancos de dados e outras aplicações que exigem armazenamento persistente e consistência de estado entre os pods [\[25\]](#referências).
+
         </details>
 
     - <h5 id="chart-p6">Helm</h5>
+    
+        Com objetivo de gerenciar a complexidade da implantação de aplicativos em Kubernetes, permitindo que concentra-se no desenvolvimento e na inovação de aplicativos, foi utilizado a tecnlogia Helm [\[3\]](#referências), que necessita da definição de um Chart.yaml, um values.yaml e, uma pasta de templates, onde tem-se presente os arquivos yaml de objetos kubernetes e arquivos .tpl que são utilizados para criar função com pseudo-código GoLang, utilizado pela tecnologia Helm para facilita o desenvolvimento e tornar mais dinâmico.
 
-        <details><summary>Configuração do Helm Chart</summary></details>
+        <details><summary>Configuração do Helm Chart.yaml</summary>
+
+        ```yaml
+        apiVersion: v2
+        name: dolphin-data-observation-platform
+        version: 1.0.0
+        description: Predictive Observation Platform
+        keywords:
+        - Proagro
+        - Time-Series
+        home: https://github.com/DolphinDatabase/POP
+        sources:
+        - https://github.com/DolphinDatabase/POP-backend/tree/main
+        - https://github.com/DolphinDatabase/POP-frontend/tree/main
+        maintainers:
+        - name: Victor Cavichioli
+            email: vivictoraraujo@hotmail.com
+            url: https://github.com/VictorCavichioli
+        icon: A URL to an SVG or PNG image to be used as an icon (optional).
+        appVersion: 1.0.0
+        deprecated: False
+        ```
+        
+        </details>
+
+        <details><summary>Configuração do Helm values.yaml</summary>
+
+        ```yaml
+        global:
+        imagePullPolicy: "IfNotPresent"
+
+        database:
+            postgres_db: "pop"
+            postgresql_password: "example"
+            postgres_log_hostname: "true"
+            postgresql_log_connections: "false"
+            postgresql_log_disconnections: "false"
+            postgresql_pgaudit_log_catalog: "off"
+            postgresql_client_min_messages: "error"
+            postgresql_shared_preload_libraries: "pgaudit, repmgr"
+            postgresql_enable_tls: "no"
+        ```
+        
+        </details>
 
     - <h5 id="volumes-p6">Volumes Persistentes</h5>
 
-        <details><summary>AKS</summary></details>
+        Ao utilizar-se a tecnologia Kubernetes com aplicações onde necessita-se de persistência de dados, como Bancos de Dados, além do StatefulSet, fala-se normalmente sobre três objetos, o PersistentVolume, o PersistentVolumeClaim e o StorageClass. Abaixo, encontra-se informações sobre estes objetos e implementações no projeto POP.
+
+        <details><summary>PersistentVolumeClaim e PersistentVolume</summary>
+
+        Um PersistentVolume (PV) é uma porção de armazenamento no cluster que foi provisionada por um administrador ou dinamicamente provisionada usando Classes de Armazenamento. É um recurso no cluster, assim como um nó é um recurso do cluster. Os PVs são plugins de volume, assim como Volumes, mas têm um ciclo de vida independente de qualquer Pod individual que utiliza o PV. Esse objeto de API captura os detalhes da implementação do armazenamento, seja NFS, iSCSI ou um sistema de armazenamento específico de um provedor de nuvem [\[30\]](#referências).
+
+        Um PersistentVolumeClaim (PVC) é um pedido de armazenamento feito por um usuário. É semelhante a um Pod. Os Pods consomem recursos do nó, e os PVCs consomem recursos do PV. Os Pods podem solicitar níveis específicos de recursos (CPU e Memória). As Claims podem solicitar um tamanho específico e modos de acesso (por exemplo, podem ser montados como ReadWriteOnce, ReadOnlyMany ou ReadWriteMany, consulte AccessModes) [\[30\]](#referências).
+
+        </details>
+
+        <details><summary>StorageClass</summary>
+
+        Uma StorageClass fornece uma maneira para os administradores descreverem as "classes" de armazenamento que oferecem. Diferentes classes podem estar relacionadas a níveis de qualidade de serviço, políticas de backup ou a políticas arbitrárias determinadas pelos administradores do cluster. O Kubernetes em si não impõe uma opinião sobre o que as classes representam. Esse conceito às vezes é chamado de "perfis" em outros sistemas de armazenamento [\[31\]](#referências).
+
+        </details>
+
+        <details><summary>Implementação</summary>
+
+        - PersistentVolumeClaim
+        ```yaml
+        apiVersion: v1
+        kind: PersistentVolumeClaim
+        metadata:
+        name: postgresql-db-disk
+        spec:
+        accessModes:
+            - ReadWriteOnce
+        resources:
+            requests:
+            storage: 10Gi
+        storageClassName: my-azurefile
+        ```
+
+        - StorageClass
+        ```yaml
+        kind: StorageClass
+        apiVersion: storage.k8s.io/v1
+        metadata:
+        name: my-azurefile
+        provisioner: file.csi.azure.com # replace with "kubernetes.io/azure-file" if aks version is less than 1.21
+        allowVolumeExpansion: true
+        mountOptions:
+        - dir_mode=0777
+        - file_mode=0777
+        - uid=0
+        - gid=0
+        - mfsymlinks
+        - cache=strict
+        - actimeo=30
+        reclaimPolicy: Retain
+        volumeBindingMode: Immediate
+        parameters:
+        skuName: Premium_LRS
+        ```
+
+        - StatefulSet
+        ```yaml
+        ...
+        volumes:
+        - name: postgresql-db-disk
+          persistentVolumeClaim:
+            claimName: postgresql-db-disk
+        ```
+        </details>
 
     - <h5 id="aks-p6">Azure Kubernetes Service</h5>
 
-        <details><summary>AKS</summary></details>
+        <details><summary>AKS Cluster</summary>
+        O Serviço de Kubernetes do Azure (AKS) oferece a maneira mais rápida de começar a desenvolver e implantar aplicativos nativos de nuvem no Azure, em datacenters ou na borda com pipelines internos do código para a nuvem e verificadores de integridade. Obtenha gerenciamento e governança unificados para clusters do Kubernetes locais, de borda e multinuvem. Interopere com os serviços de segurança, identidade, gerenciamento de custos e migração do Azure [\[23\]](#referências).
+        </details>
+
+- <h4 id="performance-p6">Performance e Persistências NoSQL</h4>
+
+    - <h5 id="cassandra-p6">Modelagem NoSQL Apache Cassandra</h5>
+
+        <details><summary>DML</summary>
+        
+        </details>
+    
+    - <h5 id="redis-p6">Criação de Camada de Cacha usando Redis Queue</h5>
+
+        <details><summary>Redis</summary>
+        
+        </details>
+
+- <h4 id="test-p6">Teste de Software</h4>
+
+    - <h5 id="locust-p6">Teste de Carga com Locust</h5>
+
+        <details><summary>Reporte do Locust</summary>
+        
+        </details>
 
 <h3 id="aprendizados-p6">Aprendizados Efetivos</h3>
 
@@ -2179,61 +2323,94 @@ O Projeto Integrador também alavancou o conhecimento prático de tecnologias at
 Concluindo, o curso de Tecnólogo em Banco de Dados se revelou como um trampolim para um aprendizado rico e profundo. O autor não apenas dominou habilidades técnicas cruciais, mas também desenvolveu a resiliência, a curiosidade e a determinação necessárias para prosperar em um campo em constante evolução. As lições aprendidas ao longo deste projeto não apenas enriqueceram o repertório do autor, mas também estabeleceram uma base sólida para um futuro promissor e repleto de oportunidades no mundo da programação e do desenvolvimento de software.
 
 ### **Referências**
-[1] - [O que é Docker?](https://aws.amazon.com/pt/docker/#:~:text=Docker%20is%20a%20software%20platform,tools%2C%20code%2C%20and%20runtime.)
+[1 - O que é Docker?](https://aws.amazon.com/pt/docker/#:~:text=Docker%20is%20a%20software%20platform,tools%2C%20code%2C%20and%20runtime.)
 <br/>
-[2] - [O que é Kubernetes?](https://cloud.google.com/learn/what-is-kubernetes?hl=pt-br#:~:text=Kubernetes%20automates%20operational%20tasks%20of,it%20easier%20to%20manage%20applications.
-)
+
+[2 - O que é Kubernetes?](https://cloud.google.com/learn/what-is-kubernetes?hl=pt-br#:~:text=Kubernetes%20automates%20operational%20tasks%20of,it%20easier%20to%20manage%20applications.)
 <br/>
-[3] - [O que é Helm?](https://helm.sh/)
+
+[3 - O que é Helm?](https://helm.sh/)
 <br/>
-[4] - [Introdução ao Apache Cassandra](https://cassandra.apache.org/_/cassandra-basics.html)
+
+[4 - Introdução ao Apache Cassandra](https://cassandra.apache.org/_/cassandra-basics.html)
 <br/>
-[5] - [Importância do Teste de Software](https://www.ibm.com/topics/software-testing#:~:text=Software%20testing%20is%20the%20process,Types%20of%20software%20testing)
+
+[5 - Importância do Teste de Software](https://www.ibm.com/topics/software-testing#:~:text=Software%20testing%20is%20the%20process,Types%20of%20software%20testing)
 <br/>
-[6] - [O que são Sistemas Distribuídos?](https://www.splunk.com/en_us/data-insider/what-are-distributed-systems.html#:~:text=A%20distributed%20system%20is%20a,been%20responsible%20for%20the%20task.)
+
+[6 - O que são Sistemas Distribuídos?](https://www.splunk.com/en_us/data-insider/what-are-distributed-systems.html#:~:text=A%20distributed%20system%20is%20a,been%20responsible%20for%20the%20task.)
 <br/>
-[7] - [Exceções e Controle de Erros em Java](https://www.alura.com.br/apostila-java-orientacao-objetos/excecoes-e-controle-de-erros?utm_term=&utm_campaign=%5BSearch%5D+%5BPerformance%5D+-+Dynamic+Search+Ads&utm_source=adwords&utm_medium=ppc&hsa_acc=7964138385&hsa_cam=1560195067&hsa_grp=63243218150&hsa_ad=473952452366&hsa_src=g&hsa_tgt=aud-1030763255023:dsa-1684046743563&hsa_kw=&hsa_mt=&hsa_net=adwords&hsa_ver=3&gclid=Cj0KCQjwuNemBhCBARIsADp74QSaTuMsqlx_54Cvs_N1QWEfRtl9sqOI-bFUhPu_0oQKhuW_DwfDmlAaAta9EALw_wcB)
+
+[7 - Exceções e Controle de Erros em Java](https://www.alura.com.br/apostila-java-orientacao-objetos/excecoes-e-controle-de-erros?utm_term=&utm_campaign=%5BSearch%5D+%5BPerformance%5D+-+Dynamic+Search+Ads&utm_source=adwords&utm_medium=ppc&hsa_acc=7964138385&hsa_cam=1560195067&hsa_grp=63243218150&hsa_ad=473952452366&hsa_src=g&hsa_tgt=aud-1030763255023:dsa-1684046743563&hsa_kw=&hsa_mt=&hsa_net=adwords&hsa_ver=3&gclid=Cj0KCQjwuNemBhCBARIsADp74QSaTuMsqlx_54Cvs_N1QWEfRtl9sqOI-bFUhPu_0oQKhuW_DwfDmlAaAta9EALw_wcB)
 <br/>
-[8] - [TypeScript in 5 minutes](https://www.typescriptlang.org/docs/handbook/typescript-in-5-minutes.html)
+
+[8 - TypeScript in 5 minutes](https://www.typescriptlang.org/docs/handbook/typescript-in-5-minutes.html)
 <br/>
-[9] - [Two-Way Data Binding in Angular](https://angular.io/guide/two-way-binding)
+
+[9 - Two-Way Data Binding in Angular](https://angular.io/guide/two-way-binding)
 <br/>
-[10] - [Spring @RestController Documentation](https://docs.spring.io/spring-framework/docs/current/javadoc-api/org/springframework/web/bind/annotation/RestController.html)
+
+[10 - Spring @RestController Documentation](https://docs.spring.io/spring-framework/docs/current/javadoc-api/org/springframework/web/bind/annotation/RestController.html)
 <br/>
-[11] - [Why to Use Service Layer in Spring MVC](https://blog1.westagilelabs.com/why-to-use-service-layer-in-spring-mvc-5f4fc52643c0)
+
+[11 - Why to Use Service Layer in Spring MVC](https://blog1.westagilelabs.com/why-to-use-service-layer-in-spring-mvc-5f4fc52643c0)
 <br/>
-[12] - [Spring Boot Microservices: Coding Style Guidelines and Best Practices](https://medium.com/codex/spring-boot-microservices-coding-style-guidelines-and-best-practices-1dec229161c8#b0ab)
+
+[12 - Spring Boot Microservices: Coding Style Guidelines and Best Practices](https://medium.com/codex/spring-boot-microservices-coding-style-guidelines-and-best-practices-1dec229161c8#b0ab)
 <br/>
-[13] - [Accessing Data with JPA - Spring Guide](https://spring.io/guides/gs/accessing-data-jpa/)
+
+[13 - Accessing Data with JPA - Spring Guide](https://spring.io/guides/gs/accessing-data-jpa/)
 <br/>
-[14] - [Cross-Origin Resource Sharing (CORS)](https://developer.mozilla.org/en-US/docs/Web/HTTP/CORS)
+
+[14 - Cross-Origin Resource Sharing (CORS)](https://developer.mozilla.org/en-US/docs/Web/HTTP/CORS)
 <br/>
-[15] - [Creating Injectable Services in Angular](https://angular.io/guide/creating-injectable-service)
+
+[15 - Creating Injectable Services in Angular](https://angular.io/guide/creating-injectable-service)
 <br/>
-[16] - [JwtAuthenticationFilter - Atlassian Connect Spring Boot Core](https://javadoc.io/doc/com.atlassian.connect/atlassian-connect-spring-boot-core/2.0.0/com/atlassian/connect/spring/internal/auth/jwt/JwtAuthenticationFilter.html)
+
+[16 - JwtAuthenticationFilter - Atlassian Connect Spring Boot Core](https://javadoc.io/doc/com.atlassian.connect/atlassian-connect-spring-boot-core/2.0.0/com/atlassian/connect/spring/internal/auth/jwt/JwtAuthenticationFilter.html)
 <br/>
-[17] - [OncePerRequestFilter - Spring Framework](https://docs.spring.io/spring-framework/docs/current/javadoc-api/org/springframework/web/filter/OncePerRequestFilter.html)
+
+[17 - OncePerRequestFilter - Spring Framework](https://docs.spring.io/spring-framework/docs/current/javadoc-api/org/springframework/web/filter/OncePerRequestFilter.html)
 <br/>
-[18] - [WebSecurityConfigurerAdapter - Spring Security](https://docs.spring.io/spring-security/site/docs/5.7.0-M2/api/org/springframework/security/config/annotation/web/configuration/WebSecurityConfigurerAdapter.html)
+
+[18 - WebSecurityConfigurerAdapter - Spring Security](https://docs.spring.io/spring-security/site/docs/5.7.0-M2/api/org/springframework/security/config/annotation/web/configuration/WebSecurityConfigurerAdapter.html)
 <br/>
-[19] - [UserDetailsService and Password Encoding - Spring Security](https://docs.spring.io/spring-security/reference/servlet/authentication/passwords/user-details-service.html)
+
+[19 - UserDetailsService and Password Encoding - Spring Security](https://docs.spring.io/spring-security/reference/servlet/authentication/passwords/user-details-service.html)
 <br/>
-[20] - [Jackson Annotations for Controllers - Spring Framework](https://docs.spring.io/spring-framework/reference/web/webmvc/mvc-controller/ann-methods/jackson.html)
+
+[20 - Jackson Annotations for Controllers - Spring Framework](https://docs.spring.io/spring-framework/reference/web/webmvc/mvc-controller/ann-methods/jackson.html)
 <br/>
-[21] - [Docker Build Reference](https://docs.docker.com/engine/reference/builder/)
+
+[21 - Docker Build Reference](https://docs.docker.com/engine/reference/builder/)
 <br/>
-[22] - [k3d: Easily Run Kubernetes Locally](https://k3d.io/v5.5.2/)
+
+[22 - k3d: Easily Run Kubernetes Locally](https://k3d.io/v5.5.2/)
 <br/>
-[23] - [Azure Kubernetes Service](https://azure.microsoft.com/en-us/products/kubernetes-service)
+
+[23 - Azure Kubernetes Service](https://azure.microsoft.com/en-us/products/kubernetes-service)
 <br/>
-[24] - [Kubernetes Deployments](https://kubernetes.io/docs/concepts/workloads/controllers/deployment/)
+
+[24 - Kubernetes Deployments](https://kubernetes.io/docs/concepts/workloads/controllers/deployment/)
 <br/>
-[25] - [Kubernetes StatefulSets](https://kubernetes.io/docs/concepts/workloads/controllers/statefulset/)
+
+[25 - Kubernetes StatefulSets](https://kubernetes.io/docs/concepts/workloads/controllers/statefulset/)
 <br/>
-[26] - [Cluster IP Allocation in Kubernetes](https://kubernetes.io/docs/concepts/services-networking/cluster-ip-allocation/)
+
+[26 - Cluster IP Allocation in Kubernetes](https://kubernetes.io/docs/concepts/services-networking/cluster-ip-allocation/)
 <br/>
-[27] - [Kubernetes Service LoadBalancer](https://kubernetes.io/docs/concepts/services-networking/service/#loadbalancer)
+
+[27 - Kubernetes Service LoadBalancer](https://kubernetes.io/docs/concepts/services-networking/service/#loadbalancer)
 <br/>
-[28] - [Horizontal Pod Autoscale in Kubernetes](https://kubernetes.io/docs/tasks/run-application/horizontal-pod-autoscale/)
+
+[28 - Horizontal Pod Autoscale in Kubernetes](https://kubernetes.io/docs/tasks/run-application/horizontal-pod-autoscale/)
 <br/>
-[29] - [Kubernetes Ingress](https://kubernetes.io/docs/concepts/services-networking/ingress/)
+
+[29 - Kubernetes Ingress](https://kubernetes.io/docs/concepts/services-networking/ingress/)
+<br/>
+
+[30 - PersistentVolume, PersistentVolumeClaim](https://kubernetes.io/docs/concepts/storage/persistent-volumes/)
+<br/>
+
+[31 - Storage Classes](https://kubernetes.io/docs/concepts/storage/storage-classes/)
