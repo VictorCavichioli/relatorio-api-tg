@@ -2285,12 +2285,39 @@ CI/CD: GitHub Actions
 
         <details><summary>DML</summary>
         
+        ```CQL
+        CREATE KEYSPACE IF NOT EXISTS prediction WITH replication = {'class':'SimpleStrategy', 'replication_factor': 1}
+
+        CREATE TABLE data_series (
+            id_municipio INT,
+            data_id UUID,
+            valor_indice FLOAT,
+            data DATE,
+            PRIMARY KEY (id_municipio, data_id)
+        ) WITH CLUSTERING ORDER BY (data DESC, data_id ASC);
+        ```
+
+        A modelagem NoSQL para o Apache Cassandra envolve o design de esquemas de dados adequados para ambientes de Big Data. No exemplo de código CQL fornecido, um keyspace chamado "prediction" é criado com configurações de replicação. Uma tabela chamada "data_series" é definida com colunas, incluindo "id_municipio", "data_id", "valor_indice" e "data". A chave primária é composta por "id_municipio" e "data_id", e as linhas são armazenadas com ordenação decrescente pela coluna "data" e, em caso de empate, ordenação crescente pela coluna "data_id". Esse esquema é adequado para armazenar dados de séries temporais por município, permitindo consultas eficientes.
+
         </details>
     
     - <h5 id="redis-p6">Criação de Camada de Cacha usando Redis Queue</h5>
 
         <details><summary>Redis</summary>
         
+        ```python
+        @app.on_event("startup")
+        def startup():
+            redis_cache = FastApiRedisCache()
+            redis_cache.init(
+                host_url=configuration.LOCAL_REDIS_URL,
+                prefix="myapi-cache",
+                response_header="X-MyAPI-Cache",
+                ignore_arg_types=[Request, Response, Session],)
+        ```
+
+        O código configura o Redis como um mecanismo de cache para a aplicação FastAPI. O Redis é usado para armazenar em cache resultados de solicitações, o que ajuda a melhorar o desempenho, reduzindo a necessidade de buscar dados repetidamente do banco de dados ou executar cálculos caros. O Redis Cache é configurado com um prefixo para evitar conflitos de chaves e um cabeçalho HTTP personalizado para indicar o uso do cache. Além disso, algumas solicitações específicas, como as do tipo Request, Response e Session, são excluídas do cache.
+
         </details>
 
 - <h4 id="test-p6">Teste de Software</h4>
@@ -2298,7 +2325,10 @@ CI/CD: GitHub Actions
     - <h5 id="locust-p6">Teste de Carga com Locust</h5>
 
         <details><summary>Reporte do Locust</summary>
-        
+
+        Os testes de carga com Locust são realizados usando a ferramenta de código aberto Locust para avaliar o desempenho de um sistema sob carga. Isso envolve a definição de comportamentos de usuário, configuração de cenários de teste, simulação de usuários virtuais e monitoramento do sistema em tempo real para identificar possíveis problemas de desempenho e gargalos. Esses testes são úteis para garantir que um sistema possa lidar com cargas de tráfego reais e são frequentemente empregados no desenvolvimento de software.
+
+        Os resultados podem ser encontrados a partir do [documento de report](https://drive.google.com/file/d/17mFur-Xjo8vFCGPUlgnqD6ICqUbtX9D-/view?usp=sharing).
         </details>
 
 <h3 id="aprendizados-p6">Aprendizados Efetivos</h3>
