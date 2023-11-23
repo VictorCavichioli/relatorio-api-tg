@@ -139,7 +139,7 @@ Sistemas distribuídos são sistemas de software que consistem em múltiplos com
 </details></h4>
 
 ### **Projetos Integradores durante a graduação**
-Durante a graduação, foram desenvolvidos projetos integradores, os quais visam solucionar problemas do mundo real, utilizando os conhecimentos adquiridos durante o curso. A seguir, serão descritos todos esses projetos, incluindo detalhes sobre o problema enfrentado, a solução proposta (e entregue), e os aprendizados obtidos em cada um deles.
+Durante a graduação, foram desenvolvidos projetos integradores, os quais visaram solucionar problemas do mundo real, utilizando os conhecimentos adquiridos durante o curso. A seguir, serão descritos todos esses projetos, incluindo detalhes sobre o problema enfrentado, a solução proposta (e entregue), e os aprendizados obtidos em cada um deles.
 
 <h4><details id="projeto-1" open>
 <summary>Projeto 1: 1º Semestre de 2021</summary>
@@ -149,7 +149,7 @@ Fatec
 
 <h3 id="objetivo-p1">Objetivo do Projeto</h3>
 
-Projeto consistia em criar uma assistente virtual feito em python. Entre os requisitos estão:
+Projeto consistia em criar uma assistente virtual feito em python. Segue os requisitos atendidos:
   - Responder a comando de voz ou sons específicos (palma, estalar de dedos, etc.); 
   - Possuir no mínimo 8 ações distintas e de natureza distintas; 
   - Ser mobile, web ou desktop; - Retornar o comando em qualquer forma (som, texto ou ação); 
@@ -164,7 +164,7 @@ Foi utilizado o SqLite para guardar informações de comparação e quando é
 realizado uma consulta ou uma comparação, é feito uma query no Banco.
 
 ### **Back-end**: Python
-Para relização da API foi utilizado a linguagem Python, com algumas bibliotecas, são elas:
+Para relização da API foi utilizado a linguagem Python, com algumas bibliotecas; relacionadas a seguir:
  - speech_recognition (Para reconhecimento de voz);
  - pyttsx3 (Para síntese de texto em voz);
  - requests (Para realizar requisições na web);
@@ -329,7 +329,7 @@ Para relização da API foi utilizado a linguagem Python, com algumas biblioteca
 
 <h3 id="aprendizados-p1">Aprendizados Efetivos</h3>
 
-Sendo este o primeiro projeto em que se trabalhou, não apenas na Fatec, mas também na área de programação em geral, exigiu um estudo intenso. Durante o projeto, foi adquirido conhecimento sobre o funcionamento de linguagens interpretadas e compiladas, como iniciar um projeto do zero, como lidar com dados provenientes da web e utilizá-los no sistema de acordo com as solicitações feitas pelo usuário, além de definir o escopo das funções. Reposítório do projeto Julius presente no GitHub através do seguinte [link](https://github.com/VictorCavichioli/Julius).
+Sendo o primeiro projeto, não apenas na Fatec, mas também na área de programação em geral, exigiu-se um estudo intenso. Durante o projeto, foi adquirido conhecimento sobre o funcionamento de linguagens interpretadas e compiladas, como iniciar um projeto do zero, como lidar com dados provenientes da web e utilizá-los no sistema de acordo com as solicitações feitas pelo usuário, além de definir o escopo das funções. O reposítório do projeto Julius está presente no GitHub através do seguinte [link](https://github.com/VictorCavichioli/Julius).
 
 </details></h4>
 
@@ -341,7 +341,7 @@ Necto Systems
 
 <h3 id="objetivo-p2">Objetivo do Projeto</h3>
 
-Desenvolvido para uma aplicação de coleta de informações do servidor para geração de série histórica. A missão é desenvolver uma aplicação para coletar métricas periodicamente de um ou mais Sistemas Gerenciadores de **Banco de Dados** remoto. Através desta ferramenta o usuário terá informações para tomar decisões quanto a necessidade de manutenções, balanceamento e aumento de capacidade e melhoria no seus SGBDs, databases e na sua infra (Servidores).
+Esse projeto consistiu na aplicação de coleta de informações do servidor para geração de série histórica. A missão é desenvolver uma aplicação para coletar métricas periodicamente de um ou mais Sistemas Gerenciadores de **Banco de Dados** remoto. Através desta ferramenta o usuário obtém informações para tomar decisões quanto a necessidade de manutenções, balanceamento e aumento de capacidade e melhoria no seus SGBDs, databases e na sua infra (Servidores).
 
 Requisitos Funcionais:
 
@@ -358,11 +358,11 @@ Requisitos Não Funcionais:
 <h3 id="tecnologias-p2">Tecnologias Utilizadas</h3>
 
 ### **Banco de Dados**: Postgress
-Como pedido pelo cliente, foi utilizado o Postgress e todo o software for desenhado de acordo com os mecanismos
+Como solicitado pelo cliente, foi utilizado o Postgress e todo o software for desenhado de acordo com os mecanismos
 do Postgress.
 
 ### **Back-end**: Java
-Para relização da API foi utilizado a linguagem Java, com algumas bibliotecas, são elas:
+Para relização da API foi utilizado a linguagem Java, com algumas bibliotecas; relacionadas a seguir:
   - java.sql (Para fazer operações no **Banco de Dados**);
   - java.io (Para manipular entrada e saída de arquivos);
   - java.util (Para utilizar toda a estrutura de dados fornecida pelo Java);
@@ -408,7 +408,7 @@ Para relização da API foi utilizado a linguagem Java, com algumas bibliotecas,
     ```
     </details>
 
-    Em algumas operações, é comum os erros voltarem de maneira não estruturada, para facilitar a leitura foi criado então essa forma de tratamento de exception para que o erro fosse mais fácil de se ler e compreensível [\[7\]](#referências).
+    Em algumas operações, é comum os erros voltarem de maneira não estruturada; Para facilitar a leitura foi criado então essa forma de tratamento de exception para que o erro fosse mais para leitura e compreenssão [\[7\]](#referências).
 
 - <h4 id="leitura-p2">Leitura de Dados Passados pelo Usuário</h4>
 
@@ -448,7 +448,7 @@ Para relização da API foi utilizado a linguagem Java, com algumas bibliotecas,
     ```
     </details>
 
-    Em outra classe do sistema é definida um menu, e para utilizar é necessário leitura do teclado, para isso foi definido o ```Leitor```, com alguns métodos para garantir a eficácia, e que torna possível a utilização de maneira bem estruturada.
+    Em outra classe do sistema é definida um menu; e para utiliza-lo é necessário leitura do teclado; Para isto foi definido o ```Leitor```, com alguns métodos para garantir a eficácia, de forma a tornar-se possível utilização de maneira bem estruturada.
 
 - <h4 id="metrica-p2">Métrica de Tamanho de Banco de Dados</h4>
 
@@ -469,7 +469,7 @@ Para relização da API foi utilizado a linguagem Java, com algumas bibliotecas,
     ```
     </details>
 
-    Para a análise de algumas métricas, foi feito a implementação do método ```tamanhoBancos()``` que retorna uma formatação com o
+    Para a análise de algumas métricas; foi feita a implementação do método ```tamanhoBancos()``` que retorna uma formatação com o
     nome, tamanho e dados do banco.
 
     <details><summary>Coleta de métricas</summary>
@@ -511,11 +511,11 @@ Para relização da API foi utilizado a linguagem Java, com algumas bibliotecas,
     ```
     </details>
 
-    Foi feito também um fluxo onde conecta a aplicação no **Banco de Dados** e para cada Banco dentro do SGBD realiza a operação de coletar e armazenar as informações, posterior a isso, é retornado a lista e desconecta do **Banco de Dados**.
+    Foi feito também um fluxo onde conecta a aplicação no **Banco de Dados** e, para cada Banco dentro do SGBD realiza a operação de coletar e armazenar as informações; Posterior a isso, é retornado a lista e desconecta do **Banco de Dados**.
 
 <h3 id="aprendizados-p2">Aprendizados Efetivos</h3>
 
-Sendo este o primeiro projeto em que se trabalhou com Java, não apenas na Fatec, mas na área de programação em geral, foi necessário realizar estudos intensos. Durante o projeto, foi adquirido conhecimento sobre o funcionamento do Java, como estabelecer conexão com um banco de dados, como tratar dados provenientes do SGBD e utilizá-los no sistema de acordo com as solicitações feitas pelo usuário, além de definir o escopo das funções. Reposítório do projeto Vigilant presente no GitHub através do seguinte [link](https://github.com/VictorCavichioli/Necto-Project).
+Sendo o primeiro projeto em que se trabalhou com Java, não apenas na Fatec, mas na área de programação em geral, foi necessário realizar estudos intensos. Durante o projeto, foi adquirido conhecimento sobre o funcionamento do Java, como estabelecer conexão com um banco de dados, como tratar dados provenientes do SGBD e utilizá-los no sistema de acordo com as solicitações feitas pelo usuário, além de definir o escopo das funções. O reposítório do projeto Vigilant está presente no GitHub através do seguinte [link](https://github.com/VictorCavichioli/Necto-Project).
 
 </details></h4>
 
@@ -527,18 +527,18 @@ MidAll
 
 <h3 id="objetivo-p3">Objetivo do Projeto</h3>
 
-A empresa MidAll situada no Parque Tecnológico de São José dos Campos, propôs o seguinte desafio baseado na metodologia ágil Scrum. "Temos um problema para criação de promoções em um Ecommerce. Precisamos de uma solução inteligente onde, as mecânicas das promoções sejam feitas de forma flexível e de rápida atualização no sistema".
+A empresa MidAll situada no Parque Tecnológico de São José dos Campos; propôs como desafio o desenvolvimentom de uma solução para criação de promoções em um Ecommerce. Para qual exeigiu-se uma solução inteligente onde; as mecânicas das promoções fossem feitas de forma flexível e de rápida atualização no sistema.
 
 <h3 id="tecnologias-p3">Tecnologias Utilizadas</h3>
 
 ### **Banco de Dados**: Microsoft SQL Server
-Como requisitado pela Fatec, foi utilizado um **Banco de Dados** relacional para armazenar o conteúdo das tabelas, como a escolha do BD era opcional foi optado por utilizar o Microsoft SQL Server
+Como requisitado pela Fatec, foi utilizado um **Banco de Dados** relacional para armazenar o conteúdo das tabelas; Como a escolha do BD era opcional foi optado por utilizar o Microsoft SQL Server.
 
 ### **Back-end**: Java e Spring Boot
-Para relização da API foi utilizado a linguagem Java (Outro requisito Fatec) e o framework rest Spring Boot 
+Para relização da API foi utilizado a linguagem Java (outro requisito Fatec) e o framework rest Spring Boot.
 
 ### **Front-end**: Angular, CSS, Bootstrap
-Para construção da interface foi utilizado o Angular, por alguns motivos, ele é um framework que suporta typescript, e segundo a definição da documentação oficial ele oferece todos os recursos do JavaScript e uma camada adicional sobre eles: o sistema de tipos TypeScript [\[8\]](#referências), também foi utilizado o Angular pois um do requisitos do cliente era atualização simultânea de dados, o que é possíbel fazer facilmente com Angular utilizando o recurso two-way data binding [\[9\]](#referências).
+Para construção da interface foi utilizado o Angular, que consiste em um framework que suporta typescript e, segundo a definição da documentação oficial, este framework oferece todos os recursos do JavaScript e uma camada adicional sobre eles: o sistema de tipos TypeScript [\[8\]](#referências); também foi utilizado o Angular pois um do requisitos do cliente era atualização simultânea de dados, o que é possíbel fazer facilmente com Angular utilizando o recurso two-way data binding [\[9\]](#referências).
 
 <h3 id="ferramentas-p3">Ferramentas: IntelliJ IDEA, Visual Studio Code, GitHub e Figma</h3>
 
@@ -663,7 +663,7 @@ Para construção da interface foi utilizado o Angular, por alguns motivos, ele 
     ```
     </details>
 
-    A camada de serviço é reponsável pelas regras de negócio da aplicação, ou seja, o que define o que a aplicação faz, o comportamento dela [\[11\]](#referências), no exemplo acima são feitos métodos de pesquisa, de inserção, de deleção e update, totalmente personalizados para a entidade em questão, no caso a entidade ```Category```. É importante separar os Controllers dos Services, não apenas por questão de organização, mas para garantir eficiência também, não é recomendado fazer validações e regras de negócio nos controllers, é necessário definir serviços [\[12\]](#referências).
+    A camada de serviço é reponsável pelas regras de negócio da aplicação, ou seja, define o que a aplicação faz, o comportamento dela [\[11\]](#referências), no códgo apresentado acima são feitos métodos de pesquisa, de inserção, de deleção e update, totalmente personalizados para a entidade em questão, no caso a entidade ```Category```. É importante separar os Controllers dos Services, não apenas por questão de organização, mas para garantir eficiência, além de não ser recomendado fazer validações e regras de negócio nos controllers, é necessário definir serviços [\[12\]](#referências).
 
 - <h4 id="modelo-p3">Modelo Básico de Dados</h4>
 
@@ -756,7 +756,7 @@ Para construção da interface foi utilizado o Angular, por alguns motivos, ele 
     ```
     </details>
 
-    A classe acima, define algumas configurações web para o módulo CORS, definindo quais urls poderam realizar requisições para o Back-end. Esse código é necessário para configurar e habilitar o filtro CORS na aplicação Spring Boot. O filtro CORS é usado para controlar quais origens, cabeçalhos e métodos HTTP são permitidos em solicitações feitas a partir de um domínio diferente. Essa configuração é especialmente útil em aplicações que fornecem uma API RESTful e precisam permitir solicitações CORS de clientes em diferentes origens [\[14\]](#referências).
+    A classe acima, define algumas configurações web para o módulo CORS, definindo quais urls podem realizar requisições para o Back-end. Esse código é necessário para configurar e habilitar o filtro CORS na aplicação Spring Boot. O filtro CORS é usado para controlar quais origens, cabeçalhos e métodos HTTP são permitidos em solicitações feitas a partir de um domínio diferente. Estas configurações são especialmente úteis em aplicações que fornecem uma API RESTful e precisam permitir solicitações CORS de clientes em diferentes origens [\[14\]](#referências).
 
 - <h4 id="integração-p3">Integração do Front-end e Back-end Utilizando Typescript</h4>
 
@@ -818,7 +818,7 @@ Para construção da interface foi utilizado o Angular, por alguns motivos, ele 
     ```
     </details>
 
-    Foi realizado a integração do serviço em Angular com o Back-end em Spring Boot, através do uso dos services do angular, onde são criados métodos que enviam objetos para as URLs definidas no Back-end de acordo com as regras pre-definidas utilizando o módulo HTTP do Angular [\[15\]](#referências).
+    Para que houvesse comunicação entre os projetos Front-end e Back-end foi realizado a integração destes serviços através do uso dos recursos do angular, onde são criados métodos que enviam objetos para as URLs definidas no Back-end de acordo com as regras pre-definidas utilizando o módulo HTTP do Angular [\[15\]](#referências).
 
 - <h4 id="desenvolvimento-p3">Desenvolvimento de Telas Responsivas</h4>
 
@@ -913,7 +913,7 @@ Para construção da interface foi utilizado o Angular, por alguns motivos, ele 
 
 <h3 id="aprendizados-p3">Aprendizados Efetivos</h3>
 
-Durante esse projeto, o autor ainda não tinha muita noção de como funciona o conjunto do Back-end e Front-end, como utilizar os protocolos de comunicação entre serviços feitos em diferentes linguagens, nem quais configurações devem ser feitas tanto no back-end quanto no front-end para garantir uma comunicação controlada e esperada. Nesse contexto, os aprendizados efetivos foram: integração de microservices, modularização de configurações para inicialização do TomCat e estabelecimento de protocolos de comunicação e exposição adequada da aplicação como um todo para a web. Reposítório do projeto PromoAll presente no GitHub através do seguinte [link](https://github.com/VictorCavichioli/doc-docker-MidAll).
+Durante esse projeto, o autor deste trabalho ainda não tinha muita noção do funcionamento conjunto do Back-end e Front-end, como utilizar os protocolos de comunicação entre serviços feitos em diferentes linguagens, nem quais configurações deveriam ser feitas tanto no back-end quanto no front-end para garantir uma comunicação controlada e esperada. Nesse contexto, os aprendizados efetivos envolveram a: integração de microservices, modularização de configurações para inicialização do TomCat e estabelecimento de protocolos de comunicação e exposição adequada da aplicação como um todo para a web. O reposítório do projeto PromoAll está presente no GitHub através do seguinte [link](https://github.com/VictorCavichioli/doc-docker-MidAll).
 
 </details></h4>
 
@@ -925,7 +925,7 @@ Subter
 
 <h3 id="objetivo-p4">Objetivo do Projeto</h3>
 
-Existe um desafio de sincronização dos dados administrativos, financeiros e operacionais relacionados aos serviços prestados pela empresa. A falta de organização dos dados resulta em lentidão no atendimento de chamados e na interpretação confusa dos indicadores comerciais e financeiros.
+E empresa parceora declarou que existia um desafio de sincronização dos dados administrativos, financeiros e operacionais relacionados aos serviços prestados pela empresa. A falta de organização dos dados resultava em lentidão no atendimento de chamados e na interpretação confusa dos indicadores comerciais e financeiros. Portanto, o objetivo deste projeto era desenvolver uma aplicação ERP que sincronizasse este dados e disponibilizasse visualização através de uma interface gráfica.
 
 - Requisitos Funcionais
 
@@ -1018,7 +1018,7 @@ Para construção da interface foi utilizado o VueJs.
 
 - <h4 id="modelo-p4">Modelo Básico de Dados</h4>
 
-    Foi realizado o modelo básico de dados, que seria as classes que representam entidades, utilizando como guia a modelagem feita por outro membro do time.
+    Foi realizado o modelo básico de dados, que seria as classes que representam entidades; utilizando como guia a modelagem feita por outro membro do time.
 
     <details><summary>Chamado Entity</summary>
 
@@ -1101,7 +1101,7 @@ Para construção da interface foi utilizado o VueJs.
 
 - <h4 id="configuração-p4">Módulo de Configurações da Aplicação</h4>
 
-    Houve a necessidade de um módulo responsável por realizar configurações antes da inicialização do TomCat, por isso foi desenvolvido algumas funções que tinham características específicas, como por exemplo a ```WebConfig```, quais URLs poderiam estar acessando o Back-end, quais métodos seriam permitidos e assim por diante, com o intuito de não ter de repetir código em todos os endpoints que fossem implementados.
+    Houve a necessidade de um módulo responsável por realizar configurações antes da inicialização do TomCat, para isto foram desenvolvidas algumas funções que tinham características específicas, como por exemplo a ```WebConfig```, que definia quais URLs poderiam estar acessando o Back-end, quais métodos seriam permitidos e assim por diante, com o intuito de não ter de repetir código em todos os endpoints que fossem implementados.
 
     <details><summary>Configurações de CORS</summary>
 
@@ -2093,7 +2093,7 @@ Para acessar a playlist do projeto, clique [aqui](https://www.youtube.com/watch?
 <h3 id="parceiro-p6">Parceiro Acadêmico</h3>
 Visiona
 
-Resultante de uma iniciativa inédita do Governo Brasileiro para incentivar a criação de uma empresa integradora da indústria espacial, a Visiona é uma joint venture entre a Embraer Defesa & Segurança e a Telebras.
+A empresa Visiona propôs o desafio de desenvolver uma aplicação para visualização de dados do ProAgro, através da modelagem de um banco de dados geoespacial, para solucionar problemas com a pesquisa e visualização destes dados. Além disto, através da concepção de um modelo de Machine Learning, realizar predição baseado nos dados de série temporal.
 
 <h3 id="objetivo-p6">Objetivo do Projeto</h3>
 
@@ -2332,8 +2332,13 @@ CI/CD: GitHub Actions
         </details>
 
 <h3 id="aprendizados-p6">Aprendizados Efetivos</h3>
+Durante o desenvolvimento desse projeto o autor deste trabalho tinha dúvidas relacionadas a gerenciamento de storage utilizando a tecnologia kubernetes, como utilizar bancos não relacionas em memória, como o Redis, para criar camadas de cache e aumentar performance da aplicação, além da criação de um modelo não relacional para armazenamento de dados de predição. Todas essas dúvidas foram sanadas durante o desenvolvimento, possibilitando uma base mais sólida para futuros trabalhos. O repositório do projeto POP está disponível no GitHub através do seguinte [link](https://github.com/DolphinDatabase/POP).
 
 <h3 id="demo-p6">Demonstração das Funcionalidades</h3>
+
+Para acessar a playlist do projeto, clique [aqui](https://www.youtube.com/watch?v=-L3xjt2aHUY&list=PLUOBqJKbljZvDd8dOXBFlEHLtTTWCrRLk):
+
+[<img src="https://user-images.githubusercontent.com/74321890/228991716-687c07f9-3b6a-4cea-b855-677b51b2b20a.svg" width="60%" height="60%">](https://www.youtube.com/watch?v=OUy-XOH-k6o&list=PLUOBqJKbljZvDd8dOXBFlEHLtTTWCrRLk&index=3 "POP vídeo Demonstração")
 
 </details></h4>
 
