@@ -111,30 +111,15 @@ Olá, seja bem-vindo. Me chamo Victor Cavichioli, sou estudante de **Banco de Da
   <img align="center" alt="THL-Kubernetes" height="30" width="40" src="https://raw.githubusercontent.com/devicons/devicon/master/icons/kubernetes/kubernetes-plain.svg">
 </div>
 
-### **Python**
+Durante o curso foi possível obter uma sólida experiência em Python, sendo esta linguagem a primeira incursão durante a graduação e atualmente desempenhando um papel central em minhas atuais responsabilidades como desenvolvedor. Além disto, a proficiência em Java, adquirida anteriormente durante atividades relacionadas a faturamento e projetos de API na Fatec, contribui significativamente para meu conjunto de habilidades, especialmente no contexto de REST APIs.
 
-Python foi a primeira linguagem estudada no primeiro semestre da graduação. Atualmente, como DevOps, as principais atribuições são realizadas utilizando Python, também pela Fatec. Um projeto anterior envolveu o desenvolvimento de um assistente virtual em Python. No trabalho, Python é utilizado para integrar outros serviços, realizar operações de verificação no cluster e no **banco de dados**.
+Em termos de tecnologias de contêineres, foi possível adquirir domínio tanto em Docker quanto em Kubernetes, compreendendo o valor do Docker na criação de ambientes isolados para aplicativos, simplificando implantações e reduzindo problemas de compatibilidade. Adicionalmente, destaca-se a importância do Kubernetes como uma ferramenta essencial para orquestração de contêineres, oferecendo implantações rápidas, alta disponibilidade e recursos avançados para gerenciamento eficiente de aplicativos críticos de negócios. Além disto, utilizando-se a tecnologia Helm como uma ferramenta de gerenciamento de pacotes para Kubernetes, simplica-se e automatiza-se implantações de aplicativos em contêineres.
 
-### **Java**
-Java foi a terceira linguagem de programação aprendida. Antes de trabalhar com Python, houve um envolvimento prévio na área de faturamento, onde muitos dos serviços foram desenvolvidos em Java utilizando Spring Boot. Além disso, os projetos de API na Fatec também foram desenvolvidos em Java. Essa experiência agrega muito valor quando se trata de Java, especialmente no contexto de REST APIs.
+Em relação a bancos de dados, foi desenvolvido uma expertise no Apache Cassandra, um banco de dados NoSQL distribuído, altamente escalável e tolerante a falhas. Obtendo benefícios através da arquitetura descentralizada e distribuída do Cassandra, tornando-o ideal para aplicações que demandam escalabilidade e disponibilidade, como serviços de mensagens, redes sociais e jogos online.
 
-### **Docker**
-Docker é uma plataforma de virtualização de aplicativos que permite criar, empacotar e executar aplicativos em um ambiente isolado, conhecido como contêiner. Isso ajuda a garantir que os aplicativos sejam executados da mesma maneira em diferentes sistemas operacionais e ambientes, o que simplifica o processo de implantação e reduz os problemas de compatibilidade. Além disso, o Docker permite que vários contêineres compartilhem recursos de hardware, como CPU e memória, sem interferir uns nos outros. Essa capacidade de isolamento e compartilhamento de recursos é crucial para a construção de aplicativos escaláveis, confiáveis e eficientes [\[1\]](#referências). 
+Além disso, aprendeu-se testes de software como uma prática essencial para garantir a qualidade, segurança e desempenho de aplicativos. A importância da diversidade de tipos de testes, desde funcionais até testes de segurança são necessarias para uma estratégia sólida para reduzir riscos e melhorar a eficiência de desenvolvimento.
 
-### **Kubernetes**
-Kubernetes é uma plataforma de orquestração de contêineres que automatiza a implantação, a escala e a gestão de aplicativos em contêineres. Ele permite que os usuários gerenciem e orquestrem contêineres em grande escala, em diferentes ambientes de infraestrutura, como data centers, nuvens públicas e privadas. Com o Kubernetes, os usuários podem implantar aplicativos rapidamente, com alta disponibilidade e resiliência, além de gerenciar o tráfego de rede e balanceamento de carga entre os contêineres. O Kubernetes também oferece recursos avançados, como implantações canário, atualizações automáticas e rollbacks de aplicativos, o que permite uma gestão mais eficiente e segura de aplicativos críticos de negócios. Em resumo, o Kubernetes é uma ferramenta essencial para construir e gerenciar aplicativos escaláveis e altamente disponíveis na era da nuvem [\[2\]](#referências).
-
-### **Helm**
-Helm é uma ferramenta de gerenciamento de pacotes para Kubernetes que ajuda a simplificar e automatizar a implantação de aplicativos em contêineres. Ele permite que os usuários definam e instalem pacotes de aplicativos, conhecidos como charts, em um cluster Kubernetes de maneira fácil e repetitiva. Helm também oferece recursos avançados, como a capacidade de atualizar, listar e remover charts, além de integrar-se com outras ferramentas de orquestração, como o Kubernetes Dashboard e o Terraform. Com Helm, os usuários podem padronizar e automatizar a implantação de aplicativos em diferentes ambientes, o que reduz o tempo e o esforço necessários para configurar e gerenciar um cluster Kubernetes. Em resumo, Helm é uma ferramenta importante para gerenciar a complexidade da implantação de aplicativos em Kubernetes, permitindo que os usuários se concentrem no desenvolvimento e na inovação de seus aplicativos [\[3\]](#referências).
-
-### **Apache Cassandra**
-Apache Cassandra é um banco de dados NoSQL distribuído, altamente escalável e tolerante a falhas. Ele foi projetado para gerenciar grandes volumes de dados estruturados em vários data centers e na nuvem, oferecendo alta disponibilidade e desempenho constante, mesmo em escala global. Cassandra usa uma arquitetura descentralizada e distribuída, com replicação de dados automática e consistência eventual, o que significa que os dados podem ser gravados e lidos em vários nós simultaneamente. Além disso, Cassandra oferece recursos avançados, como compressão de dados, suporte a transações ACID, e uma linguagem de consulta baseada em SQL, o CQL. Esses recursos tornam o Cassandra uma ferramenta importante para aplicativos que exigem escalabilidade e disponibilidade, como serviços de mensagens, mídias sociais, jogos online e IoT [\[4\]](#referências).
-
-### **Testes de software**
-Testes de software são uma prática essencial no desenvolvimento de aplicativos que ajudam a garantir que os aplicativos atendam aos requisitos de qualidade, segurança e desempenho. Eles incluem uma série de atividades que vão desde a identificação de requisitos de teste, planejamento de testes, design de casos de teste, execução de testes, avaliação de resultados e relatórios de bugs. Existem vários tipos de testes de software, incluindo testes funcionais, testes de integração, testes de desempenho, testes de segurança e testes de aceitação do usuário, entre outros. A adoção de uma estratégia de teste sólida pode ajudar a reduzir o risco de bugs e falhas no aplicativo, melhorar a eficiência do desenvolvimento e aumentar a satisfação do usuário final [\[5\]](#referências).
-
-### **Sistemas Distribuídos**
-Sistemas distribuídos são sistemas de software que consistem em múltiplos componentes independentes, que podem ser executados em diferentes computadores e se comunicam entre si para realizar uma tarefa específica. Eles são projetados para lidar com grandes volumes de dados, lidar com falhas e serem escaláveis, permitindo que os aplicativos sejam distribuídos em várias máquinas para aumentar a capacidade de processamento. Alguns exemplos de sistemas distribuídos incluem aplicativos de comércio eletrônico, redes sociais, sistemas bancários e de gerenciamento de estoque. A construção de sistemas distribuídos requer uma compreensão profunda de arquiteturas de software, protocolos de rede, segurança, gerenciamento de recursos e balanceamento de carga, entre outros conceitos. Além disso, os sistemas distribuídos podem ser difíceis de depurar e testar, tornando a construção de aplicativos escaláveis e tolerantes a falhas um desafio para os desenvolvedores [\[6\]](#referências).
+Por fim, por causa de desafios e complexidades associados a sistemas distribuídos. Foi necessário desenvolver uma compreensão profunda de arquiteturas de software, protocolos de rede, segurança e outros conceitos para construir aplicativos escaláveis e tolerantes a falhas em ambientes distribuídos. Essa experiência é crucial para lidar com sistemas complexos, como aplicativos de comércio eletrônico, redes sociais e sistemas bancários.
 
 </details></h4>
 
@@ -174,6 +159,15 @@ Para relização da API foi utilizado a linguagem Python, com algumas biblioteca
 <h3 id="ferranentas-p1">Ferramentas PyCharm, Visual Studio Code, GitHub e Figma</h3>
 
 <h3 id="contribuições-p1">Contribuições pessoais</h3>
+O autor participou ativamente do desenvolvimento de funções core do sistema, como reconhecimento de voz, síntese de texto em áudio, utilização de microfone para captura de áudio, cotações, padronização de retornos, tratamento de erros e web scraping. Dentre os desafios deste primeiro projeto destaca-se a necessidade de estudos intensos dado ao fato de que o autor não tinha experiências prévias com desenvolvimento e por causa deste comprometimento, foi possível ter um papel importante no time, liderando outros alunos e ajudando a criar tarefas e distribuí-las.
+
+Além disso, a persistência do autor em seus estudos o levou a ser requisitado por outras equipes para que pudesse tirar dúvidas e ajuda-las a entender alguns requisitos do projeto.
+
+Por fim, as principais skills e fragmentos de código desenvolvidos serão demonstrados e explicados abaixo:
+
+**Hard Skills Efetivamente Desenvolvidas**: Python, Scrum
+
+**Soft Skills Efetivamente Desenvolvidas**: Autonomia, proatividade, liderança e persistência.
 
 - <h4 id="funções-voz-p1">Funções que reconhecem voz e transformam em texto</h4>
 
@@ -191,7 +185,7 @@ Para relização da API foi utilizado a linguagem Python, com algumas biblioteca
     do google, além disso, atráves da da variável booleana ```imprimir``` é possíbel definir se a mensagem será printada
     nos logs do serviço. Por ser uma função genérica, é utilizada em várias partes do produto.
 
-    <details><summary>Função assistente</summary>
+    <details open><summary>Função assistente</summary>
 
     ```python
     def assistente():
@@ -219,7 +213,7 @@ Para relização da API foi utilizado a linguagem Python, com algumas biblioteca
     A função ```assistente()``` é a matriz do produto, onde é captada a informação dita pelo cliente utilizando o microfone, no caso 
     a primeira parte recebe o nome, que será armazenada na variável *user_name*, que é utilizada em toda a instância de sessão.
 
-    <details><summary>Recognizer</summary>
+    <details open><summary>Recognizer</summary>
 
     ```python
     rec = sr.Recognizer()
@@ -266,7 +260,7 @@ Para relização da API foi utilizado a linguagem Python, com algumas biblioteca
 
 - <h4 id="requisições-p1">Requisição e interpretação de dados vindos da web</h4>
 
-    <details><summary>Função cotação</summary>
+    <details open><summary>Função cotação</summary>
 
     ```python
     requisição = requests.get('https://economia.awesomeapi.com.br/all')
@@ -294,7 +288,7 @@ Para relização da API foi utilizado a linguagem Python, com algumas biblioteca
 
 - <h4 id="tratamento-p1">Tratamento de erro</h4>
 
-    <details><summary>Padrões de retorno</summary>
+    <details open><summary>Padrões de retorno</summary>
 
     ```python
     lista_erros = [
@@ -371,10 +365,20 @@ Para relização da API foi utilizado a linguagem Java, com algumas bibliotecas;
 <h3 id="ferramentas-p2">Ferramentas: Intellij, Eclipse, Visual Studio Code, GitHub e Figma</h3>
 
 <h3 id="contribuições-p2">Contribuições pessoais</h3>
+Atuando como desenvolvedor, o autor deste trabalho participou ativamente do desenvolvimento de funções core do sistema, como tratamento de erros, leitura de dados, coleta de métricas e desenvolvimento de interface. Dentre os desafios deste primeiro projeto destaca-se a necessidade de estudos intensos pois durante o desenvolvimento da primeira Sprint, foi percebido certa dificuldade de adequação com a linguagem Java dado ao fato de que o autor não tinha experiências prévias com desenvolvimento utilizando esta linguagem e por causa deste comprometimento a partir da segunda sprint foi possível ter uma contribuição mais assertiva e uma entrega de valor adquada para o trabalho. 
+
+Além disso, a necessidade de compreenssão do funcionamento de Sistemas Gerenciadores de Bancos de Dados (SGBDs) para coleta e armazanamento de métricas era fundamental para concepção do projeto Vigilant e esta compreenssão foi difícil de se alcançar logo na primeira Sprint; Entretanto após a compreenssão foi possível ter um papel mais ativo no time, liderando o desenvolvimento de algumas tarefas.
+
+Por fim, as principais skills e fragmentos de código desenvolvidos serão demonstrados e explicados abaixo:
+
+
+**Hard Skills Efetivamente Desenvolvidas**: Java, Scrum
+
+**Soft Skills Efetivamente Desenvolvidas**: Autonomia, proatividade, liderança e persistência.
 
 - <h4 id="tratamento-p2">Tratamento de Erros</h4>
 
-    <details><summary>SQLRunTimeException</summary>
+    <details open><summary>SQLRunTimeException</summary>
 
     ```java
     public class SQLRunTimeException extends RuntimeException {
@@ -412,7 +416,7 @@ Para relização da API foi utilizado a linguagem Java, com algumas bibliotecas;
 
 - <h4 id="leitura-p2">Leitura de Dados Passados pelo Usuário</h4>
 
-    <details><summary>Leitor</summary>
+    <details open><summary>Leitor</summary>
 
     ```java
     public class Leitor implements AutoCloseable {
@@ -452,7 +456,7 @@ Para relização da API foi utilizado a linguagem Java, com algumas bibliotecas;
 
 - <h4 id="metrica-p2">Métrica de Tamanho de Banco de Dados</h4>
 
-    <details><summary>Obter tamanho do banco</summary>
+    <details open><summary>Obter tamanho do banco</summary>
 
     ```java
     @SuppressWarnings("unused")
@@ -472,7 +476,7 @@ Para relização da API foi utilizado a linguagem Java, com algumas bibliotecas;
     Para a análise de algumas métricas; foi feita a implementação do método ```tamanhoBancos()``` que retorna uma formatação com o
     nome, tamanho e dados do banco.
 
-    <details><summary>Coleta de métricas</summary>
+    <details open><summary>Coleta de métricas</summary>
 
     ```java
     public ArrayList<TamanhoBancos> TamanhoBanco() {
@@ -544,9 +548,19 @@ Para construção da interface foi utilizado o Angular, que consiste em um frame
 
 <h3 id="contribuições-p3">Contribuições pessoais</h3>
 
+O autor participou ativamente do desenvolvimento de funcionalidades core do sistema, como exposição de endpoints de tabelas, criação de services, rest controllers, modelo entidade-relacionamento, configurações de aplicação e CORS (Cross-origin resource sharing), integração de Front-end e Back-end utilizando Typescript e no desenvolvendo de interfaces; este projeto destaca-se por ser o primeiro em que houve dois sub-sistemas, um Back-end responsável realizar conexões com um banco de dados e armazenar as regras de negócio desenvolvidas e, um Front-end reponsável por expor o sistema para o cliente através de uma interface agradável e intuitiva, pela qual o cliente podia realizar todas as operações necessárias.
+
+Neste projeto o autor teve ium papel mais ativo na liderança do desenvolvimento e na integração dos dois sub-sistemas, pois já estava trabalhando com as tecnologias utilizas e tinha a experiẽncia necessária para escrever as tarefas e guiar alunos com menos experiência para poderem participar. Entre os principais desafios enfrentados destaca-se o desenvolvimento do motor de promoções, que foi feito em typescript no sub-sistema Front-end, onde o autor passou por dificuldades na compreenssão, que no final foram sanadas com ajuda de outros desenvolvedores e o projeto foi aprovado pelo cliente.
+
+Por fim, as principais skills e fragmentos de código desenvolvidos serão demonstrados e explicados abaixo:
+
+**Hard Skills Efetivamente Desenvolvidas**: Java, Scrum, Spring Boot, Angular, Typescript
+
+**Soft Skills Efetivamente Desenvolvidas**: Autonomia, proatividade, planejamento, liderança e persistência
+
 - <h4 id="exposição-p3">Exposição dos Endpoints das Tabelas e Camada de Serviço</h4>
 
-    <details><summary>CategoryResource</summary>
+    <details open><summary>CategoryResource</summary>
 
     ```java
     @RestController
@@ -605,7 +619,7 @@ Para construção da interface foi utilizado o Angular, que consiste em um frame
 
     Foi realizada a exposição de alguns endpoins baseado no modelo básico de dados. Como é possível ver, definindo a classe como um *RestController* e mapeando ela para uma URL desejada estaremos expondo aquele ponto de acesso quando é iniciado o TomCat, realizando a exposição da entidade para que seja acessada via a uma URL na web, com o domínio que requerido [\[10\]](#referências). Nesse caso, tudo que é relacionado a entidade ```Category``` terá seu ponto de acesso nesse endpoint definido, por ele é realizado operações desejadas e as devidas manipulações utilizando os métodos HTTPs para que sejam feitas operações no **Banco de Dados**, na tabela ```Category```.
 
-    <details><summary>CategoryService</summary>
+    <details open><summary>CategoryService</summary>
 
     ```java
     @Service
@@ -669,7 +683,7 @@ Para construção da interface foi utilizado o Angular, que consiste em um frame
 
     Foi produzido o modelo básico de dados, que seriam as classes que representam entidades:
 
-    <details><summary>Product Entity</summary>
+    <details open><summary>Product Entity</summary>
 
     ```java
     @Entity
@@ -722,7 +736,7 @@ Para construção da interface foi utilizado o Angular, que consiste em um frame
 
     Houve a necessidade de um módulo responsável por realizar configurações antes da inicialização do TomCat, por isso foi desenvolvido algumas funções que tinham características específicas, como por exemplo a ```WebConfig```, quais URLs poderiam estar acessando o Back-end, quais métodos seriam permitidos e assim por diante, com o intuito de não ter de repetir código em todos os endpoints que fossem implementados.
 
-    <details><summary>Configurações de CORS</summary>
+    <details open><summary>Configurações de CORS</summary>
 
     ```java
     @Configuration
@@ -760,7 +774,7 @@ Para construção da interface foi utilizado o Angular, que consiste em um frame
 
 - <h4 id="integração-p3">Integração do Front-end e Back-end Utilizando Typescript</h4>
 
-    <details><summary>ProductService</summary>
+    <details open><summary>ProductService</summary>
 
     ```typescript
     @Injectable({
@@ -822,7 +836,7 @@ Para construção da interface foi utilizado o Angular, que consiste em um frame
 
 - <h4 id="desenvolvimento-p3">Desenvolvimento de Telas Responsivas</h4>
 
-    <details><summary>ProductForm</summary>
+    <details open><summary>ProductForm</summary>
 
     ```html
     <div class="container">
@@ -925,7 +939,7 @@ Subter
 
 <h3 id="objetivo-p4">Objetivo do Projeto</h3>
 
-E empresa parceora declarou que existia um desafio de sincronização dos dados administrativos, financeiros e operacionais relacionados aos serviços prestados pela empresa. A falta de organização dos dados resultava em lentidão no atendimento de chamados e na interpretação confusa dos indicadores comerciais e financeiros. Portanto, o objetivo deste projeto era desenvolver uma aplicação ERP que sincronizasse este dados e disponibilizasse visualização através de uma interface gráfica.
+A empresa parceira Subter declarou que existia um desafio de sincronização dos dados administrativos, financeiros e operacionais relacionados aos serviços prestados pela empresa. A falta de organização dos dados resultava em lentidão no atendimento de chamados e na interpretação confusa dos indicadores comerciais e financeiros. Portanto, o objetivo deste projeto era desenvolver uma aplicação ERP que sincronizasse este dados e disponibilizasse visualização através de uma interface gráfica.
 
 - Requisitos Funcionais
 
@@ -956,10 +970,17 @@ Para construção da interface foi utilizado o VueJs.
 <h3 id="ferramentas-p4">Ferramentas: IntelliJ IDEA, Docker, Visual Studio Code, GitHub e Figma</h3>
 
 <h3 id="contribuições-p4">Contribuições pessoais</h3>
+O autor participou ativamente do desenvolvimento de funcionalidades core do sistema, como exposição de endpoints de tabelas, criação de services, rest controllers, modelo entidade-relacionamento, configurações de aplicação e CORS (Cross-origin resource sharing), definições de níveis de acesso com Spring Security, filtro de dados com JsonView e conteinerização de aplicações utilizando Docker.; este projeto teve dois sub-sistemas, um Back-end responsável realizar conexões com um banco de dados e armazenar as regras de negócio desenvolvidas e, um Front-end reponsável por expor o sistema para o cliente através de uma interface agradável e intuitiva, pela qual o cliente podia realizar todas as operações necessárias.
+
+Neste projeto o autor teve um papel ativo na liderança do desenvolvimento e na integração dos dois sub-sistemas, pois já estava trabalhando com as tecnologias utilizas e tinha a experiẽncia necessária para escrever as tarefas e guiar alunos com menos experiência para poderem participar. Entre os principais desafios enfrentados destaca-se o desenvolvimento do modelo se segurança da aplicação, que foi feito no sub-sistema Back-end utilizando Spring Security e tokens JWT (Json Web Token) eque eram enviados para o sub-sistema Front-end com  a validação de quais níveis de acesso um usuário tinha, onde o autor passou por dificuldades na compreenssão, que no final foram sanadas com ajuda de outros desenvolvedores e o projeto foi aprovado pelo cliente.
+
+Além disso, o autor adaptou os dois sub-sistemas para funcionarem em contêineres utilizando a tecnologia Docker, vista e implementadas pela primeira vez até aquele momento.
+
+Por fim, as principais skills e fragmentos de código desenvolvidos serão demonstrados e explicados abaixo:
 
 - <h4 id="exposição-p4">Exposição dos Endpoints das Tabelas e Camada de Serviço</h4>
 
-    <details><summary>ChamadoController</summary>
+    <details open><summary>ChamadoController</summary>
 
     ```java
     @RestController
@@ -1020,7 +1041,7 @@ Para construção da interface foi utilizado o VueJs.
 
     Foi realizado o modelo básico de dados, que seria as classes que representam entidades; utilizando como guia a modelagem feita por outro membro do time.
 
-    <details><summary>Chamado Entity</summary>
+    <details open><summary>Chamado Entity</summary>
 
     ```java
     @Entity(name = "CHAMADO")
@@ -1103,7 +1124,7 @@ Para construção da interface foi utilizado o VueJs.
 
     Houve a necessidade de um módulo responsável por realizar configurações antes da inicialização do TomCat, para isto foram desenvolvidas algumas funções que tinham características específicas, como por exemplo a ```WebConfig```, que definia quais URLs poderiam estar acessando o Back-end, quais métodos seriam permitidos e assim por diante, com o intuito de não ter de repetir código em todos os endpoints que fossem implementados.
 
-    <details><summary>Configurações de CORS</summary>
+    <details open><summary>Configurações de CORS</summary>
 
     ```java
     @Configuration
@@ -1142,7 +1163,7 @@ Para construção da interface foi utilizado o VueJs.
 
 - <h4 id="security-p4">Security</h4>
 
-    <details><summary>JWTAuthenticationFilter</summary>
+    <details open><summary>JWTAuthenticationFilter</summary>
 
     ```java
     @Slf4j
@@ -1198,7 +1219,7 @@ Para construção da interface foi utilizado o VueJs.
 
     Se as credenciais do usuário forem validadas com sucesso, o método **successfulAuthentication()** é chamado. Nesse método, um token JWT é criado usando a biblioteca java-jwt. O token contém o nome de usuário, uma data de expiração, um emissor e as permissões do usuário (também chamadas de funções). O token é então adicionado ao objeto Map e enviado como uma resposta HTTP com um status de 200 [\[16\]](#referências).
 
-    <details><summary>JWTAuthorizationFilter</summary>
+    <details open><summary>JWTAuthorizationFilter</summary>
 
     ```java
     public class JWTAuthorizationFilter extends OncePerRequestFilter {
@@ -1250,7 +1271,7 @@ Para construção da interface foi utilizado o VueJs.
 
     Se o token JWT for inválido, o filtro retorna um erro 403 Forbidden com uma mensagem de erro JSON no corpo da resposta.
 
-    <details><summary>SecurityConfig</summary>
+    <details open><summary>SecurityConfig</summary>
 
     ```java
     @Configuration
@@ -1336,7 +1357,7 @@ Para construção da interface foi utilizado o VueJs.
 
     Os beans de **BCryptPasswordEncoder** e **AuthenticationManager** são configurados e disponíveis para uso no contexto da aplicação.
 
-    <details><summary>ApplicationUserDetails</summary>
+    <details open><summary>ApplicationUserDetails</summary>
 
     ```java
     @Service @RequiredArgsConstructor @Transactional @Slf4j
@@ -1381,9 +1402,9 @@ Para construção da interface foi utilizado o VueJs.
 
 - <h4 id="jsonview-p4">JsonView</h4>
 
-    Quando são feitas classes relacionadas, como Empresa e Serviço, é comum surgir a necessidade de visualizar esses dados, tanto em uma tabela quanto em outra. No entanto, surge um desafio quando é necessário visualizar dados da empresa juntamente com os serviços relacionados a ela. Se for utilizado uma operação de GET sem configurações adicionais, a requisição entrará em loop devido ao relacionamento e resultará em um erro. Para contornar esse problema, foi optado por utilizar um componente JsonIgnore em um dos atributos de relacionamento da classe, evitando o loop, entretanto ainda houve a dificuldade de não conseguir visualizar esses dados em conjunto. Portanto, foi decidido utilizar o JsonView para resolver esse problema.
+    Quando são feitas classes relacionadas, como Empresa e Serviço, é comum surgir a necessidade de visualizar estes dados, tanto em uma tabela quanto em outra. No entanto, surge um desafio quando é necessário visualizar dados da empresa juntamente com os serviços relacionados a ela. Se for utilizado uma operação de GET sem configurações adicionais, a requisição entrará em loop devido ao relacionamento e resultará em um erro. Para contornar este problema, foi optado por utilizar um componente JsonIgnore em um dos atributos de relacionamento da classe, evitando o loop, entretanto ainda houve a dificuldade de não conseguir visualizar esses dados em conjunto. Portanto, foi decidido imprementar um JsonView para resolver este problema.
 
-    <details><summary>JsonView</summary>
+    <details open><summary>JsonView</summary>
 
     ```java
     public class View {
@@ -1413,7 +1434,7 @@ Para construção da interface foi utilizado o VueJs.
     Essa classe é a referência pro JsonView, cada método representa a abstração que será usada como View para cada tabela,
     e cada atributo da entidade recebera uma anotação para o JsonView respectivo [\[20\]](#referências).
 
-    <details><summary>Usuario Entity</summary>
+    <details open><summary>Usuario Entity</summary>
 
     ```java
     @Entity(name = "USUARIO")
@@ -1506,15 +1527,26 @@ O objetivo é criar uma aplicação orquestradora de transferência automática 
 <img src="https://img.shields.io/badge/-GitHub%20Actions-2088FF?logo=GitHub-Actions&logoColor=white&style=for-the-badge" alt="badge">
 <img src="https://img.shields.io/badge/-Kubernetes-326CE5?logo=Kubernetes&logoColor=white&style=for-the-badge" alt="badge">
 
-<h3 id="ferramentos-p5">Ferramentas</h3>
+<h3 id="ferramentas-p5">Ferramentas: IntelliJ IDEA, Docker, Visual Studio Code, GitHub e Figma</h3>
 
 <h3 id="contribuições-p5">Contribuições pessoais</h3>
+O autor participou ativamente do desenvolvimento de funcionalidades core do sistema, como Serviço do Google Drive, padronização de retornos, configurações de erros, teste de software (Unitários e de Integração), conteinerização de aplicações utilizando Docker, configuração de pipelines de teste e de implantação utilizando GitHub Actions, implantação de cluster Kubernetes utilizando AKS (Azure Kubernetes Service), criação de manuais de desenvolvimento para utilização do K3D (Kubernetes em Container) para testes, criação de Deployments, StatefulSets, Services e escalonadores.
+
+Dentre os desafios deste primeiro projeto destaca-se a necessidade de estudos intensos dado ao fato de que o autor não tinha experiências prévias com desenvolvimento de helm charts e a usabilidade de um Azure Kubernetes Service, que foi utilizado para criar um cluster kubernetes para utilização e testes e por causa do comprometimento o autor se destacou na posição de DevOps, liderando outros alunos e ajudando a criar tarefas e distribuí-las.
+
+Além disto, destaca-se a liderança na concepção de testes de software, escrevendo unit-tests e integration-test e charging-tests, além do planejamento dos testes de outras funcionalidades.
+
+Por fim, as principais skills e fragmentos de código desenvolvidos serão demonstrados e explicados abaixo:
+
+**Hard Skills Efetivamente Desenvolvidas**: Python, Flask, Kubernetes, Helm, AKS, Scrum, VueJS, Javascript.
+
+**Soft Skills Efetivamente Desenvolvidas**: Autonomia, proatividade, planejamento, liderança e persistência.
 
 - <h4 id="google-p5">Google Drive API</h4>
 
     - <h5 id="download-p5">Download</h5>
 
-        <details><summary>Fazer Download de Arquivo</summary>
+        <details open><summary>Fazer Download de Arquivo</summary>
 
         ```python
         def download_file(file_id, file_name, token):
@@ -1548,7 +1580,7 @@ O objetivo é criar uma aplicação orquestradora de transferência automática 
 
     - <h5 id="upload-p5">Upload</h5>
 
-        <details><summary>Fazer Upload de Arquivo</summary>
+        <details open><summary>Fazer Upload de Arquivo</summary>
 
         ```python
         def upload_file(file_name, token, origin):
@@ -1587,11 +1619,11 @@ O objetivo é criar uma aplicação orquestradora de transferência automática 
 
         Essa função Python é responsável pelo upload de um arquivo para o Google Drive. Ela recebe como entrada o nome do arquivo, o token de autorização e o diretório de origem do arquivo. A função define o título, o tipo MIME e a descrição do arquivo e envia uma solicitação POST para criar um novo arquivo no Google Drive. Em seguida, ela extrai o ID do arquivo recém-criado e constrói uma URL de upload para enviar os dados do arquivo. A função abre o arquivo de origem e lê seu conteúdo em um objeto BytesIO. Em seguida, ela envia uma solicitação PUT com o objeto BytesIO como carga útil e o token de autorização no cabeçalho. Se o upload for bem-sucedido, a função retorna informações sobre o arquivo carregado, incluindo o nome, o tempo total de upload e o tamanho em bytes. A função também exclui o arquivo de origem após o upload. Se ocorrer um erro, a função retorna uma mensagem de erro JSON com um código de status 500.
 
-        </details>
+        </details open>
     
     - <h5 id="list-p5">Listar Arquivos</h5>
 
-        <details><summary>Listar todos os arquivos</summary>
+        <details open><summary>Listar todos os arquivos</summary>
 
         ```python
         def list_files():
@@ -1617,7 +1649,7 @@ O objetivo é criar uma aplicação orquestradora de transferência automática 
 
         </details>
 
-        <details><summary>Listar todas as pastas ativas no root</summary>
+        <details open><summary>Listar todas as pastas ativas no root</summary>
 
         ```python
         def list_folders():
@@ -1682,7 +1714,7 @@ O objetivo é criar uma aplicação orquestradora de transferência automática 
 
     - <h5 id="ts-p5">Testes de Software</h5>
 
-        <details><summary>test_list_files_valid_token</summary>
+        <details open><summary>test_list_files_valid_token</summary>
 
         ```python
         @mock.patch("requests.get")
@@ -1708,7 +1740,7 @@ O objetivo é criar uma aplicação orquestradora de transferência automática 
 
         </details>
         
-        <details><summary>test_list_files_invalid_token</summary>
+        <details open><summary>test_list_files_invalid_token</summary>
 
         ```python
         def test_list_files_invalid_token():
@@ -1721,7 +1753,7 @@ O objetivo é criar uma aplicação orquestradora de transferência automática 
 
         </details>
 
-        <details><summary>test_download_file</summary>
+        <details open><summary>test_download_file</summary>
 
         ```python
         @mock.patch("requests.get")
@@ -1751,7 +1783,7 @@ O objetivo é criar uma aplicação orquestradora de transferência automática 
 
         </details>
 
-        <details><summary>test_upload_file</summary>
+        <details open><summary>test_upload_file</summary>
 
         ```python
         @mock.patch("requests.post")
@@ -1789,7 +1821,7 @@ O objetivo é criar uma aplicação orquestradora de transferência automática 
 
         </details>
 
-        <details><summary>test_autoscale.py</summary>
+        <details open><summary>test_autoscale.py</summary>
 
         ```python
         CHART_DIR = "cloudin-midall"
@@ -1871,7 +1903,7 @@ O objetivo é criar uma aplicação orquestradora de transferência automática 
 
 - <h4 id="cd-p5">Continuous Delivery</h4>
     
-    <details id="k3d-p5"><summary>K3D Cluster</summary>
+    <details id="k3d-p5" open><summary>K3D Cluster</summary>
 
     Com o objetivo de criar um ambiente k8s para teste antes de utilizar o cluster AKS, foi realizado a configuração e a documentação do cluster k3d. K3d é uma ferramenta de linha de comando projetada para simplificar o gerenciamento de clusters de Kubernetes localmente. Ele permite criar, implantar e gerenciar clusters Kubernetes em seu ambiente de desenvolvimento ou teste. Com o K3d, você pode provisionar rapidamente clusters Kubernetes leves em contêineres Docker, o que facilita a execução de várias instâncias do Kubernetes em uma única máquina. É uma opção popular para desenvolvedores que desejam testar e depurar aplicativos em um ambiente Kubernetes local [\[22\]](#referências).
 
@@ -1884,13 +1916,13 @@ O objetivo é criar uma aplicação orquestradora de transferência automática 
 
     </details>
 
-    <details id="aks-p5"><summary>AKS Cluster</summary>
+    <details id="aks-p5" open><summary>AKS Cluster</summary>
 
     O Serviço de Kubernetes do Azure (AKS) oferece a maneira mais rápida de começar a desenvolver e implantar aplicativos nativos de nuvem no Azure, em datacenters ou na borda com pipelines internos do código para a nuvem e verificadores de integridade. Obtenha gerenciamento e governança unificados para clusters do Kubernetes locais, de borda e multinuvem. Interopere com os serviços de segurança, identidade, gerenciamento de custos e migração do Azure [\[23\]](#referências).
 
     </details>
 
-    <details id="deployment-p5"><summary>Kubernetes Deployment</summary>
+    <details id="deployment-p5" open><summary>Kubernetes Deployment</summary>
 
     ```yaml
     apiVersion: apps/v1
@@ -1926,7 +1958,7 @@ O objetivo é criar uma aplicação orquestradora de transferência automática 
 
     </details>
 
-    <details id="statefulset-p5"><summary>Kubernetes StatefulSet</summary>
+    <details id="statefulset-p5" open><summary>Kubernetes StatefulSet</summary>
 
     ```yaml
     apiVersion: apps/v1
@@ -1975,7 +2007,7 @@ O objetivo é criar uma aplicação orquestradora de transferência automática 
 
     </details>
 
-    <details id="service-ip-p5"><summary>Kubernetes Service ClusterIP</summary>
+    <details id="service-ip-p5" open><summary>Kubernetes Service ClusterIP</summary>
 
     ```yaml
     apiVersion: v1
@@ -1999,7 +2031,7 @@ O objetivo é criar uma aplicação orquestradora de transferência automática 
 
     </details>
 
-    <details id="service-lb-p5"><summary>Kubernetes Service LoadBalancer</summary>
+    <details id="service-lb-p5" open><summary>Kubernetes Service LoadBalancer</summary>
 
     ```yaml
     apiVersion: v1
@@ -2023,7 +2055,7 @@ O objetivo é criar uma aplicação orquestradora de transferência automática 
 
     </details>
 
-    <details id="hpa-p5"><summary>Kubernetes HorizontalPodAutoscaler</summary>
+    <details id="hpa-p5" open><summary>Kubernetes HorizontalPodAutoscaler</summary>
     
     ```yaml
     apiVersion: autoscaling/v2
@@ -2050,7 +2082,7 @@ O objetivo é criar uma aplicação orquestradora de transferência automática 
 
     </details>
 
-    <details id="ingress-p5"><summary>Kubernetes Ingress</summary>
+    <details id="ingress-p5" open><summary>Kubernetes Ingress</summary>
     
     ```yaml
     apiVersion: networking.k8s.io/v1
@@ -2111,12 +2143,21 @@ Back-end/Front-end: Visual Studio Code
 CI/CD: GitHub Actions
 
 <h3 id="contribuições-p6">Contribuições pessoais</h3>
+O autor participou ativamente do desenvolvimento de funcionalidades core do sistema, como camada de cache da aplicação, serviço de envio de email, modelagem não relacional e configuração do banco NoSQL apache Cassandra, criptografia síncrona para exclusão de dados do usuário, conteinerização de aplicações utilizando Docker, implantação de cluster Kubernetes utilizando AKS (Azure Kubernetes Service), criação de manuais de desenvolvimento para utilização do K3D (Kubernetes em Container) para testes, criação de Deployments, StatefulSets, Services e escalonadores.
+
+Dentre os desafios deste primeiro projeto destaca-se a necessidade de estudos intensos dado ao fato de que o autor não tinha experiências prévias com desenvolvimento de camadas de cache e operações de backup/restore em um Azure Kubernetes Service, que foi utilizado para criar um cluster kubernetes para utilização e testes e por causa do comprometimento o autor se destacou na posição de DevOps, liderando outros alunos e ajudando a criar tarefas e distribuí-las.
+
+Por fim, as principais skills e fragmentos de código desenvolvidos serão demonstrados e explicados abaixo:
+
+**Hard Skills Efetivamente Desenvolvidas**: Python, FastAPI, Apache Cassandra, Redis, Kubernetes, Helm, AKS, Scrum, VueJS, Javascript.
+
+**Soft Skills Efetivamente Desenvolvidas**: Autonomia, proatividade, planejamento, liderança e persistência.
 
 - <h4 id="devops-p6">DevOps</h4>
 
     - <h5 id="StatefulSet-p6">StatefulSet</h5>
 
-        <details><summary>PostGIS StatefulSet</summary>
+        <details open><summary>PostGIS StatefulSet</summary>
         
         ```yaml
         apiVersion: apps/v1
@@ -2161,7 +2202,7 @@ CI/CD: GitHub Actions
     
         Com objetivo de gerenciar a complexidade da implantação de aplicativos em Kubernetes, permitindo que concentra-se no desenvolvimento e na inovação de aplicativos, foi utilizado a tecnlogia Helm [\[3\]](#referências), que necessita da definição de um Chart.yaml, um values.yaml e, uma pasta de templates, onde tem-se presente os arquivos yaml de objetos kubernetes e arquivos .tpl que são utilizados para criar função com pseudo-código GoLang, utilizado pela tecnologia Helm para facilita o desenvolvimento e tornar mais dinâmico.
 
-        <details><summary>Configuração do Helm Chart.yaml</summary>
+        <details open><summary>Configuração do Helm Chart.yaml</summary>
 
         ```yaml
         apiVersion: v2
@@ -2186,7 +2227,7 @@ CI/CD: GitHub Actions
         
         </details>
 
-        <details><summary>Configuração do Helm values.yaml</summary>
+        <details open><summary>Configuração do Helm values.yaml</summary>
 
         ```yaml
         global:
@@ -2210,7 +2251,7 @@ CI/CD: GitHub Actions
 
         Ao utilizar-se a tecnologia Kubernetes com aplicações onde necessita-se de persistência de dados, como Bancos de Dados, além do StatefulSet, fala-se normalmente sobre três objetos, o PersistentVolume, o PersistentVolumeClaim e o StorageClass. Abaixo, encontra-se informações sobre estes objetos e implementações no projeto POP.
 
-        <details><summary>PersistentVolumeClaim e PersistentVolume</summary>
+        <details open><summary>PersistentVolumeClaim e PersistentVolume</summary>
 
         Um PersistentVolume (PV) é uma porção de armazenamento no cluster que foi provisionada por um administrador ou dinamicamente provisionada usando Classes de Armazenamento. É um recurso no cluster, assim como um nó é um recurso do cluster. Os PVs são plugins de volume, assim como Volumes, mas têm um ciclo de vida independente de qualquer Pod individual que utiliza o PV. Esse objeto de API captura os detalhes da implementação do armazenamento, seja NFS, iSCSI ou um sistema de armazenamento específico de um provedor de nuvem [\[30\]](#referências).
 
@@ -2218,13 +2259,13 @@ CI/CD: GitHub Actions
 
         </details>
 
-        <details><summary>StorageClass</summary>
+        <details open><summary>StorageClass</summary>
 
         Uma StorageClass fornece uma maneira para os administradores descreverem as "classes" de armazenamento que oferecem. Diferentes classes podem estar relacionadas a níveis de qualidade de serviço, políticas de backup ou a políticas arbitrárias determinadas pelos administradores do cluster. O Kubernetes em si não impõe uma opinião sobre o que as classes representam. Esse conceito às vezes é chamado de "perfis" em outros sistemas de armazenamento [\[31\]](#referências).
 
         </details>
 
-        <details><summary>Implementação</summary>
+        <details open><summary>Implementação</summary>
 
         - PersistentVolumeClaim
         ```yaml
@@ -2275,7 +2316,7 @@ CI/CD: GitHub Actions
 
     - <h5 id="aks-p6">Azure Kubernetes Service</h5>
 
-        <details><summary>AKS Cluster</summary>
+        <details open><summary>AKS Cluster</summary>
         O Serviço de Kubernetes do Azure (AKS) oferece a maneira mais rápida de começar a desenvolver e implantar aplicativos nativos de nuvem no Azure, em datacenters ou na borda com pipelines internos do código para a nuvem e verificadores de integridade. Obtenha gerenciamento e governança unificados para clusters do Kubernetes locais, de borda e multinuvem. Interopere com os serviços de segurança, identidade, gerenciamento de custos e migração do Azure [\[23\]](#referências).
         </details>
 
@@ -2283,7 +2324,7 @@ CI/CD: GitHub Actions
 
     - <h5 id="cassandra-p6">Modelagem NoSQL Apache Cassandra</h5>
 
-        <details><summary>DML</summary>
+        <details open><summary>DML</summary>
         
         ```CQL
         CREATE KEYSPACE IF NOT EXISTS prediction WITH replication = {'class':'SimpleStrategy', 'replication_factor': 1}
@@ -2303,7 +2344,7 @@ CI/CD: GitHub Actions
     
     - <h5 id="redis-p6">Criação de Camada de Cacha usando Redis Queue</h5>
 
-        <details><summary>Redis</summary>
+        <details open><summary>Redis</summary>
         
         ```python
         @app.on_event("startup")
@@ -2324,7 +2365,7 @@ CI/CD: GitHub Actions
 
     - <h5 id="locust-p6">Teste de Carga com Locust</h5>
 
-        <details><summary>Reporte do Locust</summary>
+        <details open><summary>Reporte do Locust</summary>
 
         Os testes de carga com Locust são realizados usando a ferramenta de código aberto Locust para avaliar o desempenho de um sistema sob carga. Isso envolve a definição de comportamentos de usuário, configuração de cenários de teste, simulação de usuários virtuais e monitoramento do sistema em tempo real para identificar possíveis problemas de desempenho e gargalos. Esses testes são úteis para garantir que um sistema possa lidar com cargas de tráfego reais e são frequentemente empregados no desenvolvimento de software.
 
